@@ -8,6 +8,13 @@
 
 ---
 
+## 🧭 Repository Cleanup (publish-clean)
+
+- Created orphan branch publish-clean with large archives and releases excluded; pushed to GitHub as the clean history.
+- Heavy local artifacts remain available in Archive/, IT/, and Product/ but are intentionally unstaged to keep the branch lightweight.
+- Next action: open PR to replace main with publish-clean (https://github.com/ResonanceEnergy/MircoHydro/pull/new/publish-clean) and switch the default branch or fast-forward main after approval.
+
+
 ## 📊 WHAT WAS ACCOMPLISHED
 
 ### ✅ TASK A: SoT Consolidation
