@@ -1,10 +1,29 @@
 # 160 Visionaries: Complete Framework (Historic + Modern)
 
-**Date:** January 25, 2026  
+**Date:** January 26, 2026  
 **Total Visionaries:** 160 (80 historic + 80 modern)  
 **Target Insights:** 1,600 (800 from each cohort)  
 **Research Timeline:** Weeks 1-9 (9 weeks total execution)  
-**Status:** Framework complete; Phase 1 (3 visionaries) complete; Phase 2 (77 historic + 80 modern) launching
+**Status:** Framework complete; Phase 1 (4 founding visionaries) complete; Phase 2 (76 historic + 80 modern) launching
+
+---
+
+## THE FOUR FOUNDING VISIONARIES
+
+Before presenting the full 160 visionaries, we honor the **Four Founding Pillars** whose life works form the irreducible foundation of our technology:
+
+1. **Viktor Schauberger** (1885-1958) — **Observation**: Natural wisdom, vortex dynamics, implosion principle
+2. **Nikola Tesla** (1856-1943) — **Innovation**: Electromagnetic mastery, boundary layer turbines, resonant systems
+3. **Dan Winter** (1950s-present) — **Mathematical Proof**: φ-optimization, fractal field theory, phase conjugation
+4. **Johann Grander** (1930-2012) — **Information Transfer**: Magnetic water revitalization, living water technology
+
+**The Four-Pillar Synergy**:
+- **Schauberger** = *Mechanical* (what nature does — vortex flow, implosion)
+- **Tesla** = *Electromagnetic* (how to harness fields — magnets, resonance)
+- **Dan Winter** = *Geometric* (why φ works — sacred geometry, fractal compression)
+- **Grander** = *Informational* (water consciousness — magnetic structuring, molecular memory)
+
+Together: **Complete water structuring + energy extraction system** (unmatched globally)
 
 ---
 
