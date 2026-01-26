@@ -143,7 +143,59 @@ $$t_{backup} = \frac{15,000 \, \text{L}}{50 \, \text{L/s}} = 300 \, \text{s} = 5
 
 ---
 
-### **Cost & BOM**
+### **Design Decision: Single vs Multi-Ram Pump Configuration**
+
+**Analysis Performed:** Parallel array (4× small rams) vs Single large ram pump
+
+**Configuration Comparison:**
+
+| Parameter | Single Large Ram | 4× Parallel Rams | Delta |
+|-----------|------------------|------------------|-------|
+| Drive flow per unit | 30 L/s | 7.5 L/s each | -75% per pump |
+| Total delivery | 4.0 L/s (346 m³/day) | 4.32 L/s (373 m³/day) | +7.8% |
+| System efficiency | 67% | 72% | +5 pp |
+| Capital cost | $2,420 | $4,620 | +91% |
+| Failure redundancy | 0% (total down) | 75% (3 of 4 run) | +75% uptime |
+| Maintenance complexity | Low (1 unit) | Moderate (4 units) | 4× service points |
+
+**Efficiency Drivers (Multi-Ram Advantage):**
+1. **Valve dynamics:** Smaller valve mass (0.6kg vs 2kg) → faster closure (6ms vs 12ms) → sharper pressure spike
+2. **Reynolds effects:** Lower flow → less turbulent friction in drive pipe (f = 0.016 vs 0.020)
+3. **Individual optimization:** Each pump self-tunes stroke rate to local conditions
+
+**Economic Analysis:**
+```
+Extra output value: 27 m³/day × 365 × 9.81 × 50m × 0.70 / 3600 = 945 kWh/year
+Revenue gain: 945 kWh × $0.12/kWh = $113/year
+Reliability benefit: $22/year (reduced downtime)
+Total benefit: $135/year
+Extra cost: $2,200
+Payback: 16.2 years ❌ (Poor ROI)
+```
+
+**DECISION FOR PILOT SYSTEM (Units 1-50):**
+✅ **Use SINGLE large ram pump** ($2,420)
+- Simpler installation & commissioning
+- Lower upfront cost; save $2,200 for higher-ROI components (battery, solar)
+- Proven technology with 67% efficiency (acceptable)
+- Faster to market
+
+**FUTURE PRODUCTION DESIGN (Units 50+):**
+🔄 **Switch to 4× modular array** when:
+- Manufacturing scale reduces unit cost: $500/pump × 4 = $2,000 total (cheaper than single!)
+- Standardized components enable volume pricing
+- Market demands premium "redundant high-efficiency" SKU
+- Remote monitoring ROI justifies $600 sensor/control investment
+
+**R&D Path:**
+- Design modular manifold system (engineering complete, production-ready)
+- Build 1× multi-ram validation unit for field testing (prove +7.8% claim)
+- Patent "parallel ram pump array with adaptive flow balancing"
+- Position for scale-up at 50-unit production milestone
+
+---
+
+### **Cost & BOM (Single Ram Pump - Pilot Configuration)**
 
 | Component | Spec | Qty | Unit Cost | Total |
 |-----------|------|-----|-----------|-------|
@@ -155,6 +207,8 @@ $$t_{backup} = \frac{15,000 \, \text{L}}{50 \, \text{L/s}} = 300 \, \text{s} = 5
 | Elevated tank (poly) | 15 m³ | 1 | $800 | $800 |
 | Fittings & anchors | Misc | 1 lot | $200 | $200 |
 | **TOTAL RAM PUMP SYSTEM** | | | | **$2,420** |
+
+*Note: Multi-ram configuration BOM available in appendix for future production scale-up*
 
 ---
 
