@@ -102,10 +102,39 @@
 
 ---
 
+## 🧭 PILOT SHORTLIST + SITE PARAMETERS
+- **P1 Agrarian Irrigation (Priority 1):** Head 4–8 m; flow 0.35–0.55 m³/s; target 5 kW; capex ~$17k (pilot), $15k at 50 units; expected LCOE ~$0.05/kWh; permits: water use + small structure; ownership: farmer coop + MFI note; success proof: irrigation uptime + household power + fish-safe intake.
+- **P2 Eco-Lodge Remote (Priority 2):** Head 6–12 m; flow 0.25–0.40 m³/s; 7–10 kW hybrid hydro+PV; capex ~$28k pilot; premium monitoring; permits: environmental + aesthetic constraints; ownership: lodge; success proof: 24/7 uptime + guest-branding dashboard + diesel displacement >70%.
+- **P3 Community Microgrid (Priority 3):** 3×5 kW cluster + 20–40 kWh storage; head 2–6 m; flow 0.6–0.9 m³/s; capex ~$55–65k pilot; funding: NGO/DFI grant + tariff; permits: land/water + community agreement; ownership: community coop/SPV; success proof: prepaid/paygo collections >90%, uptime >90%, safety zero incidents.
+- **P4 Agro-Processing (Watchlist):** 10–20 kW, higher uptime requirement; treat as follow-on after P1–P3 data.
+
+**Pilot Next Actions (30 days):**
+- Lock host sites for P1–P3; capture head/flow measurements, load profiles, and civil constraints.
+- Run fish-safety intake design review; finalize screening/bypass design per site.
+- Draft MoUs + tariff/lease terms; align on data-sharing and public dashboard rights.
+- Start permit packets (water use, minor works, environmental clearance where required).
+
+---
+
 ## 📊 KPIs THAT MATTER
 - **Tech:** Efficiency, uptime, MTBF, fish survival, install time, cost/kW, LCOE.
 - **Business:** CAC/payback, GM/CM, churn, ARR (services), project IRR.
 - **Impact:** CO₂e avoided, households served, jobs created, community equity %, water quality indices.
+
+---
+
+## 🛰️ DATA / MONITORING STACK v0 (FAST DEPLOY)
+- **Edge:** Flow, head/pressure, RPM, voltage/current, temp, vibration, water quality (turbidity/DO optional), tamper switch.
+- **Gateway:** Low-power IPC/SoC; RS-485/Modbus + CAN; local buffering; OTA-capable; failsafe data store.
+- **Comms:** LTE/NB-IoT primary; LoRa/mesh fallback; store-and-forward for outages.
+- **Cloud:** Time-series DB + object store; rules for alerts; device twin for config.
+- **Dashboard:** Uptime, η proxy, kWh, revenue (paygo/EaaS), fish-safe intake status, alarms; public view toggle for impact.
+- **Security:** Signed firmware, role-based access, audit logs; PII-light by design.
+- **Delivery Plan (60 days):**
+  - Day 0–10: Finalize sensor BoM + gateway spec; choose protocol map; safety interlocks.
+  - Day 10–25: Build firmware v0 + MQTT/HTTPS uplink; cloud ingestion + dashboard skeleton.
+  - Day 25–45: Pilot hardware install; alerting + remote config; data QA.
+  - Day 45–60: Publish pilot dashboards; add basic predictive flags (thresholds + Z-score drift).
 
 ---
 
