@@ -1,8 +1,14 @@
 # Philip S. Callahan: Paramagnetism, Weak Earth Magnetic Forces & the Antenna of Life
 
 **Source**: 40+ years research, USDA entomologist, paramagnetism pioneer, nature's electromagnetic secrets  
-**Status**: Supporting Visionary - Electromagnetic Agriculture & Soil Vitality  
+**Status**: **TIER 2 - INSPIRATIONAL VISIONARY** (Experimental, must prove ≥5% micro-hydro efficiency gains)  
 **Last Updated**: January 26, 2026
+
+**STRATEGIC RECLASSIFICATION**: Callahan moved from "Supporting Visionary" to "Inspirational Visionary" pending rigorous validation. His agriculture research is proven (20-300% crop yield increases), but turbine efficiency benefits are UNPROVEN. Testing required before promoting to core technology.
+
+**TESTING PROTOCOL**: Alberta Pilot #3 (paramagnetic variant) - 6 months continuous operation  
+**DECISION CRITERIA**: ≥5% efficiency gain → Promote to Tier 1; <5% → Agricultural marketing only  
+**DECISION POINT**: September 2026 (data-driven, not assumption-based)
 
 ---
 

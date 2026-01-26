@@ -2,28 +2,65 @@
 
 **Date:** January 26, 2026  
 **Total Visionaries:** 160 (80 historic + 80 modern)  
+**Founding Visionaries:** 4 Tier 1 (core tech) + 4 Tier 2 (inspirational)  
 **Target Insights:** 1,600 (800 from each cohort)  
 **Research Timeline:** Weeks 1-9 (9 weeks total execution)  
-**Status:** Framework complete; Phase 1 (4 founding visionaries) complete; Phase 2 (76 historic + 80 modern) launching
+**Status:** Strategic pivot complete - proprietary RWR Module (not Grander licensing), Callahan moved to experimental tier
 
 ---
 
-## THE FOUR FOUNDING VISIONARIES
+## TIER 1: THE FOUR FOUNDING VISIONARIES (Core Technologies)
+
+**Status**: Essential to every system - proven performance, proprietary implementation
 
 Before presenting the full 160 visionaries, we honor the **Four Founding Pillars** whose life works form the irreducible foundation of our technology:
 
 1. **Viktor Schauberger** (1885-1958) — **Observation**: Natural wisdom, vortex dynamics, implosion principle
 2. **Nikola Tesla** (1856-1943) — **Innovation**: Electromagnetic mastery, boundary layer turbines, resonant systems
-3. **Dan Winter** (1950s-present) — **Mathematical Proof**: φ-optimization, fractal field theory, phase conjugation
-4. **Johann Grander** (1930-2012) — **Information Transfer**: Magnetic water revitalization, living water technology
+3. **Dan Winter** (1950s-present) — **Mathematical Proof**: φ-optimization, fractal field theory, phase conjugation, Imploder magnetic water technology
+4. **Resonance Water Revitalization (RWR)** — **Proprietary Integration**: Our own magnetic water structuring technology, inspired by Grander/Winter principles, zero licensing fees
 
 **The Four-Pillar Synergy**:
 - **Schauberger** = *Mechanical* (what nature does — vortex flow, implosion)
 - **Tesla** = *Electromagnetic* (how to harness fields — magnets, resonance)
-- **Dan Winter** = *Geometric* (why φ works — sacred geometry, fractal compression)
-- **Grander** = *Informational* (water consciousness — magnetic structuring, molecular memory)
+- **Dan Winter** = *Geometric* (why φ works — sacred geometry, fractal compression, Imploder precedent)
+- **RWR Module** = *Proprietary Magnetic Structuring* (dodecahedron magnetic array, information water core, spiral flow path — BUILT BY US, inspired by Grander 40-year track record + Dan Winter sacred geometry)
 
-Together: **Complete water structuring + energy extraction system** (unmatched globally)
+**Strategic Note**: We do NOT license Grander technology. We build our own RWR Module co-developed with Dan Winter, owning 100% of IP, paying zero royalties. This saves $1M-4M over 10 years and creates exclusive competitive advantage.
+
+Together: **Complete water structuring + energy extraction system** (proprietary, unmatched globally)
+
+---
+
+## TIER 2: INSPIRATIONAL VISIONARIES (Experimental Features)
+
+**Status**: Tested but not guaranteed - added only if proven ≥5% efficiency benefit
+
+These visionaries inspire R&D directions, but their technologies are NOT core to every system until rigorously validated:
+
+### 5. Philip S. Callahan (1923-2019) — **Paramagnetism**
+**Contribution**: Weak Earth magnetic field concentration, volcanic basalt agriculture, Round Tower antenna discovery  
+**Potential Application**: Basalt fiber turbine blades, basalt penstock lining, paramagnetic site selection  
+**Status**: ⏳ **TESTING** (Alberta Pilot #3 paramagnetic variant, 6-month trial)  
+**Decision Criteria**: Must prove **≥5% efficiency gain** to promote to Tier 1  
+**Timeline**: September 2026 decision point (data-driven, not assumption-based)  
+**Current Value**: Agricultural marketing (output water paramagnetic enhancement for irrigation), site selection tool (PCSM meter)
+
+### 6. Gerald Pollack (1940s-present) — **EZ Water (4th Phase)**
+**Contribution**: Exclusion zone water, structured water science, hydrophilic surfaces  
+**Potential Application**: Hydrophilic coatings, UV/IR light exposure in transparent penstock  
+**Status**: 📋 **FUTURE RESEARCH** (Phase 2-3 R&D, after core technologies validated)
+
+### 7. Masaru Emoto (1943-2014) — **Water Consciousness**
+**Contribution**: Water crystal photography, intentionality effects, consciousness-aware design  
+**Potential Application**: Water crystal before/after testing, consciousness-aware branding  
+**Status**: 📊 **MARKETING/DOCUMENTATION** (not core tech, used for brand storytelling)
+
+### 8. Johann Grander (1930-2012) — **Magnetic Water Revitalization**
+**Contribution**: 40 years proven magnetic water treatment, 10,000+ commercial installations  
+**Inspiration Value**: ⭐ **HIGH** — Grander's success validates magnetic structuring principles  
+**Implementation**: We do NOT license Grander. Instead, we BUILT our own RWR Module inspired by his principles (see Tier 1 #4)  
+**Strategic Note**: Grander is honored as inspiration, but licensing = $1M-4M in royalties over 10 years. We choose to innovate, not license.
 
 ---
 

@@ -2,39 +2,42 @@
 
 **Purpose:** Define visual brand identity inspired by Alberta's iconic landscape and historic mill heritage.
 
-**Status:** Design concept framework.  
-**Last Updated:** January 25, 2026
+**Status:** Design concept framework - STRATEGIC PIVOT: Grander moved to inspirational tier, RWR Module now core  
+**Last Updated:** January 26, 2026
 
 ---
 
 ## Logo Concept: "Mill Spirit Circle"
 
 ### Overview
-A circular logo badge inspired by sacred geometry and the Four Founding Visionaries, integrating landscape and industrial heritage symbols to represent MicroHydro's mission: harnessing water consciousness through passive magnetic structuring, vortex dynamics, electromagnetic resonance, and φ-optimization.
+A circular logo badge inspired by sacred geometry and the Four Founding Visionaries, integrating landscape and industrial heritage symbols to represent MicroHydro's mission: harnessing water consciousness through proprietary magnetic structuring (RWR Module), vortex dynamics, electromagnetic resonance, and φ-optimization.
 
 **Founding Visionary Integration (FOUR-PILLAR DESIGN):**
 The logo embodies the four founding visionaries in tetrahedral sacred geometry:
 
 - **Top (Waterwheel)** = **Viktor Schauberger** - Natural wisdom, vortex dynamics, implosion principle
 - **Right (Tesla Coil)** = **Nikola Tesla** - Electromagnetic innovation, resonant systems, boundary layer turbines
-- **Bottom (Grander Field Lines)** = **Johann Grander** - Magnetic water revitalization, information transfer, living water consciousness
-- **Left (φ Sacred Geometry)** = **Dan Winter** - Golden ratio optimization, fractal field theory, phase conjugation
+- **Bottom (Magnetic Array)** = **Resonance Water Revitalization (RWR)** - Proprietary magnetic structuring (dodecahedron array, information water core, spiral flow)
+- **Left (φ Sacred Geometry)** = **Dan Winter** - Golden ratio optimization, fractal field theory, phase conjugation, Imploder technology
 
 **Tetrahedral Symmetry (4-Fold)**:
 - **4 vertices** = 4 visionaries positioned at cardinal points (North, East, South, West)
-- **4 elements** = Water (Schauberger), Fire/Energy (Tesla), Earth/Structure (Grander), Air/Consciousness (Dan Winter)
+- **4 elements** = Water (Schauberger), Fire/Energy (Tesla), Earth/Structure (RWR Module), Air/Consciousness (Dan Winter)
 - **Center** = Integration point (micro-hydro turbine where all 4 principles converge)
 - **φ-scaling** = Each visionary symbol scaled by golden ratio relative to center (1:1.618 radial progression)
 
-**Grander's Addition (NEW - 4th Pillar)**:
-- **Symbol**: Magnetic field lines (curved, flowing) emanating from water droplet with concentric information rings
+**RWR Module Representation (NEW - Proprietary 4th Pillar)**:
+- **Symbol**: Dodecahedron magnetic array (12 vertices visible) with spiral flow lines entering/exiting
 - **Placement**: Bottom of circular logo (South position), at river level
-- **Color**: Blue-silver gradient (water + magnetism)
-- **Meaning**: Water carries memory/information; magnetic fields restructure molecular clusters; passive revitalization (no electricity)
-- **Synergy with others**: Grander magnetic template → Schauberger vortex amplification → Dan Winter φ-phase conjugation → Tesla electromagnetic coupling
+- **Color**: Blue-gold gradient (water + sacred geometry + electromagnetic field)
+- **Meaning**: Proprietary technology (BUILT BY US), not licensed; magnetic information transfer inspired by Grander 40-year track record + Dan Winter φ-optimization
+- **Text notation** (optional small font): "RWR™" below symbol (trademark our own tech)
+- **Synergy with others**: RWR magnetic template → Schauberger vortex amplification → Dan Winter φ-phase conjugation → Tesla electromagnetic coupling
+
+**Strategic Note**: Logo does NOT reference "Grander" trademark. RWR Module is our proprietary system, inspired by proven principles but 100% owned IP. This protects against licensing dependency and creates unique brand identity.
 
 **Dan Winter's Enhanced Influence**: 
-The circular format represents φ-scaled recursion (self-similarity). The 4-fold symmetry mirrors the tetrahedron (simplest platonic solid, 4 faces). Landscape layers nest in golden ratio proportions. Sacred geometry (dodecahedron, icosahedron) subtly embedded in curves. The FOUR visionaries create phase-conjugate interference pattern (Winter's proof that multiple φ-waves = constructive interference = maximum coherence).
+The circular format represents φ-scaled recursion (self-similarity). The 4-fold symmetry mirrors the tetrahedron (simplest platonic solid, 4 faces). Landscape layers nest in golden ratio proportions. Sacred geometry (dodecahedron for RWR magnetic array, icosahedron) subtly embedded in curves. The FOUR visionaries create phase-conjugate interference pattern (Winter's proof that multiple φ-waves = constructive interference = maximum coherence).
 
 ### Visual Composition
 
