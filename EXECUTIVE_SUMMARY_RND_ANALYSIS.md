@@ -317,7 +317,7 @@ Stay curious, adaptive, humble. Best design emerges through iteration and learni
 1. **VISIONARY_RESEARCH_FOUNDATION.md** — Complete 1600-insight catalog (160 visionaries)
 2. **RND_PRIORITIZATION_SYNTHESIS.md** — Full R&D analysis (this summary extracted from)
 3. **PRODUCT_DEVELOPMENT_ROADMAP.md** — Detailed technical specifications (Option B, next step)
-4. **PROJECT_COMPLETION_SUMMARY.md** — Project history and milestones achieved
+4. **MASTER_PROJECT_OVERVIEW.md** — Project history and milestones achieved
 5. **EXPANSION_COMPLETE_SUMMARY.md** — Research expansion chronicle
 
 ---

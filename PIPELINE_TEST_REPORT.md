@@ -29,7 +29,7 @@ MicroHydroV1 — SoT/MicroHydroV1/
 ├─ docs/                   ✅ Present
 ├─ tests/                  ✅ Present
 ├─ tools/                  ✅ Present
-└─ README.md               ✅ Present
+└─ MASTER_PROJECT_OVERVIEW.md               ✅ Present
 ```
 
 ### Critical Files ✅
@@ -242,7 +242,7 @@ c:\MircoHydro\MicroHydroV1 — SoT\MicroHydroV1
 - `MANIFEST.json` - Version tracking
 - `automation/Import_Config.json` - Import settings
 - `tools/run_pipeline.py` - Pipeline execution
-- `README.md` - Project overview
+- `MASTER_PROJECT_OVERVIEW.md` - Project overview
 
 ---
 

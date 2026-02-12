@@ -1,0 +1,79 @@
+Category,File Name,Primary Purpose,Overlap Notes,Merge Candidate
+Executive/Overview,00_START_HERE.md,Master index and navigation,High overlap with other indexes,Yes - into DOCUMENT_INDEX.md
+Executive/Overview,AUDIT_QUICK_REFERENCE.md,Manager-friendly audit stats,Repeats AUDIT_MASTER_REPORT.md stats,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Executive/Overview,COMPLETE_DELIVERABLES.md,Project deliverables overview,Shares summary structure,Yes - into MASTER_PROJECT_OVERVIEW.md
+Executive/Overview,CONSOLIDATION_COMPLETE.md,Consolidation status,Similar to EXECUTION_SUMMARY.md,Yes - into MASTER_PROJECT_OVERVIEW.md
+Executive/Overview,CONSOLIDATION_EXECUTION_REPORT.md,Execution report,Overlaps with summaries,Yes - into MASTER_PROJECT_OVERVIEW.md
+Executive/Overview,EXECUTION_SUMMARY.md,Complete overview,Core summary,Yes - into MASTER_PROJECT_OVERVIEW.md
+Executive/Overview,MASTER_AUDIT_SUMMARY.md,Role-based summaries,Repeats audit data,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Executive/Overview,OVERVIEW_5MIN.md,5-minute summary,Quick overview,Yes - into MASTER_PROJECT_OVERVIEW.md
+Executive/Overview,PHASE_1_VISIONARY_EXECUTIVE_SUMMARY.md,Visionary summary,Unique visionary focus,Yes - into MASTER_PROJECT_OVERVIEW.md
+Executive/Overview,PROJECT_COMPLETION_SUMMARY.md,Completion status,Similar to deliverables,Yes - into MASTER_PROJECT_OVERVIEW.md
+Executive/Overview,README_AUDIT_INDEX.md,Audit navigation,Index overlap,Yes - into DOCUMENT_INDEX.md
+Executive/Overview,README.md,Main project hub,Basic overview,Yes - into MASTER_PROJECT_OVERVIEW.md
+Executive/Overview,START_SoT_CONSOLIDATION.md,Consolidation start,Similar to indexes,Yes - into DOCUMENT_INDEX.md
+Executive/Overview,STRUCTURE.md,Project structure,Index overlap,Yes - into DOCUMENT_INDEX.md
+Executive/Overview,VISIONARY_RESEARCH_EXPANSION_SUMMARY.md,Research expansion,Research summary,Yes - into MASTER_PROJECT_OVERVIEW.md
+Design/Specifications,CRITICAL_DESIGN_ANALYSIS_GAPS_IMPROVEMENTS.md,Gaps and improvements,Gap analysis,Yes - into HYBRID_SYSTEM_MASTER_SPEC.md
+Design/Specifications,HYBRID_SYSTEM_SPECIFICATION_v2.0.md,Hybrid system spec,Core spec,Yes - into HYBRID_SYSTEM_MASTER_SPEC.md
+Design/Specifications,OPTIMAL_DESIGN_FUNCTIONS_FRAMEWORK.md,Design framework,Framework details,Yes - into HYBRID_SYSTEM_MASTER_SPEC.md
+Design/Specifications,OVERALL_SYSTEM_DESIGN.md,Overall design,High-level design,Yes - into HYBRID_SYSTEM_MASTER_SPEC.md
+Design/Specifications,PRODUCT_DEVELOPMENT_ROADMAP.md,Product roadmap,Development plan,Yes - into HYBRID_SYSTEM_MASTER_SPEC.md
+Design/Specifications,WORKING_DESIGN_SPECIFICATION_v1.0.md,Working spec,Detailed spec,Yes - into HYBRID_SYSTEM_MASTER_SPEC.md
+Design/Specifications,Engineering/Data/data/README.md,Data README,Subfolder doc,No major overlap,No
+Design/Specifications,Engineering/Automation/automation/README.md,Automation README,Subfolder doc,No major overlap,No
+Design/Specifications,Engineering/CAD/cad/README.md,CAD README,Subfolder doc,No major overlap,No
+Design/Specifications,Engineering/README.md,Engineering README,Subfolder doc,No major overlap,No
+Research/Insights,160_VISIONARIES_COMPLETE_FRAMEWORK.md,Visionaries framework,Framework overview,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Research/Insights,DAN_WINTER_10_INSIGHTS_MICROHYDRO.md,Winter insights,Specific insights,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Research/Insights,EXPANSION_COMPLETE_SUMMARY.md,Expansion summary,Research summary,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Research/Insights,JOHANN_GRANDER_30_INSIGHTS_WATER_REVITALIZATION.md,Grander insights,Specific insights,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Research/Insights,PHILIP_CALLAHAN_PARAMAGNETISM_INSIGHTS.md,Callahan insights,Specific insights,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Research/Insights,RND_PRIORITIZATION_SYNTHESIS.md,R&D synthesis,Synthesis doc,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Research/Insights,VISIONARY_INSIGHTS_SYNTHESIS_PHASE1.md,Phase 1 synthesis,Synthesis,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Research/Insights,VISIONARY_INSIGHTS_SYNTHESIS_PHASE2.md,Phase 2 synthesis,Synthesis,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Research/Insights,VISIONARY_RESEARCH_FOUNDATION.md,Research foundation,Foundation doc,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Research/Insights,[Additional 11 insight files],Various insights,Specific themes,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Audits/Consolidation,AUDIT_DEDUPLICATION_ROADMAP.md,Dedup roadmap,Roadmap,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Audits/Consolidation,AUDIT_MASTER_REPORT.md,Master audit report,Core audit,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Audits/Consolidation,SOT_CONSOLIDATION_ANALYSIS.md,SoT analysis,Analysis,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Audits/Consolidation,SOT_CONSOLIDATION_CHECKLIST.md,Checklist,Checklist,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Audits/Consolidation,SOT_CONSOLIDATION_EXECUTION_PLAN.md,Execution plan,Plan,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Audits/Consolidation,SOT_CONSOLIDATION_INDEX.md,Index,Index,Yes - into DOCUMENT_INDEX.md
+Audits/Consolidation,SOT_CONSOLIDATION_SUMMARY.md,Summary,Summary,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Audits/Consolidation,[Additional 6 audit files],Various audits,Audit details,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Execution/Planning,ACCELERATED_MIGRATION_PLAN_9_MONTHS.md,Migration plan,Plan,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,DAILY_EXECUTION_CHECKLIST.md,Daily checklist,Checklist,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,MASTER_EXECUTION_PLAN.md,Master plan,Core plan,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,MASTER_TODO_LIST.md,Todo list,List,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,PHASE_1_TEAM_COMMUNICATION.md,Phase 1 comm,Comm,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,PHASE_2_DEDUP_EXECUTION.md,Phase 2 execution,Execution,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,PHASE_3_DOCUMENTATION_EXECUTION.md,Phase 3 execution,Execution,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,PHASE_3_DOCUMENTATION_UPDATES.md,Updates,Updates,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,PHASE_4_LONGTERM_STRATEGY.md,Strategy,Strategy,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,PHASE_4_LONGTERM_STRATEGY_EXECUTION.md,Execution,Execution,Yes - into MASTER_EXECUTION_GUIDE.md
+Execution/Planning,[Additional 5 phase/checklist files],Various phases,Phase details,Yes - into MASTER_EXECUTION_GUIDE.md
+Reference/Archive,ARCHIVE_RETENTION_POLICY.md,Retention policy,Policy,No major overlap,No
+Reference/Archive,FUNDING_DIVISION_CHARTER.md,Funding charter,Charter,No major overlap,No
+Reference/Archive,IP_PATENT_STRATEGY_DIVISION.md,IP strategy,Strategy,No major overlap,No
+Reference/Archive,ORGANIZATIONAL_ANALYSIS_FORWARD_PLAN.md,Org analysis,Analysis,No major overlap,No
+Reference/Archive,PARTNERSHIP_DIVISION_CHARTER.md,Partnership charter,Charter,No major overlap,No
+Reference/Archive,RESEARCH_DEVELOPMENT_ARM_CHARTER.md,R&D charter,Charter,No major overlap,No
+Reference/Archive,[Additional 4 charter/strategy files],Various charters,Charter details,No major overlap,No
+Other,ALBERTA_SITE_IDENTIFICATION_WORKFLOW.md,Site workflow,Workflow,Some format overlap,Review for merge
+Other,BRANDING_LOGO_CONCEPT.md,Branding concept,Concept,No major overlap,No
+Other,CONTINENTAL_SITE_ANALYSIS_175_LOCATIONS.md,Site analysis,Analysis,Shares case study format,Review for merge
+Other,COPY_PASTE_FAST_TRACK.md,Fast track,Fast track,No major overlap,No
+Other,DEDUPLICATION_STRATEGY.md,Dedup strategy,Strategy,Overlaps with audits,Yes - into AUDIT_MASTER_CONSOLIDATED.md
+Other,DOCUMENT_INDEX.md,Document index,Index,Index overlap,Yes - into DOCUMENT_INDEX.md
+Other,ETHICS_VALUES_BRAND.md,Ethics brand,Brand,No major overlap,No
+Other,FAST_TRACK_10MIN_EXECUTION.md,Fast execution,Execution,Overlaps with planning,Yes - into MASTER_EXECUTION_GUIDE.md
+Other,GIGA_ENTERPRISE_BLUEPRINT.md,Blueprint,Blueprint,No major overlap,No
+Other,GLOBAL_STAKEHOLDER_DATABASE.md,Stakeholder DB,DB,No major overlap,No
+Other,GLOBAL_TOP_10_OPTIMAL_SITES.md,Top sites,Sites,Shares analysis format,Review for merge
+Other,HISTORIC_MILLS_VISION_ARCHIVE.md,Historic archive,Archive,No major overlap,No
+Other,MODERN_VISIONARIES_FOUNDATION.md,Visionaries foundation,Foundation,Overlaps with research,Yes - into VISIONARY_INSIGHTS_MASTER.md
+Other,REVENUE_GENERATION_STRATEGY.md,Revenue strategy,Strategy,No major overlap,No
+Other,STELLITE_MATERIALS_STRATEGY.md,Materials strategy,Strategy,No major overlap,No
+Other,URUGUAY_PARAGUAY_CASE_ANALYSIS.md,Case analysis,Analysis,Shares case study format,Review for merge
+Other,[Additional 10 misc files],Various misc,Misc details,Review individually,Review for merge

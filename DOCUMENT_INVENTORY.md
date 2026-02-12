@@ -11,7 +11,7 @@
 
 ## ⭐ CRITICAL DOCUMENTS (Read First)
 
-### 1. [README.md](./README.md)
+### 1. [MASTER_PROJECT_OVERVIEW.md](./MASTER_PROJECT_OVERVIEW.md)
 **Purpose:** Main project hub with department navigation, status, and quick links  
 **Audience:** Everyone  
 **Read Time:** 5 min  
@@ -22,7 +22,7 @@
 - File organization overview
 - Document guide by audience
 
-### 2. [OVERVIEW_5MIN.md](./OVERVIEW_5MIN.md)
+### 2. [MASTER_PROJECT_OVERVIEW.md](./MASTER_PROJECT_OVERVIEW.md)
 **Purpose:** Executive 5-minute summary of entire project  
 **Audience:** Executives, new team members  
 **Read Time:** 5 min  
@@ -42,7 +42,7 @@
 - Key dates to remember
 - Time estimates
 
-### 4. [STRUCTURE.md](./STRUCTURE.md)
+### 4. [DOCUMENT_INDEX.md](./DOCUMENT_INDEX.md)
 **Purpose:** Complete navigation guide to all documentation and departments  
 **Audience:** Everyone  
 **Read Time:** 10 min  
@@ -245,10 +245,10 @@
 
 | # | Document | Status | Created | Location |
 |---|----------|--------|---------|----------|
-| 1 | README.md | ✅ | Jan 24 | c:\MircoHydro\ |
-| 2 | OVERVIEW_5MIN.md | ✅ | Jan 24 | c:\MircoHydro\ |
+| 1 | MASTER_PROJECT_OVERVIEW.md | ✅ | Jan 24 | c:\MircoHydro\ |
+| 2 | MASTER_PROJECT_OVERVIEW.md | ✅ | Jan 24 | c:\MircoHydro\ |
 | 3 | MASTER_TODO_LIST.md | ✅ | Jan 24 | c:\MircoHydro\ |
-| 4 | STRUCTURE.md | ✅ | Jan 24 | c:\MircoHydro\ |
+| 4 | DOCUMENT_INDEX.md | ✅ | Jan 24 | c:\MircoHydro\ |
 | 5 | PHASE_SUMMARY.md | ✅ | Jan 24 | PHASES/ |
 | 6 | TIER_1_OVERVIEW.md | ✅ | Jan 24 | TIERS/ |
 | 7 | TIER_2_OVERVIEW.md | ✅ | Jan 24 | TIERS/ |
@@ -262,13 +262,13 @@
 
 ## 🚀 How to Use This Inventory
 
-1. **New to project?** → Start with #2 (OVERVIEW_5MIN.md)
+1. **New to project?** → Start with #2 (MASTER_PROJECT_OVERVIEW.md)
 2. **Need full context?** → Read #5 (PHASE_SUMMARY.md)
 3. **Have a specific question?** → Find your need in "Document Cross-References"
 4. **Ready to monitor?** → Use #3 (MASTER_TODO_LIST.md)
 5. **Decision meeting today?** → Use the relevant DECISION_TEMPLATE
 6. **Need details on a tier?** → Use TIER_X_OVERVIEW
-7. **Lost?** → See #4 (STRUCTURE.md)
+7. **Lost?** → See #4 (DOCUMENT_INDEX.md)
 
 ---
 
