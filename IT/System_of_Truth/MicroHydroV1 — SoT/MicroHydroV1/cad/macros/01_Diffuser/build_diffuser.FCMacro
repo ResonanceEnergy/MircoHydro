@@ -1,0 +1,95 @@
+
+# --- bootstrap: allow stand-alone run (load params.json if PARAMS not injected) ---
+import os, json
+if 'PARAMS' not in globals():
+    HERE = os.path.dirname(__file__)
+    ROOT = os.path.abspath(os.path.join(HERE, '..'))
+    PARAMS_FILE = os.path.join(ROOT, 'params.json')
+    if not os.path.exists(PARAMS_FILE):
+        raise FileNotFoundError("params.json not found at: " + PARAMS_FILE)
+    with open(PARAMS_FILE, 'r') as _f:
+        PARAMS = json.load(_f)
+
+
+# -*- coding: utf-8 -*-
+# MicroHydroV1 — Diffuser Builder (robust face + revolve)
+
+import FreeCAD, Part
+from FreeCAD import Vector
+
+P      = PARAMS['Diffuser']
+D_in   = float(P['D_in'])
+D_out  = float(P['D_out'])
+L      = float(P['Length'])
+wall   = float(P['Wall'])
+
+if D_in <= 0 or D_out <= 0 or L <= 0:
+    raise ValueError('[Diffuser] Non-positive dimensions. Check params.json.')
+
+sag_default = max(0.5, 0.02 * L)
+sag = float(P.get('ArcSagitta', sag_default))
+if abs(sag) < 1e-6:
+    sag = sag_default
+
+doc = FreeCAD.newDocument('Diffuser_vA1')
+
+p1  = Vector(D_in/2.0,  0.0, 0.0)
+p2  = Vector(D_out/2.0, 0.0, L)
+p1m = Vector(-p1.x,     0.0, p1.z)
+p2m = Vector(-p2.x,     0.0, p2.z)
+
+mx = 0.5 * (p1.x + p2.x)
+mz = 0.5 * (p1.z + p2.z)
+pm  = Vector(mx,  sag, mz)
+pmm = Vector(-mx, sag, mz)
+
+def make_arc(a, m, b):
+    try:
+        return Part.Arc(a, m, b).toShape()
+    except Exception:
+        m2 = Vector(m.x, m.y * 2.0, m.z)
+        return Part.Arc(a, m2, b).toShape()
+
+arc_outer = make_arc(p1, pm,  p2)
+arc_inner = make_arc(p1m,pmm, p2m)
+
+line_top = Part.LineSegment(p2,  p2m).toShape()
+line_bot = Part.LineSegment(p1m, p1 ).toShape()
+
+wire = Part.Wire([arc_outer, line_top, arc_inner, line_bot])
+wire = Part.Wire(wire.Edges)
+
+print('[Diffuser] isClosed:', wire.isClosed())
+print('[Diffuser] isValid :', wire.isValid())
+if not wire.isClosed():
+    raise RuntimeError('[Diffuser] Profile wire is not closed — check orientation / endpoints.')
+
+try:
+    face = Part.Face(wire)
+except Exception as e:
+    print('[Diffuser][WARN] Face() failed; attempting makeFilledFace.')
+    try:
+        face = Part.makeFilledFace(wire.Edges)
+    except Exception:
+        raise RuntimeError('[Diffuser] Could not create a face: ' + str(e))
+
+axis_origin = Vector(0,0,0)
+axis_dir    = Vector(0,0,1)
+try:
+    solid = face.revolve(axis_origin, axis_dir, 360.0)
+except Exception:
+    print('[Diffuser][WARN] Revolve retry with tiny axis offset.')
+    solid = face.copy().revolve(Vector(0,0,1e-6), axis_dir, 360.0)
+
+obj = doc.addObject('Part::Feature', 'Diffuser_vA1')
+obj.Shape = solid
+
+if wall > 0:
+    try:
+        thick = solid.makeThickness([], -wall, 1e-3)
+        obj.Shape = thick
+    except Exception as e:
+        print('[Diffuser][WARN] Thickness failed; using solid. Reason:', e)
+
+doc.recompute()
+print('[Diffuser] OK — built and revolved face successfully.')

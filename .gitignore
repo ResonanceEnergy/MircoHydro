@@ -3,3 +3,13 @@ Archive/Old_Releases/*.zip
 
 # Git LFS tracking
 .gitattributes
+Site_Scouting/.env
+
+Operations/.env
+Partnerships/.env
+Sales_Marketing/.env
+
+# Ignore all .env files
+*.env
+research/AAC
+research/EURA

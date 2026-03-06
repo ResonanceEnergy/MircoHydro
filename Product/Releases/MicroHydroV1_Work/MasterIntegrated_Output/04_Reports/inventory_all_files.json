@@ -1,0 +1,1127 @@
+[
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "RES_MicroHydroV1_Integration_Log.docx",
+    "bytes": 13254,
+    "mtime": 1769068593.1370246,
+    "sha256": "fab2220b5cf1ede20573f63ea70db63a558e8b2719cbe76256600a080a2e5284",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "bytes": 2065500,
+    "mtime": 1769068593.1031733,
+    "sha256": "3c827bf2a3060338bd85cf14fc15ae37a98bdfaada20a72af1a6012c2de53b4c",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_DoAll_Templates_Plots (1).zip",
+    "bytes": 39453,
+    "mtime": 1769068593.107656,
+    "sha256": "dc3ec1ccaf5495ec9bd37e03c66cb6d8fd2f6388eb48fced88f215272a273ecf",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_v0.3.0.zip",
+    "bytes": 40613,
+    "mtime": 1769068593.1079073,
+    "sha256": "245461ed716e3d2a531177dd77f4d746e0f177383572317c7f03972dbd4f8952",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_DO_ALL_AddOn_v0.3.0 (3).zip",
+    "bytes": 9999,
+    "mtime": 1769068593.1081274,
+    "sha256": "619a1caef5f2058b1f7f78f24dc866d11f97b4dc1c65f4a76ab971a691b0f26e",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0.zip",
+    "bytes": 43613,
+    "mtime": 1769068593.109198,
+    "sha256": "c99ed90d43978e51474c9410fef2d33f3095266548b26d8ae252211e33f64e0a",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_Calibration_AutoEmbed_AddOn_v0.3.0 (1).zip",
+    "bytes": 11313,
+    "mtime": 1769068593.1095657,
+    "sha256": "546c9fe2aff79a1bbb1a666e8107209e4bf16e1275016b33a4fe945854cba448",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_DO_ALL_AddOn_v0.3.0 (2).zip",
+    "bytes": 9999,
+    "mtime": 1769068593.1099045,
+    "sha256": "619a1caef5f2058b1f7f78f24dc866d11f97b4dc1c65f4a76ab971a691b0f26e",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/README.md",
+    "bytes": 729,
+    "mtime": 1769068593.1102254,
+    "sha256": "baa44f957e3651547d9455e9a936a74cd056ad8e55f14965c9522f89a1f3ed84",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_DO_ALL_AddOn_v0.3.0 (1).zip",
+    "bytes": 9999,
+    "mtime": 1769068593.1104198,
+    "sha256": "619a1caef5f2058b1f7f78f24dc866d11f97b4dc1c65f4a76ab971a691b0f26e",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_DO_ALL_AddOn_v0.3.0.zip",
+    "bytes": 9999,
+    "mtime": 1769068593.110893,
+    "sha256": "619a1caef5f2058b1f7f78f24dc866d11f97b4dc1c65f4a76ab971a691b0f26e",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_DoAll_Templates_Plots.zip",
+    "bytes": 39453,
+    "mtime": 1769068593.1114087,
+    "sha256": "dc3ec1ccaf5495ec9bd37e03c66cb6d8fd2f6388eb48fced88f215272a273ecf",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MANIFEST.json",
+    "bytes": 5591,
+    "mtime": 1769068593.1115994,
+    "sha256": "4a7ac3a3eee451297d0531b3d103a0c6fea93ec480297b307f7110f16cfa0b4c",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa (1).zip",
+    "bytes": 2065500,
+    "mtime": 1769068593.1131542,
+    "sha256": "3c827bf2a3060338bd85cf14fc15ae37a98bdfaada20a72af1a6012c2de53b4c",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_SharePoint_Version_Control_Configuration_Guide_v1.0.docx",
+    "bytes": 30718,
+    "mtime": 1769068593.1154125,
+    "sha256": "aa4207700f68768fc19bdb8cf636dbf6508fa153b49b4df5f7e3f96ddbf13f7f",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_Calibration_AutoEmbed_AddOn_v0.3.0.zip",
+    "bytes": 11313,
+    "mtime": 1769068593.1156373,
+    "sha256": "546c9fe2aff79a1bbb1a666e8107209e4bf16e1275016b33a4fe945854cba448",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_RUNID_BASELINE_v0.3.0/MANIFEST.json",
+    "bytes": 1016,
+    "mtime": 1769068593.116031,
+    "sha256": "26d2c214df70ca9fa1046334f8a9134dc2872999a4a0932993f15532976c883c",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_RUNID_BASELINE_v0.3.0/MicroHydroV1/tools/workflow/autofill_evidence_doc.py",
+    "bytes": 15654,
+    "mtime": 1769068593.1341102,
+    "sha256": "8d11ea9195f0042847d9c8063cbee7ed2e130787cdf4426c8dccf67aafd64453",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_RUNID_BASELINE_v0.3.0/MicroHydroV1/tools/plots/plot_t002_psd_peakiness.py",
+    "bytes": 3204,
+    "mtime": 1769068593.1343691,
+    "sha256": "d89af7f0e56c5d7c2e7acf3b85afd486d428c10650e2609e5069c89d1e626133",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_RUNID_BASELINE_v0.3.0/MicroHydroV1/docs/run3/RUN3_Evidence_Template.docx",
+    "bytes": 37555,
+    "mtime": 1769068593.1347823,
+    "sha256": "9665b888a1087ebcadd4caf4be6456de6165bd022ab80885b6e7a9168bd850fa",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_RUNID_BASELINE_v0.3.0/MicroHydroV1/docs/run3/README_AUTOFILL.md",
+    "bytes": 1206,
+    "mtime": 1769068593.1350403,
+    "sha256": "4c6ef531aefe09ec52ca60cc26bf25d1ee9a2baa978dc36bd204de072f3c4f38",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/tools/run_pipeline.py",
+    "bytes": 1830,
+    "mtime": 1769068593.1166701,
+    "sha256": "3e2bf0503a75b8829988af5c44f1cd7e9d701c8f07baa65e15caefb57643a485",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/tools/validate/validate_repo.py",
+    "bytes": 575,
+    "mtime": 1769068593.125457,
+    "sha256": "bf4aef700d228cb3e3d7440763ee41d39a42d00c282dbadc387768af1d77c36b",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/tools/optimize/opt_config.json",
+    "bytes": 1248,
+    "mtime": 1769068593.125685,
+    "sha256": "cbf34b5d2addf3da483f13740021b7c840dff51f3c57d81a892a20a391480ca1",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/tools/optimize/optimize_params.py",
+    "bytes": 8337,
+    "mtime": 1769068593.1259286,
+    "sha256": "25fe11f477b89674e434449ff666aea87970ce7607af2e8ce8f79ebdba9db864",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/tools/release/make_release.py",
+    "bytes": 1978,
+    "mtime": 1769068593.1261072,
+    "sha256": "445864cef793d56b8252c7d27f99840d8585491180b7a7ea6c2795f4a7ce1d81",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/tests/raw/2026-01-22_Run1_TankRipple/T002_TankRipple_Run1.csv",
+    "bytes": 165,
+    "mtime": 1769068593.1306388,
+    "sha256": "0c230ca23becce1698a9513fdf468c539a7ba0dbc530c117897085edcb51942c",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/tests/raw/2026-01-22_Run1_Power/T004_Power_Run1.csv",
+    "bytes": 169,
+    "mtime": 1769068593.1308565,
+    "sha256": "b50e14edc4427815d60d2ccee108acfbe9a5c8e5b81ba4d5ca18738cc7dc6f55",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/tests/raw/2026-01-22_Run1_ELCStability/T003_ELCStability_Run1.csv",
+    "bytes": 185,
+    "mtime": 1769068593.1310804,
+    "sha256": "e361352ebbc3901aea806641135c2be79c8a03b5fc929cabe67ff159743749b8",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/tests/raw/2026-01-22_Run1_JetCoherence/T001_JetCoherence_Run1.csv",
+    "bytes": 207,
+    "mtime": 1769068593.131307,
+    "sha256": "a0111983d22ef3fa7e68dd6b04ab69a5c7e65ee64da7cb316517df039ef467a9",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/docs/Master_Index.docx",
+    "bytes": 27555,
+    "mtime": 1769068593.1176968,
+    "sha256": "67e1e516136e0b8cd8bd9a220bcdd2d35c800f05b3f5f22ea8224ae076fb1578",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/docs/Tank_Ripple_Procedure.docx",
+    "bytes": 13200,
+    "mtime": 1769068593.119374,
+    "sha256": "6b9bef45727ea910145122ee3bedfeb0844c8d8d81bc88909834a5e2b6b1d267",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/docs/architecture_diagram.png",
+    "bytes": 1864434,
+    "mtime": 1769068593.1206088,
+    "sha256": "57ddb0c1e65ab7021d3746d43b7e02ff18cbaad28a09d05539e436f451ae64ae",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/docs/Run_of_Show_Checklist.docx",
+    "bytes": 37242,
+    "mtime": 1769068593.1214392,
+    "sha256": "11199a4af8b8c9ef2b4d867d8bd3ce470c6f72fc06163f9a2ca8178d7c190785",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/docs/Test_Campaign_Plan.docx",
+    "bytes": 37347,
+    "mtime": 1769068593.1217053,
+    "sha256": "34e1f04ed4e66fd4b1f5cd657bb0661226f6da313c9fbdb3e1bbf81fdc6ff5bd",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/docs/Jet_Coherence_Procedure.docx",
+    "bytes": 13215,
+    "mtime": 1769068593.1219177,
+    "sha256": "c06a91dbc16054457dee22f9eb7b67e020571ffa5963a35cd4871ff6901ba4b3",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/docs/PASS_A_FULL_RevA.docx",
+    "bytes": 53411,
+    "mtime": 1769068593.1226377,
+    "sha256": "0c8b38e25bfd1cea3c75e288d2043ae06d4732953eb33567ef07b53ba9d0a5f8",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_v0.3.0/MANIFEST.json",
+    "bytes": 848,
+    "mtime": 1769068593.12324,
+    "sha256": "6898aa8be6eb6e064a6aabb45ff7a67aca725d62748b369f144148a9185348e5",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_v0.3.0/MicroHydroV1/tools/workflow/autofill_evidence_doc.py",
+    "bytes": 12743,
+    "mtime": 1769068593.1352649,
+    "sha256": "01c3b68fcc4bb9097ac30faa91ec7c2645195332296905f70f7ce973430f25ea",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_v0.3.0/MicroHydroV1/tools/plots/plot_t002_psd_peakiness.py",
+    "bytes": 3204,
+    "mtime": 1769068593.13552,
+    "sha256": "d89af7f0e56c5d7c2e7acf3b85afd486d428c10650e2609e5069c89d1e626133",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_v0.3.0/MicroHydroV1/docs/run3/RUN3_Evidence_Template.docx",
+    "bytes": 37555,
+    "mtime": 1769068593.135842,
+    "sha256": "9665b888a1087ebcadd4caf4be6456de6165bd022ab80885b6e7a9168bd850fa",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_v0.3.0/MicroHydroV1/docs/run3/README_AUTOFILL.md",
+    "bytes": 717,
+    "mtime": 1769068593.1360848,
+    "sha256": "03a04b096dfe104f8c47ade990943ae5c2fdb2a039f8707a0bec4c91ac583784",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_Importer_RunID_Patch_v0.3.0/MANIFEST.json",
+    "bytes": 487,
+    "mtime": 1769068593.1236138,
+    "sha256": "aad697987be4cee338361c8feb5970e7d50ce768289963177bb6a4d6faeb6bfd",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_Importer_RunID_Patch_v0.3.0/MicroHydroV1/docs/governance/README_Importer_RunID_Patch.md",
+    "bytes": 1154,
+    "mtime": 1769068593.1362734,
+    "sha256": "0c9393c00741fbf5d3f5e56e81ab662b7cb8878882ac0d57e9b340b1e71b7b3b",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_Importer_RunID_Patch_v0.3.0/MicroHydroV1/automation/import_measurements.py",
+    "bytes": 5969,
+    "mtime": 1769068593.1322274,
+    "sha256": "f7e29180cdddbd3e4e9e78c4036328099ed0bf871b9d1e54609dbae6d6d4ce1c",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/macros/build_all.FCMacro",
+    "bytes": 1446,
+    "mtime": 1769068593.1284056,
+    "sha256": "95ebc29de844e140812d8d25bf1ff34d7999244a9f10fc3e61371c635ca67a5e",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/macros/params.json",
+    "bytes": 586,
+    "mtime": 1769068593.1288552,
+    "sha256": "750a4752509da918b34fc1fb0a444bcf30d49f0e0d3f98117c7b82b27e14492f",
+    "policy_flags": "PARAMS_JSON_PRESENT;PARAMS_POTENTIAL_DRIFT;DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/macros/README.txt",
+    "bytes": 119,
+    "mtime": 1769068593.129162,
+    "sha256": "6b61436b5ba032765e149e40a5742924e6657d41bb6209ec4ebd54a9f2d36a57",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/macros/03_VanePacks/build_vanepacks.FCMacro",
+    "bytes": 1440,
+    "mtime": 1769068593.1324487,
+    "sha256": "cf1b2bfd3b377a6961c667b03087f2bfa252db3de6d42067b9dbcfd341148e8f",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/macros/Assembly/build_assembly.FCMacro",
+    "bytes": 592,
+    "mtime": 1769068593.1326644,
+    "sha256": "e3d695c0b94138f5cb2bdfbe3fc28356a6260420909e94fd5b8865288ddefcdc",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/macros/04_Retainer/build_retainer.FCMacro",
+    "bytes": 1139,
+    "mtime": 1769068593.1328745,
+    "sha256": "5dac82c093a78461c94483a8db3d131611248153d4cba5bb20aeaad66527304b",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/macros/scripts/export_batch.FCMacro",
+    "bytes": 1062,
+    "mtime": 1769068593.1330788,
+    "sha256": "ef7a1b714e83f4763162e82887f08248c638aad0e0bd49a0b1f0d62d6ccf92fa",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/macros/01_Diffuser/build_diffuser.FCMacro",
+    "bytes": 2824,
+    "mtime": 1769068593.1332896,
+    "sha256": "c26c5a928ba4fdc1275b0040d38f8095581e6236f5eca79cac11200a7b0bf522",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/macros/02_Nozzle/build_nozzle.FCMacro",
+    "bytes": 1559,
+    "mtime": 1769068593.1335065,
+    "sha256": "1d279a8bb562250575df1f80111c80957ba426852d7c4e43699390d4acd80ba8",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/cad/params/params.json",
+    "bytes": 1302,
+    "mtime": 1769068593.1296234,
+    "sha256": "d1926b30a4ccd39349a69332cc358423528c3119862a829d4721b2664b0c290b",
+    "policy_flags": "PARAMS_JSON_PRESENT;CANONICAL_PARAMS;DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RunID_Migrator_v0.3.0/MANIFEST.json",
+    "bytes": 478,
+    "mtime": 1769068593.1242921,
+    "sha256": "ea78eb02c0fa9721c9c69ffab1c43c8860aa8dfa008746d60ff71ae5076f6ba9",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RunID_Migrator_v0.3.0/MicroHydroV1/tools/workflow/migrate_add_run_id.py",
+    "bytes": 4868,
+    "mtime": 1769068593.136531,
+    "sha256": "f7ff10e2694896271b5b860a383c1bf304f458a51b2bd60cef2420a2540c0cb3",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/MicroHydroV1_RunID_Migrator_v0.3.0/MicroHydroV1/docs/governance/README_RunID_Migration.md",
+    "bytes": 830,
+    "mtime": 1769068593.1367621,
+    "sha256": "a0adf0443e01c39eb322cc0c7a8e5dd18c21bce037a912872c6de629d1783cad",
+    "policy_flags": ""
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/automation/MicroHydroV1_RnD_Export.xlsx",
+    "bytes": 14792,
+    "mtime": 1769068593.1245146,
+    "sha256": "b1668cdbe1941f7114c15dc323422567534e725155e5b8c06f5d3b41413d10f6",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/automation/Measurements_Import_Template.csv",
+    "bytes": 68,
+    "mtime": 1769068593.1247282,
+    "sha256": "01676290d52f95b380d22a529e49ba526099855fe0c1adc7ddcf79d538cc1407",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 SoT/MicroHydroV1/automation/Import_Config.json",
+    "bytes": 484,
+    "mtime": 1769068593.1249177,
+    "sha256": "80147333453f0649dd5dd2f58a0982500695672edbda40db93af7ce442e2abc2",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "filesystem",
+    "container": "",
+    "path": "MicroHydroV1 \u0393\u00c7\u00f6 Releases/MicroHydroV1_SharePoint_Version_Control_Configuration_Guide_v1.0 (1).docx",
+    "bytes": 30718,
+    "mtime": 1769068593.0991812,
+    "sha256": "aa4207700f68768fc19bdb8cf636dbf6508fa153b49b4df5f7e3f96ddbf13f7f",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_Calibration_AutoEmbed_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/automation/README_Calibration_and_AutoEmbed.md",
+    "bytes": 701,
+    "mtime": 1769086286.0,
+    "sha256": "86d8b8bfa2038581cc6a6a83638955064ed857b83883cddf8b7e0135b0130232",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_Calibration_AutoEmbed_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/templates/PT_Calibration_PressurePa_TimeS_100Hz.xlsx",
+    "bytes": 11608,
+    "mtime": 1769086286.0,
+    "sha256": "6dd6781041adfe1248116dd9934645d34f18d8f45fc64601b857a239e19d8535",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_Calibration_AutoEmbed_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/tools/cad/apply_optimized_params.py",
+    "bytes": 2016,
+    "mtime": 1769086286.0,
+    "sha256": "3bce77ce8991631f21201455d124543508f7e82f1caa5d39923b780a1f70941d",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_Calibration_AutoEmbed_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/tools/cad/build_all_use_optimized.FCMacro",
+    "bytes": 715,
+    "mtime": 1769086286.0,
+    "sha256": "c0c4f73f73d4eca4cea09b7a326b17503bcc1d948cb5a250c60d9a0ed6737b82",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_Calibration_AutoEmbed_AddOn_v0.3.0.zip",
+    "path": "MANIFEST.json",
+    "bytes": 894,
+    "mtime": 1769086286.0,
+    "sha256": "70ba504893c5b0ac1fd922f1f3e85c3493f8be5b321f3909a853098318e7f23d",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_DO_ALL_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/automation/PowerAutomate_Flows_SoT_to_Release.md",
+    "bytes": 1437,
+    "mtime": 1769085552.0,
+    "sha256": "971566cdac0e384e4d7edfdebc0e079b6ef6495a0a2c2223acb35c2ceb533735",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_DO_ALL_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/automation/README_DO_ALL.md",
+    "bytes": 477,
+    "mtime": 1769085552.0,
+    "sha256": "b3fe6fb54cfa2ba8bfd3c1d645e2ac360f68b191d1eea0d970a7f5e43ea4c250",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_DO_ALL_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/templates/DAQ_Logger_Config_RUN3.xlsx",
+    "bytes": 6247,
+    "mtime": 1769085552.0,
+    "sha256": "091ad62d13fc5451c6ec56f7a9db00cf4dca108a9155fbf2b40bb42f0fe00695",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_DO_ALL_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/templates/T002_TankRipple_TimeSeries_Template.csv",
+    "bytes": 100,
+    "mtime": 1769085552.0,
+    "sha256": "f91e320f53e7c270cd3a8609f80b176dc2cdd00c120253e8244109df589e5644",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_DO_ALL_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/templates/T003_ELC_Frequency_TimeSeries_Template.csv",
+    "bytes": 110,
+    "mtime": 1769085552.0,
+    "sha256": "5aff4c9bf2c66ba9a4f8f3127b15017446859be72bdd976fdc43ca89977b1321",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_DO_ALL_AddOn_v0.3.0.zip",
+    "path": "MicroHydroV1/tools/workflow/run_closed_loop.py",
+    "bytes": 3287,
+    "mtime": 1769085552.0,
+    "sha256": "425397479d9d94882437ab86d94ded857d82cad8d5431087f758833f101b5a81",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_DO_ALL_AddOn_v0.3.0.zip",
+    "path": "MANIFEST.json",
+    "bytes": 1260,
+    "mtime": 1769085552.0,
+    "sha256": "91f5a720ecc433f7384633aca27fa9f1fcad71f70566802b079531b46beb8751",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0.zip",
+    "path": "MANIFEST.json",
+    "bytes": 1010,
+    "mtime": 1769087018.0,
+    "sha256": "875c6eead8609d9f9cd23b495a8e514983f2e7fcdae5708415033c7c77bb6bcf",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/run3/README_AUTOFILL.md",
+    "bytes": 818,
+    "mtime": 1769087018.0,
+    "sha256": "0be86eba83d2e8614ee41351ed7f7439cb3231101f9a3984ae68a6b5afb9afda",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/run3/RUN3_Evidence_Template.docx",
+    "bytes": 37555,
+    "mtime": 1769087018.0,
+    "sha256": "9665b888a1087ebcadd4caf4be6456de6165bd022ab80885b6e7a9168bd850fa",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0.zip",
+    "path": "MicroHydroV1/tools/plots/plot_t002_psd_peakiness.py",
+    "bytes": 3204,
+    "mtime": 1769087018.0,
+    "sha256": "d89af7f0e56c5d7c2e7acf3b85afd486d428c10650e2609e5069c89d1e626133",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0.zip",
+    "path": "MicroHydroV1/tools/workflow/autofill_evidence_doc.py",
+    "bytes": 14234,
+    "mtime": 1769087018.0,
+    "sha256": "7a31ac538a034493d0e336911eef0b884341caab51dcf844e774dca8b72dc1af",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0.zip",
+    "path": "MANIFEST.json",
+    "bytes": 1016,
+    "mtime": 1769087018.0,
+    "sha256": "26d2c214df70ca9fa1046334f8a9134dc2872999a4a0932993f15532976c883c",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/run3/README_AUTOFILL.md",
+    "bytes": 543,
+    "mtime": 1769086674.0,
+    "sha256": "e95156539ac9b38c87df568f78bd4c5d97ae1cd56c7738c0af118013f0910309",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_v0.3.0.zip",
+    "path": "MicroHydroV1/docs/run3/RUN3_Evidence_Template.docx",
+    "bytes": 37555,
+    "mtime": 1769086674.0,
+    "sha256": "9665b888a1087ebcadd4caf4be6456de6165bd022ab80885b6e7a9168bd850fa",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_v0.3.0.zip",
+    "path": "MicroHydroV1/tools/plots/plot_t002_psd_peakiness.py",
+    "bytes": 3204,
+    "mtime": 1769086674.0,
+    "sha256": "d89af7f0e56c5d7c2e7acf3b85afd486d428c10650e2609e5069c89d1e626133",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_v0.3.0.zip",
+    "path": "MicroHydroV1/tools/workflow/autofill_evidence_doc.py",
+    "bytes": 6010,
+    "mtime": 1769086674.0,
+    "sha256": "b38a997b85808c149aa62628ef233c2e579c12970e3a4176cccc84b896491c10",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_AutoFill_Evidence_v0.3.0.zip",
+    "path": "MANIFEST.json",
+    "bytes": 848,
+    "mtime": 1769086674.0,
+    "sha256": "6898aa8be6eb6e064a6aabb45ff7a67aca725d62748b369f144148a9185348e5",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_DoAll_Templates_Plots.zip",
+    "path": "MicroHydroV1/docs/run3/RUN3_Evidence_Template.docx",
+    "bytes": 37555,
+    "mtime": 1769086526.0,
+    "sha256": "9665b888a1087ebcadd4caf4be6456de6165bd022ab80885b6e7a9168bd850fa",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_DoAll_Templates_Plots.zip",
+    "path": "MicroHydroV1/docs/run3/RUN3_Evidence_Template.md",
+    "bytes": 1555,
+    "mtime": 1769086526.0,
+    "sha256": "be9e1f23144503a7e9be21d029503600a8772a66c3bb44af5589fe9619e9a238",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_DoAll_Templates_Plots.zip",
+    "path": "MicroHydroV1/docs/run3/RUN3_Operator_Card.md",
+    "bytes": 1538,
+    "mtime": 1769086526.0,
+    "sha256": "f2bc9702fbea166fd6240068e684a6ecfbc489171e4649266b06dba131a89099",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_DoAll_Templates_Plots.zip",
+    "path": "MicroHydroV1/tools/plots/plot_t002_psd_peakiness.py",
+    "bytes": 3204,
+    "mtime": 1769086526.0,
+    "sha256": "d89af7f0e56c5d7c2e7acf3b85afd486d428c10650e2609e5069c89d1e626133",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_RUN3_DoAll_Templates_Plots.zip",
+    "path": "MANIFEST.json",
+    "bytes": 845,
+    "mtime": 1769086526.0,
+    "sha256": "a0590f1f13ca611d4806701483400011c026b80acd3d59bdc6a24981b632ecf0",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/README.md",
+    "bytes": 585,
+    "mtime": 1769085948.0,
+    "sha256": "023f1cd73e37f4e366b8344297674a91a9be66fe91ef8fe58b0a13a00fc2da83",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/automation/Import_Config.json",
+    "bytes": 484,
+    "mtime": 1769085948.0,
+    "sha256": "80147333453f0649dd5dd2f58a0982500695672edbda40db93af7ce442e2abc2",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/automation/Measurements_Import_Template.csv",
+    "bytes": 68,
+    "mtime": 1769085948.0,
+    "sha256": "01676290d52f95b380d22a529e49ba526099855fe0c1adc7ddcf79d538cc1407",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/automation/MicroHydroV1_RnD_Export.xlsx",
+    "bytes": 14792,
+    "mtime": 1769085948.0,
+    "sha256": "b1668cdbe1941f7114c15dc323422567534e725155e5b8c06f5d3b41413d10f6",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/macros/01_Diffuser/build_diffuser.FCMacro",
+    "bytes": 2824,
+    "mtime": 1769085948.0,
+    "sha256": "c26c5a928ba4fdc1275b0040d38f8095581e6236f5eca79cac11200a7b0bf522",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/macros/02_Nozzle/build_nozzle.FCMacro",
+    "bytes": 1559,
+    "mtime": 1769085948.0,
+    "sha256": "1d279a8bb562250575df1f80111c80957ba426852d7c4e43699390d4acd80ba8",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/macros/03_VanePacks/build_vanepacks.FCMacro",
+    "bytes": 1440,
+    "mtime": 1769085948.0,
+    "sha256": "cf1b2bfd3b377a6961c667b03087f2bfa252db3de6d42067b9dbcfd341148e8f",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/macros/04_Retainer/build_retainer.FCMacro",
+    "bytes": 1139,
+    "mtime": 1769085948.0,
+    "sha256": "5dac82c093a78461c94483a8db3d131611248153d4cba5bb20aeaad66527304b",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/macros/Assembly/build_assembly.FCMacro",
+    "bytes": 592,
+    "mtime": 1769085948.0,
+    "sha256": "e3d695c0b94138f5cb2bdfbe3fc28356a6260420909e94fd5b8865288ddefcdc",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/macros/README.txt",
+    "bytes": 119,
+    "mtime": 1769085948.0,
+    "sha256": "6b61436b5ba032765e149e40a5742924e6657d41bb6209ec4ebd54a9f2d36a57",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/macros/build_all.FCMacro",
+    "bytes": 1446,
+    "mtime": 1769085948.0,
+    "sha256": "95ebc29de844e140812d8d25bf1ff34d7999244a9f10fc3e61371c635ca67a5e",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/macros/params.json",
+    "bytes": 586,
+    "mtime": 1769085948.0,
+    "sha256": "750a4752509da918b34fc1fb0a444bcf30d49f0e0d3f98117c7b82b27e14492f",
+    "policy_flags": "PARAMS_JSON_PRESENT;PARAMS_POTENTIAL_DRIFT;DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/macros/scripts/export_batch.FCMacro",
+    "bytes": 1062,
+    "mtime": 1769085948.0,
+    "sha256": "ef7a1b714e83f4763162e82887f08248c638aad0e0bd49a0b1f0d62d6ccf92fa",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/cad/params/params.json",
+    "bytes": 1302,
+    "mtime": 1769085948.0,
+    "sha256": "d1926b30a4ccd39349a69332cc358423528c3119862a829d4721b2664b0c290b",
+    "policy_flags": "PARAMS_JSON_PRESENT;CANONICAL_PARAMS;DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/Jet_Coherence_Procedure.docx",
+    "bytes": 13215,
+    "mtime": 1769085948.0,
+    "sha256": "c06a91dbc16054457dee22f9eb7b67e020571ffa5963a35cd4871ff6901ba4b3",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/Master_Index.docx",
+    "bytes": 27555,
+    "mtime": 1769085948.0,
+    "sha256": "67e1e516136e0b8cd8bd9a220bcdd2d35c800f05b3f5f22ea8224ae076fb1578",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/PASS_A_FULL_RevA.docx",
+    "bytes": 53411,
+    "mtime": 1769085948.0,
+    "sha256": "0c8b38e25bfd1cea3c75e288d2043ae06d4732953eb33567ef07b53ba9d0a5f8",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/Run_of_Show_Checklist.docx",
+    "bytes": 37242,
+    "mtime": 1769085948.0,
+    "sha256": "11199a4af8b8c9ef2b4d867d8bd3ce470c6f72fc06163f9a2ca8178d7c190785",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/Tank_Ripple_Procedure.docx",
+    "bytes": 13200,
+    "mtime": 1769085948.0,
+    "sha256": "6b9bef45727ea910145122ee3bedfeb0844c8d8d81bc88909834a5e2b6b1d267",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/Test_Campaign_Plan.docx",
+    "bytes": 37347,
+    "mtime": 1769085948.0,
+    "sha256": "34e1f04ed4e66fd4b1f5cd657bb0661226f6da313c9fbdb3e1bbf81fdc6ff5bd",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/architecture_diagram.png",
+    "bytes": 1864434,
+    "mtime": 1769085948.0,
+    "sha256": "57ddb0c1e65ab7021d3746d43b7e02ff18cbaad28a09d05539e436f451ae64ae",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/automation/PowerAutomate_Flows_SoT_to_Release.md",
+    "bytes": 719,
+    "mtime": 1769085948.0,
+    "sha256": "d1e7d7786a1dfaad80cc675ee5a1ea65679d00179fd6d3ac0babcbafd31d6217",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/templates/DAQ_Logger_Config_RUN3.xlsx",
+    "bytes": 6026,
+    "mtime": 1769085948.0,
+    "sha256": "ab7a0eb7d17fd666faedc20d0cb097400ae8b7ee7ec6c16711b0bf16130a71ea",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/templates/T002_TankRipple_TimeSeries_Template.csv",
+    "bytes": 100,
+    "mtime": 1769085948.0,
+    "sha256": "f91e320f53e7c270cd3a8609f80b176dc2cdd00c120253e8244109df589e5644",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/docs/templates/T003_ELC_Frequency_TimeSeries_Template.csv",
+    "bytes": 110,
+    "mtime": 1769085948.0,
+    "sha256": "5aff4c9bf2c66ba9a4f8f3127b15017446859be72bdd976fdc43ca89977b1321",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/tests/raw/2026-01-22_Run1_ELCStability/T003_ELCStability_Run1.csv",
+    "bytes": 185,
+    "mtime": 1769085948.0,
+    "sha256": "e361352ebbc3901aea806641135c2be79c8a03b5fc929cabe67ff159743749b8",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/tests/raw/2026-01-22_Run1_JetCoherence/T001_JetCoherence_Run1.csv",
+    "bytes": 207,
+    "mtime": 1769085948.0,
+    "sha256": "a0111983d22ef3fa7e68dd6b04ab69a5c7e65ee64da7cb316517df039ef467a9",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/tests/raw/2026-01-22_Run1_Power/T004_Power_Run1.csv",
+    "bytes": 169,
+    "mtime": 1769085948.0,
+    "sha256": "b50e14edc4427815d60d2ccee108acfbe9a5c8e5b81ba4d5ca18738cc7dc6f55",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/tests/raw/2026-01-22_Run1_TankRipple/T002_TankRipple_Run1.csv",
+    "bytes": 165,
+    "mtime": 1769085948.0,
+    "sha256": "0c230ca23becce1698a9513fdf468c539a7ba0dbc530c117897085edcb51942c",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/tools/optimize/opt_config.json",
+    "bytes": 1248,
+    "mtime": 1769085948.0,
+    "sha256": "cbf34b5d2addf3da483f13740021b7c840dff51f3c57d81a892a20a391480ca1",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/tools/optimize/optimize_params.py",
+    "bytes": 7366,
+    "mtime": 1769085948.0,
+    "sha256": "23b4d1da5ed9a2c04cdc94e9aa1416cdf7fab54220e5bb8d51a443c6f628970f",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/tools/release/make_release.py",
+    "bytes": 1978,
+    "mtime": 1769085948.0,
+    "sha256": "445864cef793d56b8252c7d27f99840d8585491180b7a7ea6c2795f4a7ce1d81",
+    "policy_flags": "DUPLICATE_CONTENT"
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/tools/validate/validate_repo.py",
+    "bytes": 567,
+    "mtime": 1769085948.0,
+    "sha256": "a2f098b04ca33dab701048e95329f998d94d9462f709feb0d0875ab73107eb09",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MicroHydroV1/tools/workflow/run_closed_loop.py",
+    "bytes": 2128,
+    "mtime": 1769085948.0,
+    "sha256": "5628d5b2a9ecc0bfa36fa9f5cd5fa4cc2e6824b84f8ef3e3ffd7c74e84985e54",
+    "policy_flags": ""
+  },
+  {
+    "source": "zip",
+    "container": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+    "path": "MANIFEST.json",
+    "bytes": 6417,
+    "mtime": 1769085948.0,
+    "sha256": "3311dda0935a431d10bba589405a02a4e54284821bbd43639556a1310f532c9c",
+    "policy_flags": ""
+  }
+]

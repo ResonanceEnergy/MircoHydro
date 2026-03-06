@@ -1,0 +1,76 @@
+# -*- coding: utf-8 -*-
+# MicroHydroV1 — Diffuser Builder (axis-offset safe)
+
+import FreeCAD, Part
+from FreeCAD import Vector
+
+# ---- Load Diffuser Parameters ----
+P      = PARAMS['Diffuser']
+D_in   = float(P['D_in'])
+D_out  = float(P['D_out'])
+L      = float(P['Length'])
+wall   = float(P['Wall'])
+
+if D_in <= 0 or D_out <= 0 or L <= 0:
+    raise ValueError("[Diffuser] Non-positive dimensions. Check params.json.")
+
+# Arc sag
+sag_default = max(0.5, 0.02 * L)
+sag = float(P.get("ArcSagitta", sag_default))
+if abs(sag) < 1e-6:
+    sag = sag_default
+
+doc = FreeCAD.newDocument("Diffuser_vA1")
+
+# ---- AXIS OFFSET FIX ----
+YOFF = 5.0  # Avoid geometry crossing Z-axis
+
+# Profile points at Y = +YOFF
+p1  = Vector(D_in/2.0,  YOFF, 0.0)
+p2  = Vector(D_out/2.0, YOFF, L)
+p1m = Vector(-p1.x,      YOFF, p1.z)
+p2m = Vector(-p2.x,      YOFF, p2.z)
+
+mx = 0.5*(p1.x+p2.x)
+mz = 0.5*(p1.z+p2.z)
+pm  = Vector(mx,  YOFF + sag, mz)
+pmm = Vector(-mx, YOFF + sag, mz)
+
+def make_arc(a,m,b):
+    try:
+        return Part.Arc(a,m,b).toShape()
+    except Exception:
+        m2 = Vector(m.x, m.y*2, m.z)
+        return Part.Arc(a,m2,b).toShape()
+
+arc_outer = make_arc(p1, pm,  p2)
+arc_inner = make_arc(p1m,pmm, p2m)
+
+line_top = Part.LineSegment(p2,  p2m).toShape()
+line_bot = Part.LineSegment(p1m, p1 ).toShape()
+
+wire = Part.Wire([arc_outer, line_top, arc_inner, line_bot])
+wire = Part.Wire(wire.Edges)
+
+print("[Diffuser] isClosed:", wire.isClosed())
+print("[Diffuser] isValid :", wire.isValid())
+
+face = Part.Face(wire)
+
+# ---- SAFE REVOLVE ----
+axis_origin = Vector(0,0,0)
+axis_dir    = Vector(0,0,1)
+solid = face.revolve(axis_origin, axis_dir, 360)
+
+obj = doc.addObject("Part::Feature", "Diffuser_vA1")
+obj.Shape = solid
+
+if wall > 0:
+    try:
+        thick = solid.makeThickness([], -wall, 1e-3)
+        obj.Shape = thick
+    except Exception as e:
+        print("[Diffuser][WARN] Thickness failed; using solid. Reason:", e)
+
+doc.recompute()
+print("[Diffuser] OK — built successfully using axis-offset workaround.")

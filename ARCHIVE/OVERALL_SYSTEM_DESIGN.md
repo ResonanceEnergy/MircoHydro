@@ -26,21 +26,38 @@ Purpose: Consolidate a single, actionable design view for MicroHydro that ties p
 8) Interfaces: mechanical flanges for penstock; electrical DC bus and AC output block; data via RS-485/CAN and cellular gateway.
 
 ---
+## FOUNDING VISIONARY PRINCIPLES
+
+Our design integrates three revolutionary approaches:
+
+1. **Viktor Schauberger**: Natural observation → vortex dynamics, spiral flow, work WITH water's natural motion
+2. **Nikola Tesla**: Engineering mastery → electromagnetic efficiency, boundary layer principles, precision control
+3. **Dan Winter**: Mathematical proof → golden ratio (φ = 1.618...) IS nature's compression algorithm; fractal field theory proves WHY Schauberger and Tesla worked
+
+**Dan Winter's Breakthrough Applied:**
+- Golden ratio optimization throughout energy cascade (φ-scaled dimensions, blade spacing, flow path geometry)
+- Fractal coherence: self-similar patterns across scales create constructive interference and minimize losses
+- Phase conjugation principles: time-reversal symmetry enables self-organization and negentropy
+- Planck-scale tuning: align turbine frequencies to φ^n harmonics for resonant efficiency gains
+- Sacred geometry integration: platonic solid ratios in 3D flow paths optimize compression
+
+---
 ## KEY DESIGN PRINCIPLES (TRACED TO 1600 INSIGHTS)
-- Physics and efficiency: continuity, Bernoulli, Reynolds number, cavitation avoidance, Betz awareness; pressure and velocity budget tracked end-to-end.
+- Physics and efficiency: continuity, Bernoulli, Reynolds number, cavitation avoidance, Betz awareness; pressure and velocity budget tracked end-to-end; **φ-ratio optimization applied to all dimensional relationships.**
 - Materials and durability: stainless 316L or coated steel, ceramic wear surfaces, seal quality, fatigue-safe geometries, corrosion control, abundant materials preference.
 - Manufacturability: DFM from day one, modular BOM, casting/welding where economical, SPC and poka-yoke for zero-defect culture, multi-sourcing for resilience.
-- Controls and optimization: closed-loop speed and voltage; MPPT for varying head/flow; safe-state defaults; conservative setpoints; validated PID tuning.
+- Controls and optimization: closed-loop speed and voltage; MPPT for varying head/flow; safe-state defaults; conservative setpoints; validated PID tuning; **phase coherence monitoring for system-wide optimization.**
 - Environment and fish safety: intake velocity limit, bypass flows, screened/angled racks, ecological flow commitment; publish fish survival and flow data.
 - Cost and scaling: cost-down curve 3.5k -> 2.4k -> 1.5-2.5k USD per kW with volume and DFM; field labor minimized via kits and jigs.
 - Data and integrity: signed firmware, role-based access, audit logs; public impact dashboard toggle; numbers-first communication.
 - Community and finance: EaaS/paygo ready, tariff transparency, coop ownership options, blended finance (grants/DFI/MFI), carbon/biodiversity credit readiness.
+- **Fractal optimization: Self-similar design patterns from micro (blade edge) to macro (site layout) create coherent energy flow.**
 
 ---
 ## SUBSYSTEM REQUIREMENTS (SUMMARY)
-- Intake/screen/bypass: approach velocity <0.3 m/s; corrosion-resistant screen; manual + actuated gate; sediment flush. Metrics: screen differential pressure, fish bypass uptime, water level stability.
-- Penstock: diameter sized for v=3-5 m/s; pressure rating 2x operating; head loss budget <5% of available head.
-- Turbine: efficiency >70% across 50-125% design flow; cavitation margin >=1 m; vibration within spec; quick-swap runner module.
+- Intake/screen/bypass: approach velocity <0.3 m/s; corrosion-resistant screen; manual + actuated gate; sediment flush; **screen bar spacing at φ-ratios to minimize turbulence.** Metrics: screen differential pressure, fish bypass uptime, water level stability.
+- Penstock: diameter sized for v=3-5 m/s; pressure rating 2x operating; head loss budget <5% of available head; **consider spiral geometry (Schauberger) with φ-scaled pitch for reduced friction.**
+- Turbine: efficiency >70% across 50-125% design flow; cavitation margin >=1 m; vibration within spec; quick-swap runner module; **blade count and spacing optimized to φ-ratios; nozzle geometry incorporates golden spiral for coherent energy transfer.**
 - Generator: efficiency >90% at rated; thermal rise within limits using water cooling; IP65 housing; no gearbox.
 - Power electronics: DC-DC with 95%+ efficiency; inverter >93%; surge and lightning protection; anti-islanding certified where grid-tied.
 - Controls: overspeed trip, overcurrent, earth fault detection, emergency stop; local HMI for status; remote commands gated by roles.

@@ -1,0 +1,22 @@
+# FreeCAD Macro: build_all_use_optimized.FCMacro
+# If cad/params/params_optimized.json exists, use it; else use cad/params/params.json.
+
+import os, json
+
+def cad_root():
+    return os.path.dirname(__file__)
+
+ROOT = cad_root()
+PARAM_DIR = os.path.normpath(os.path.join(os.path.dirname(ROOT), 'params'))
+P_OPT = os.path.join(PARAM_DIR, 'params_optimized.json')
+P_CAN = os.path.join(PARAM_DIR, 'params.json')
+PARAMS_FILE = P_OPT if os.path.exists(P_OPT) else P_CAN
+
+with open(PARAMS_FILE, 'r') as f:
+    PARAMS = json.load(f)
+
+print('[PARAMS] Using:', PARAMS_FILE)
+
+TARGET = os.path.join(ROOT, 'build_all.FCMacro')
+code = open(TARGET, 'rb').read()
+exec(compile(code, TARGET, 'exec'), {'PARAMS': PARAMS, 'ROOT': ROOT})

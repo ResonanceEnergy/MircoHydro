@@ -1,0 +1,42 @@
+
+# --- bootstrap: allow stand-alone run (load params.json if PARAMS not injected) ---
+import os, json
+if 'PARAMS' not in globals():
+    HERE = os.path.dirname(__file__)
+    ROOT = os.path.abspath(os.path.join(HERE, '..'))
+    PARAMS_FILE = os.path.join(ROOT, 'params.json')
+    if not os.path.exists(PARAMS_FILE):
+        raise FileNotFoundError("params.json not found at: " + PARAMS_FILE)
+    with open(PARAMS_FILE, 'r') as _f:
+        PARAMS = json.load(_f)
+
+
+# -*- coding: utf-8 -*-
+import FreeCAD, Part
+from FreeCAD import Vector
+import math
+
+P = PARAMS['RetainerCap']
+OD = float(P['OD'])
+Thk = float(P['Thickness'])
+PCD = float(P['Bolt_PCD'])
+BCnt= int(P['Bolt_Count'])
+CHole=float(P['Center_Hole'])
+
+doc = FreeCAD.newDocument('Retainer_vA1')
+
+r = OD/2
+disk = Part.makeCylinder(r, Thk)
+cyl  = Part.makeCylinder(CHole/2, Thk+1)
+body = disk.cut(cyl)
+
+for i in range(BCnt):
+    ang = math.radians(i*(360/BCnt))
+    x = (PCD/2)*math.cos(ang)
+    y = (PCD/2)*math.sin(ang)
+    bolt = Part.makeCylinder(3, Thk+1, Vector(x,y,0))
+    body = body.cut(bolt)
+
+obj = doc.addObject('Part::Feature','Retainer_vA1')
+obj.Shape = body
+doc.recompute()

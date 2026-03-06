@@ -1,0 +1,16 @@
+
+## Command: C:/MircoHydro/.venv/Scripts/python.exe Operations/Agents/operations_dashboard.py monitor "all"
+Exit Code: 1
+Stdout:
+
+Stderr:
+Traceback (most recent call last):
+  File "C:\MircoHydro\Operations\Agents\operations_dashboard.py", line 1540, in <module>
+    print("\n\u2705 Operations Dashboard Agent initialized (Groq - FREE)\n")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gripa\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+
+---

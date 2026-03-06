@@ -1,0 +1,270 @@
+
+## Command: python operations_dashboard.py monitor "all"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\operations_dashboard.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python operations_dashboard.py kpi "energy_output"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\operations_dashboard.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python operations_dashboard.py alerts "last24h"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\operations_dashboard.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python operations_dashboard.py report "weekly"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\operations_dashboard.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python process_automation.py workflow "site startup"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\process_automation.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python process_automation.py automate "turbine check"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\process_automation.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python process_automation.py efficiency "all"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\process_automation.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python process_automation.py recommend "maintenance"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\process_automation.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python quality_control.py standards "ISO9001"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\quality_control.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python quality_control.py inspection "site_12"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\quality_control.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python quality_control.py defects "last_month"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\quality_control.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python quality_control.py improvement "all"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\quality_control.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python maintenance_management.py schedule "turbine_1" "2026-02-01" "oil change"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\maintenance_management.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python maintenance_management.py track "turbine_1"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\maintenance_management.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python maintenance_management.py report "turbine_1" "vibration detected"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\maintenance_management.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python resource_allocation.py plan "expansion" "crew, excavator" "Q2 2026"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\resource_allocation.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python resource_allocation.py optimize "current allocation summary"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\resource_allocation.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python resource_allocation.py track "excavator"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\resource_allocation.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python incident_response.py detect "unexpected shutdown at site_7"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\incident_response.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python incident_response.py coordinate "INC123" "crew, tools"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\incident_response.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python incident_response.py report "INC123" "resolved, root cause: sensor failure"
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\incident_response.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python operations_dashboard.py -h
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\operations_dashboard.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python process_automation.py -h
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\process_automation.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python quality_control.py -h
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\quality_control.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python maintenance_management.py -h
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\maintenance_management.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python resource_allocation.py -h
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\resource_allocation.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python incident_response.py -h
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\incident_response.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python research/EURA/eura/cli/__main__.py prereg_validate research/EURA/prereg/HC-01/prereg.json
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\research\\EURA\\eura\\cli\\__main__.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python research/EURA/eura/cli/__main__.py run_metrics
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\research\\EURA\\eura\\cli\\__main__.py': [Errno 2] No such file or directory
+
+---
+
+## Command: python research/EURA/eura/cli/__main__.py build_paper HC-01 --fmt html
+Exit Code: 2
+Stdout:
+
+Stderr:
+python: can't open file 'C:\\MircoHydro\\research\\EURA\\eura\\cli\\__main__.py': [Errno 2] No such file or directory
+
+---

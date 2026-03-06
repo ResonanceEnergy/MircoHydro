@@ -1,0 +1,22 @@
+
+MicroHydroV1 — Consolidated Chat Log (concise)
+Generated: 2026-01-21 23:17:38
+
+Key milestones:
+- Created a clean MicroHydroV1 workspace (Master, STW, Go/No-Go, Tests, Automation, CAD/Params) and merged acceptance data; inserted 4 plots under Master Section 6A; added RUN‑2 φ-weight Section 5A; marked STW A01..A04 PASS; Go/No-Go set to GO.
+- Packaged and provided downloadable ZIPs of the workspace.
+- Provided macOS FreeCAD pipeline: install add‑on in User Mod folder, one‑click macro to Build → QA → Export → Drawings → copy PDFs to Drawings folder.
+- Diagnosed add‑on loading from the app bundle; fixed to User Mod path.
+- Delivered MicroHydroV1 FreeCAD add‑on ZIP for macOS.
+
+What’s ready for next session:
+1) You run the FreeCAD one‑click macro; PDFs appear in Tests/Results/Summary/Drawings/.
+2) Upload PDFs; we will insert into Master Appendix and create final deliverable ZIP.
+
+Artifacts referenced during chat (re-add locally if needed):
+- MicroHydroV1 workspace ZIP
+- MicroHydroV1_Addon_macOS.zip (FreeCAD add‑on)
+
+Notes:
+- Importer rules: T-001 ≥0.90 coherence; T-002 ≤0.70×baseline; T-003 ≤0.1 Hz ELC drift; T-004 10–12 kW.
+- User Mod path (macOS): ~/Library/Application Support/FreeCAD/Mod/

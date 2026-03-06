@@ -1,0 +1,5 @@
+Timestamp,Test_ID,Sensor,Value,Unit,Baseline_Value,Conditions,Notes
+2026-01-22T09:20,T-003,elc drift,0.045,Hz,,Nominal_Load_8kW,
+2026-01-22T09:22,T-003,elc drift,0.062,Hz,,Nominal_Load_8kW,
+2026-01-22T09:24,T-003,elc drift,0.088,Hz,,Nominal_Load_8kW,
+2026-01-22T09:26,T-003,elc drift,0.091,Hz,,Nominal_Load_8kW,

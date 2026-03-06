@@ -1,0 +1,74 @@
+{
+  "weights": {
+    "phi": 1.0,
+    "resonance": 2.0,
+    "penalty": 5.0
+  },
+  "bounds": {
+    "Diffuser.Length": [
+      80.0,
+      130.0
+    ],
+    "Diffuser.D_out": [
+      70.0,
+      95.0
+    ],
+    "Nozzle.L_converge": [
+      25.0,
+      60.0
+    ],
+    "Nozzle.L_straight": [
+      6.0,
+      25.0
+    ],
+    "Nozzle.Exit_Angle": [
+      10.0,
+      35.0
+    ],
+    "Insert.Vane_Angle": [
+      10.0,
+      35.0
+    ]
+  },
+  "phi_targets": [
+    {
+      "expr": "(Diffuser.D_out - Diffuser.D_in) / Diffuser.D_in",
+      "weight": 1.0
+    },
+    {
+      "expr": "Nozzle.L_converge / Nozzle.D_inlet",
+      "weight": 1.0
+    },
+    {
+      "expr": "(Nozzle.L_converge + Nozzle.L_straight) / Nozzle.D_inlet",
+      "weight": 0.7
+    },
+    {
+      "expr": "Insert.Vane_Angle / Nozzle.Exit_Angle",
+      "weight": 0.5
+    }
+  ],
+  "resonance": {
+    "enabled": true,
+    "metric": "psd_peakiness",
+    "band_hz": [
+      0.2,
+      20.0
+    ],
+    "normalize": "median"
+  },
+  "constraints": [
+    {
+      "expr": "Nozzle.D_inlet / Nozzle.D_throat",
+      "op": ">=",
+      "bound": 2.0,
+      "weight": 10.0
+    },
+    {
+      "expr": "Diffuser.D_out / Diffuser.D_in",
+      "op": ">=",
+      "bound": 2.0,
+      "weight": 10.0
+    }
+  ]
+}

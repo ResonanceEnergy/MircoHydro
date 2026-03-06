@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+import FreeCAD, Part
+from FreeCAD import Vector
+
+P = PARAMS['Nozzle']
+Dt = float(P['D_throat'])
+Di = float(P['D_inlet'])
+Lc = float(P['L_converge'])
+Ls = float(P['L_straight'])
+wall = float(P['Wall'])
+
+doc = FreeCAD.newDocument('NozzleBody_9mm_vA1')
+
+p1 = Vector(Di/2, 0, 0)
+p2 = Vector(Dt/2, 0, Lc)
+p3 = Vector(Dt/2, 0, Lc + Ls)
+seg1 = Part.LineSegment(p1, p2).toShape()
+seg2 = Part.LineSegment(p2, p3).toShape()
+
+p1b = Vector(-p1.x,0,p1.z)
+p2b = Vector(-p2.x,0,p2.z)
+p3b = Vector(-p3.x,0,p3.z)
+seg1b = Part.LineSegment(p1b, p2b).toShape()
+seg2b = Part.LineSegment(p2b, p3b).toShape()
+line_top = Part.LineSegment(p3, p3b).toShape()
+line_bot = Part.LineSegment(p1, p1b).toShape()
+
+wire = Part.Wire([seg1, seg2, line_top, seg2b, seg1b, line_bot])
+solid = wire.revolve(Vector(0,0,0), Vector(0,0,1), 360)
+obj = doc.addObject('Part::Feature', 'NozzleBody_9mm_vA1')
+obj.Shape = solid
+
+if wall > 0:
+    try:
+        thick = solid.makeThickness([], -wall, 1e-3)
+        obj.Shape = thick
+    except:
+        print('[WARN] thickness failed')
+
+doc.recompute()

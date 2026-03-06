@@ -1,0 +1,50 @@
+{
+  "library_names": {
+    "sot": [
+      "MicroHydroV1 \u2014 SoT",
+      "MicroHydroV1 \u0393\u00c7\u00f6 SoT"
+    ],
+    "releases": [
+      "MicroHydroV1 \u2014 Releases",
+      "MicroHydroV1 \u0393\u00c7\u00f6 Releases"
+    ],
+    "archive": [
+      "MicroHydroV1 \u2014 Archive",
+      "MicroHydroV1 \u0393\u00c7\u00f6 Archive"
+    ]
+  },
+  "sot_required_dirs": [
+    "docs",
+    "cad",
+    "automation",
+    "tests",
+    "tools"
+  ],
+  "canonical_files": [
+    "cad/params/params.json"
+  ],
+  "high_risk_files": [
+    "cad/params/params.json",
+    "automation/import_measurements.py"
+  ],
+  "raw_run_folder_regex": "tests/raw/\\d{4}-\\d{2}-\\d{2}_Run\\d+",
+  "base_pack_pattern": "FULL_LOCKED_PressurePa",
+  "overlay_priority": [
+    {
+      "match": "DO_ALL",
+      "order": 10
+    },
+    {
+      "match": "Calibration",
+      "order": 20
+    },
+    {
+      "match": "AutoEmbed",
+      "order": 20
+    },
+    {
+      "match": "RUN3",
+      "order": 30
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "package": "MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0",
+  "created": "2026-01-22T06:03:39",
+  "files": [
+    {
+      "path": "MANIFEST.json",
+      "bytes": 1010,
+      "sha256": "875c6eead8609d9f9cd23b495a8e514983f2e7fcdae5708415033c7c77bb6bcf"
+    },
+    {
+      "path": "MicroHydroV1/docs/run3/README_AUTOFILL.md",
+      "bytes": 818,
+      "sha256": "0be86eba83d2e8614ee41351ed7f7439cb3231101f9a3984ae68a6b5afb9afda"
+    },
+    {
+      "path": "MicroHydroV1/docs/run3/RUN3_Evidence_Template.docx",
+      "bytes": 37555,
+      "sha256": "9665b888a1087ebcadd4caf4be6456de6165bd022ab80885b6e7a9168bd850fa"
+    },
+    {
+      "path": "MicroHydroV1/tools/plots/plot_t002_psd_peakiness.py",
+      "bytes": 3204,
+      "sha256": "d89af7f0e56c5d7c2e7acf3b85afd486d428c10650e2609e5069c89d1e626133"
+    },
+    {
+      "path": "MicroHydroV1/tools/workflow/autofill_evidence_doc.py",
+      "bytes": 14234,
+      "sha256": "7a31ac538a034493d0e336911eef0b884341caab51dcf844e774dca8b72dc1af"
+    }
+  ]
+}

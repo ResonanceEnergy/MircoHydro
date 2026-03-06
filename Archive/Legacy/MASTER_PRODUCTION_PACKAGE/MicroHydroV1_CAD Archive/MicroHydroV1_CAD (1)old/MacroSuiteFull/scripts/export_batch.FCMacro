@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+import FreeCAD, ImportGui, Mesh, os
+
+targets = [
+    ('Diffuser_vA1','../01_Diffuser/Diffuser_vA1.FCStd'),
+    ('NozzleBody_9mm_vA1','../02_Nozzle/NozzleBody_9mm_vA1.FCStd'),
+    ('VanePack_10deg_vA1','../03_VanePacks/VanePack_10deg_vA1.FCStd'),
+    ('VanePack_20deg_vA1','../03_VanePacks/VanePack_20deg_vA1.FCStd'),
+    ('VanePack_30deg_vA1','../03_VanePacks/VanePack_30deg_vA1.FCStd'),
+    ('Retainer_vA1','../04_Retainer/Retainer_vA1.FCStd'),
+    ('BenchUnit_vA1','../Assembly/BenchUnit_vA1.FCStd')
+]
+EXPORT = os.path.abspath(os.path.join('..','03_CAD','04_Exports'))
+os.makedirs(EXPORT, exist_ok=True)
+
+for label, path in targets:
+    if not os.path.exists(path):
+        print('[Missing]', label)
+        continue
+    doc = FreeCAD.open(path)
+    bodies = [o for o in doc.Objects if hasattr(o,'Shape')]
+    step = os.path.join(EXPORT, f'{label}.step')
+    stl = os.path.join(EXPORT, f'{label}.stl')
+    ImportGui.export(bodies, step)
+    Mesh.export(bodies, stl)
+    FreeCAD.closeDocument(doc.Name)
+    print('[Exported]', label)

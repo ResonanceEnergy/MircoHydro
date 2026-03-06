@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-01-22T07:56:33Z",
+  "source_zip": "/Users/gripandripphdd/Library/CloudStorage/OneDrive-GripandRipp(2)/Archive.zip",
+  "filesystem_file_count": 62,
+  "zip_entry_count": 63,
+  "embedded_zips_found": 12,
+  "embedded_zips_deduped": 6,
+  "duplicate_zip_files_removed": 6,
+  "canonical_base_pack": "MicroHydroV1_v0.3.0_FULL_LOCKED_PressurePa.zip",
+  "overlay_order": [
+    "MicroHydroV1_DO_ALL_AddOn_v0.3.0.zip",
+    "MicroHydroV1_Calibration_AutoEmbed_AddOn_v0.3.0.zip",
+    "MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0.zip",
+    "MicroHydroV1_RUN3_AutoFill_Evidence_v0.3.0.zip",
+    "MicroHydroV1_RUN3_DoAll_Templates_Plots.zip"
+  ],
+  "conflicts_count": 2,
+  "policy_flagged_items": 82
+}

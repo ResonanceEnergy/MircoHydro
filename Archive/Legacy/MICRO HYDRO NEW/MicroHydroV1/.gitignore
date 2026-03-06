@@ -1,0 +1,34 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.bak
+~$*.docx
+~$*.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Build / exports (generated)
+/cad/exports/**
+/tests/results/**
+
+# Large CAD exports (release artifacts)
+*.stl
+*.step
+*.stp
+*.iges
+*.igs
+
+# Archives (publish via releases, not git)
+*.zip
+*.7z
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log

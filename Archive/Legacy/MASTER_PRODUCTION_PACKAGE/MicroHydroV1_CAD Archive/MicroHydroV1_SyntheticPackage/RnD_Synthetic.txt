@@ -1,0 +1,4 @@
+Jet Coherence:0.90-0.98
+Ripple Reduction:40%
+ELC Drift:0.045-0.10Hz
+Power:10.5-12.4kW

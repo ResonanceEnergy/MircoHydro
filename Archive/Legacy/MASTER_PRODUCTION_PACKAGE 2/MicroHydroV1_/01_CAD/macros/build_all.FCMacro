@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+# MicroHydroV1 – Master Build Macro (FINAL VERSION)
+# Fully portable, parametric, and compatible with all rebuilt part macros.
+
+import os, json
+
+def cad_root():
+    env = os.environ.get('MICROHYDRO_CAD_ROOT', '').strip()
+    if env and os.path.isdir(env):
+        print("[build_all] Using ENV root:", env)
+        return env
+    here = os.path.dirname(__file__)
+    print("[build_all] Using macro directory root:", here)
+    return here
+
+ROOT = cad_root()
+PARAMS_FILE = os.path.join(ROOT, "params.json")
+with open(PARAMS_FILE, "r") as f:
+    PARAMS = json.load(f)
+
+print("[build_all] Loaded parameter groups:", list(PARAMS.keys()))
+
+def run_macro(relpath, required=True):
+    path = os.path.join(ROOT, relpath)
+    if not os.path.exists(path):
+        if required:
+            raise FileNotFoundError(path)
+        print("[Optional Missing]", path)
+        return
+    print("
+[RUN]", relpath)
+    code = open(path, "rb").read()
+    exec(compile(code, path, "exec"), {"PARAMS": PARAMS, "ROOT": ROOT})
+
+run_macro("01_Diffuser/build_diffuser.FCMacro")
+run_macro("02_Nozzle/build_nozzle.FCMacro")
+run_macro("03_VanePacks/build_vanepacks.FCMacro")
+run_macro("04_Retainer/build_retainer.FCMacro")
+run_macro("Assembly/build_assembly.FCMacro", required=False)
+run_macro("scripts/export_batch.FCMacro", required=False)
+
+print("
+[build_all] COMPLETE — All parts built and exports generated.
+")

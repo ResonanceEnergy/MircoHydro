@@ -1,0 +1,41 @@
+
+# MicroHydroV1 – Master Build Macro (Error‑safe version)
+import os, json
+
+def cad_root():
+    env = os.environ.get('MICROHYDRO_CAD_ROOT', '').strip()
+    if env and os.path.isdir(env):
+        print('[ROOT] Using environment root:', env)
+        return env
+    here = os.path.dirname(__file__)
+    print('[ROOT] Using macro folder root:', here)
+    return here
+
+ROOT = cad_root()
+PARAMS_FILE = os.path.normpath(os.path.join(os.path.dirname(ROOT), 'params', 'params.json'))
+if not os.path.exists(PARAMS_FILE):
+    raise FileNotFoundError('params.json not found: ' + PARAMS_FILE)
+with open(PARAMS_FILE, 'r') as f:
+    PARAMS = json.load(f)
+
+print('[PARAMS] Loaded keys:', list(PARAMS.keys()))
+
+def run_macro(relpath, required=True):
+    path = os.path.join(ROOT, relpath)
+    if not os.path.exists(path):
+        if required:
+            raise FileNotFoundError('Missing macro: ' + path)
+        print('[Optional skip]', path)
+        return
+    print('[RUN]', relpath)
+    code = open(path, 'rb').read()
+    exec(compile(code, path, 'exec'), {'PARAMS': PARAMS, 'ROOT': ROOT})
+
+run_macro('01_Diffuser/build_diffuser.FCMacro')
+run_macro('02_Nozzle/build_nozzle.FCMacro')
+run_macro('03_VanePacks/build_vanepacks.FCMacro')
+run_macro('04_Retainer/build_retainer.FCMacro')
+run_macro('Assembly/build_assembly.FCMacro', required=False)
+run_macro('scripts/export_batch.FCMacro', required=False)
+
+print('[DONE] All parts built and exports generated.')

@@ -1,0 +1,7 @@
+Timestamp,Operator,Vane_Angle_deg,Swirl_Direction,Head_m,Setpoint_Q_Lps,Measured_Q_Lps,DeltaP_kPa,Temp_C,Notes
+2026-01-22T10:01,Nathan,20,CCW,2.0,0.5,0.51,1.1,12.4,
+2026-01-22T10:03,Nathan,20,CCW,2.0,1.0,1.02,2.6,12.4,
+2026-01-22T10:05,Nathan,20,CCW,2.0,1.5,1.52,4.8,12.4,
+2026-01-22T10:07,Nathan,20,CCW,2.0,2.0,2.05,7.5,12.4,
+2026-01-22T10:09,Nathan,20,CCW,2.0,2.5,2.52,11.0,12.4,
+2026-01-22T10:11,Nathan,20,CCW,2.0,3.0,3.02,15.2,12.4,

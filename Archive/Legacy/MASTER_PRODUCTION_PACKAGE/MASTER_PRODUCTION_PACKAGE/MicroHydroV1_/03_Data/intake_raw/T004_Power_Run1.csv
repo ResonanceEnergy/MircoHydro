@@ -1,0 +1,3 @@
+Timestamp,Test_ID,Sensor,Value,Unit,Baseline_Value,Conditions,Notes
+2026-01-22T09:30,T-004,power,10.5,kW,,Head=7.5m,
+2026-01-22T09:32,T-004,power,11.3,kW,,Head=7.5m,

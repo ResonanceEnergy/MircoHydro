@@ -1,0 +1,21 @@
+
+# -*- coding: utf-8 -*-
+import FreeCAD
+
+doc = FreeCAD.newDocument('BenchUnit_vA1')
+parts = [
+    ('Diffuser_vA1','../01_Diffuser/Diffuser_vA1.FCStd'),
+    ('NozzleBody_9mm_vA1','../02_Nozzle/NozzleBody_9mm_vA1.FCStd'),
+    ('VanePack_20deg_vA1','../03_VanePacks/VanePack_20deg_vA1.FCStd'),
+    ('Retainer_vA1','../04_Retainer/Retainer_vA1.FCStd')
+]
+
+for label,path in parts:
+    try:
+        obj = FreeCAD.open(path).Objects[0]
+        inst = doc.addObject('Part::Feature', label)
+        inst.Shape = obj.Shape
+    except Exception:
+        print('[Assembly] Skip', label)
+
+doc.recompute()

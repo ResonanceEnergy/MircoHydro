@@ -1,0 +1,17 @@
+{
+  "count": 2,
+  "items": [
+    {
+      "file": "MANIFEST.json",
+      "from": "MicroHydroV1_Calibration_AutoEmbed_AddOn_v0.3.0.zip",
+      "old_mtime": 1769085948.0,
+      "new_mtime": 1769086286.0
+    },
+    {
+      "file": "MANIFEST.json",
+      "from": "MicroHydroV1_RUN3_AutoFill_Evidence_PLUS_Workbook_T002_v0.3.0.zip",
+      "old_mtime": 1769086286.0,
+      "new_mtime": 1769087018.0
+    }
+  ]
+}

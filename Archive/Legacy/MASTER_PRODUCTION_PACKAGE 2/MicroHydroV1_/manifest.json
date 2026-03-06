@@ -1,0 +1,311 @@
+{
+  "generated_at": "2026-01-22T00:31:56.690163",
+  "files": [
+    {
+      "src": "MicroHydroV1_RnD_Export_SYNTH.xlsx",
+      "dest": "03_Data/RnD_Workbook/MicroHydroV1_RnD_Export_SYNTH.xlsx",
+      "hash": "b463f2fbc16181f15f65ad45b4c4072e2650657b4145940b6612193dc7b69fa1"
+    },
+    {
+      "src": "MicroHydroV1_RnD_Export (1).xlsx",
+      "dest": "03_Data/RnD_Workbook/MicroHydroV1_RnD_Export (1).xlsx",
+      "hash": "b1668cdbe1941f7114c15dc323422567534e725155e5b8c06f5d3b41413d10f6"
+    },
+    {
+      "src": "MicroHydroV1_StageB_Package.zip",
+      "dest": "09_Packages/original/MicroHydroV1_StageB_Package.zip",
+      "hash": "2ecd558f8d258b9c358d2f1a0fda010526b9ff44c74b9492d9130b84b8815086"
+    },
+    {
+      "src": "MicroHydroV1_Bench_Test_Tracker.xlsx",
+      "dest": "03_Data/RnD_Workbook/MicroHydroV1_Bench_Test_Tracker.xlsx",
+      "hash": "1448da9bb4cac299c48fa439c5976a0c9ddc8984eade0ac75d4d4cadbf10e0da"
+    },
+    {
+      "src": "MicroHydroV1_RnD_FullUpgrade.xlsx",
+      "dest": "03_Data/RnD_Workbook/MicroHydroV1_RnD_FullUpgrade.xlsx",
+      "hash": "bdb9918ba5602e0d879e182d666a651f5e15229ddda5d062ba310f7cbcf663d1"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/MacroSuite.zip",
+      "dest": "09_Packages/original/MacroSuite.zip",
+      "hash": "6a944084cdaa5fb0c5ca32d3b5a0b44714267a3fef3a50d524c3736abfab2a9c"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/MacroSuiteFull.zip",
+      "dest": "09_Packages/original/MacroSuiteFull.zip",
+      "hash": "05feffbf90882e8d38aa2b160a7a3b6a7a52a64224aa0e20c2737db3b81c0949"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/build_all.FCMacro",
+      "dest": "01_CAD/macros/build_all.FCMacro",
+      "hash": "ee3e1db7557aa820fbce9e68ddc63ba13dc496266b0d4089e8c5d6e547dd9db0"
+    },
+    {
+      "src": "MicroHydroV1_CAD_FIXED/build_all.FCMacro",
+      "dest": "01_CAD/macros/build_all.FCMacro",
+      "hash": "6c7d9a4764defe3f316c3e77dcdec7b950599fb7b4eb0bb703f94ece8020015e"
+    },
+    {
+      "src": "MicroHydroV1_Full_Package/T004_Power_Run1.csv",
+      "dest": "03_Data/intake_raw/T004_Power_Run1.csv",
+      "hash": "e7b996f3e76d2ea170986d9145d994eaacbf06383b93fe40b9d0a19ab483f971"
+    },
+    {
+      "src": "MicroHydroV1_Full_Package/T002_TankRipple_Run1.csv",
+      "dest": "03_Data/intake_raw/T002_TankRipple_Run1.csv",
+      "hash": "7eb2a54a724dcec8a67d6a7c62f606929808c07da06910d3359034afbcd0bb29"
+    },
+    {
+      "src": "MicroHydroV1_Full_Package/StageB_DataLog_Synthetic.csv",
+      "dest": "03_Data/intake_raw/StageB_DataLog_Synthetic.csv",
+      "hash": "a92294a357983f61934f1b724332083ec7745b76515dd8380f2825b9ce47bd3a"
+    },
+    {
+      "src": "MicroHydroV1_Full_Package/Stakeholder_vNext.pptx",
+      "dest": "07_Docs/Documentation/Stakeholder_vNext.pptx",
+      "hash": "0275880c2998b66a9ebb5a5c1b43f4f814b7650eb464180509f50d134bbf9e88"
+    },
+    {
+      "src": "MicroHydroV1_Full_Package/T003_ELCStability_Run1.csv",
+      "dest": "03_Data/intake_raw/T003_ELCStability_Run1.csv",
+      "hash": "bc441701af2d37fbb0855b284a71a2f11cd45e448286451b59a28c7bc0def1dc"
+    },
+    {
+      "src": "MicroHydroV1_Full_Package/GoNoGo_Packet.docx",
+      "dest": "07_Docs/Documentation/GoNoGo_Packet.docx",
+      "hash": "eba11bfe201fe3999e27e5366e76bffb3f1ca199719e3743d0e0153254e22a18"
+    },
+    {
+      "src": "MicroHydroV1_Full_Package/STW_vNext_Matrix.docx",
+      "dest": "07_Docs/Documentation/STW_vNext_Matrix.docx",
+      "hash": "aa4b347d5ad0b5868fcca381ad1a28c47ff33811ad89930e5a6036034302e186"
+    },
+    {
+      "src": "MicroHydroV1_Full_Package/T001_JetCoherence_Run1.csv",
+      "dest": "03_Data/intake_raw/T001_JetCoherence_Run1.csv",
+      "hash": "a6cd8463d5b18202b3b300e8d32402b1a121d9a7257dd73d9cba15ee42116e23"
+    },
+    {
+      "src": "MicroHydroV1_CAD/MicroHydroV1_Addon_macOS.zip",
+      "dest": "09_Packages/original/MicroHydroV1_Addon_macOS.zip",
+      "hash": "df6aed3147354b2ed1d7aec5a41c717f5c21525d3d3e931dcd3562bf92d38c6e"
+    },
+    {
+      "src": "MicroHydroV1_CAD/build_all.FCMacro",
+      "dest": "01_CAD/macros/build_all.FCMacro",
+      "hash": "b38ce7281847038ad87b372049a7d533c509cf21185f2c555907fa36c3495b43"
+    },
+    {
+      "src": "MicroHydroV1_CAD/MicroHydroV1_Complete_Engineering_Package.zip",
+      "dest": "09_Packages/original/MicroHydroV1_Complete_Engineering_Package.zip",
+      "hash": "e8eb4ee87d5fcf7066eea65f742f3fdd55f78db4e95f7abb38459494fbd0adab"
+    },
+    {
+      "src": "MicroHydroV1_CAD/patched_macros_with_params.zip",
+      "dest": "09_Packages/original/patched_macros_with_params.zip",
+      "hash": "7923de732d1ff709e6044e9c6687cc47b98884177c25eb7ad8308e7866017efc"
+    },
+    {
+      "src": "MicroHydroV1_CAD/MicroHydroV1_InModule_Installer.zip",
+      "dest": "08_Installers/MicroHydroV1_InModule_Installer.zip",
+      "hash": "90498dc45c02dcff5a240c04fb7a8140be32847fbac341cbec4a6a6e93f26f20"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/01_Diffuser/build_diffuser.FCMacro",
+      "dest": "01_CAD/macros/build_diffuser.FCMacro",
+      "hash": "9ab433a3c544daff4d9fa4f923a00137ce1170d2e04b92726fd0d858c2ba5c1f"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/04_Retainer/build_retainer.FCMacro",
+      "dest": "01_CAD/macros/build_retainer.FCMacro",
+      "hash": "afae0ef6c64b84e81d6c3c45f5183624161ab9d62656940d58fe25a46695d746"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/03_VanePacks/build_vanepacks.FCMacro",
+      "dest": "01_CAD/macros/build_vanepacks.FCMacro",
+      "hash": "e9ae4cabd500d5ad4aecee6665dcb95fc109f937413cd65cea972fcfb9d3f47e"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/Assembly/build_assembly.FCMacro",
+      "dest": "01_CAD/macros/build_assembly.FCMacro",
+      "hash": "91c0099656be32b7282605321ecc05627aeb756d80c469086f871ebc8ef598d7"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/02_Nozzle/build_nozzle.FCMacro",
+      "dest": "01_CAD/macros/build_nozzle.FCMacro",
+      "hash": "2c08ebe877188efdb2ffb9c7ac0502d7293d94ae8d50506d540ec6750cb3d442"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/MacroSuiteFull/build_all.FCMacro",
+      "dest": "01_CAD/macros/build_all.FCMacro",
+      "hash": "35e26ef883dd2ed7f547e2404d24de46f5319f4d55cd73f315b8bd075e9eefbf"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/MacroSuiteFull/scripts/export_batch.FCMacro",
+      "dest": "01_CAD/macros/export_batch.FCMacro",
+      "hash": "f7f6e73dd0dc2a8ccb85b11040f0be0e12844b4dd27ae2c12a4dd26b4c8eea0f"
+    },
+    {
+      "src": "MicroHydroV1_FULL_Workspace/Master_Package/MicroHydroV1_Master.docx",
+      "dest": "07_Docs/Documentation/MicroHydroV1_Master.docx",
+      "hash": "a36051810474db8ec5a08bd2ca954fbbe62703650b14becc40f9f0ac33dd974f"
+    },
+    {
+      "src": "MicroHydroV1_FULL_Workspace/Master_Package/Go_NoGo_Packet.docx",
+      "dest": "07_Docs/Documentation/Go_NoGo_Packet.docx",
+      "hash": "39d4e492c51adc2f871b7eef670b4eb06e906a4d50477616c1a1bf9df7b00e17"
+    },
+    {
+      "src": "MicroHydroV1_FULL_Workspace/Automation/MicroHydroV1_RnD_Export.xlsx",
+      "dest": "03_Data/RnD_Workbook/MicroHydroV1_RnD_Export.xlsx",
+      "hash": "ae4934dbfe95498b01fdbebd6c50e45434e9fa0cf7e4d3405f086b4af4a0043f"
+    },
+    {
+      "src": "MicroHydroV1_FULL_Workspace/Tests/Data/Imported/T004_Power_Run1.csv",
+      "dest": "03_Data/intake_raw/T004_Power_Run1.csv",
+      "hash": "b50e14edc4427815d60d2ccee108acfbe9a5c8e5b81ba4d5ca18738cc7dc6f55"
+    },
+    {
+      "src": "MicroHydroV1_FULL_Workspace/Tests/Data/Imported/T002_TankRipple_Run1.csv",
+      "dest": "03_Data/intake_raw/T002_TankRipple_Run1.csv",
+      "hash": "0c230ca23becce1698a9513fdf468c539a7ba0dbc530c117897085edcb51942c"
+    },
+    {
+      "src": "MicroHydroV1_FULL_Workspace/Tests/Data/Imported/T003_ELCStability_Run1.csv",
+      "dest": "03_Data/intake_raw/T003_ELCStability_Run1.csv",
+      "hash": "e361352ebbc3901aea806641135c2be79c8a03b5fc929cabe67ff159743749b8"
+    },
+    {
+      "src": "MicroHydroV1_FULL_Workspace/Tests/Data/Imported/T001_JetCoherence_Run1.csv",
+      "dest": "03_Data/intake_raw/T001_JetCoherence_Run1.csv",
+      "hash": "a0111983d22ef3fa7e68dd6b04ab69a5c7e65ee64da7cb316517df039ef467a9"
+    },
+    {
+      "src": "MicroHydroV1_CAD_FIXED/01_Diffuser/build_diffuser.FCMacro",
+      "dest": "01_CAD/macros/build_diffuser.FCMacro",
+      "hash": "c26c5a928ba4fdc1275b0040d38f8095581e6236f5eca79cac11200a7b0bf522"
+    },
+    {
+      "src": "MicroHydroV1_CAD_FIXED/04_Retainer/build_retainer.FCMacro",
+      "dest": "01_CAD/macros/build_retainer.FCMacro",
+      "hash": "5dac82c093a78461c94483a8db3d131611248153d4cba5bb20aeaad66527304b"
+    },
+    {
+      "src": "MicroHydroV1_CAD_FIXED/03_VanePacks/build_vanepacks.FCMacro",
+      "dest": "01_CAD/macros/build_vanepacks.FCMacro",
+      "hash": "cf1b2bfd3b377a6961c667b03087f2bfa252db3de6d42067b9dbcfd341148e8f"
+    },
+    {
+      "src": "MicroHydroV1_CAD_FIXED/Assembly/build_assembly.FCMacro",
+      "dest": "01_CAD/macros/build_assembly.FCMacro",
+      "hash": "e3d695c0b94138f5cb2bdfbe3fc28356a6260420909e94fd5b8865288ddefcdc"
+    },
+    {
+      "src": "MicroHydroV1_CAD_FIXED/02_Nozzle/build_nozzle.FCMacro",
+      "dest": "01_CAD/macros/build_nozzle.FCMacro",
+      "hash": "1d279a8bb562250575df1f80111c80957ba426852d7c4e43699390d4acd80ba8"
+    },
+    {
+      "src": "MicroHydroV1_CAD_FIXED/scripts/export_batch.FCMacro",
+      "dest": "01_CAD/macros/export_batch.FCMacro",
+      "hash": "ef7a1b714e83f4763162e82887f08248c638aad0e0bd49a0b1f0d62d6ccf92fa"
+    },
+    {
+      "src": "MicroHydroV1_CAD/01_Diffuser/build_diffuser.FCMacro",
+      "dest": "01_CAD/macros/build_diffuser.FCMacro",
+      "hash": "9d9e9b3912e898a94228dcce1db441bebf86cf7154028b13cf2efb154744e556"
+    },
+    {
+      "src": "MicroHydroV1_CAD/MicroHydroV1_InModule_Installer/InitGui.py",
+      "dest": "08_Installers/InitGui.py",
+      "hash": "1c3278ef3018bd836e3e5b7f3dcf6ea010a65bfa2fbeb1b6d52c10a57ae055f3"
+    },
+    {
+      "src": "MicroHydroV1_CAD/MicroHydroV1_InModule_Installer/Install_MicroHydroV1_InModule.command",
+      "dest": "08_Installers/Install_MicroHydroV1_InModule.command",
+      "hash": "df9fbfbfe861973e6bb36869e7d8abfd80fcc7d025178a274efcc102582ff03d"
+    },
+    {
+      "src": "MicroHydroV1_CAD/MicroHydroV1_InModule_Installer/README.md",
+      "dest": "08_Installers/README.md",
+      "hash": "2c30ef2edae5cdbf91b7b69eb29c867c699402e273b8b6d6f7b09118129a113b"
+    },
+    {
+      "src": "MicroHydroV1_FullUpgrade_All/Governance/README.txt",
+      "dest": "07_Docs/Documentation/README.txt",
+      "hash": "84cfef70d4065c8c9a2dda6508f9b2aad68042e6ab19a34e1ce74a22a8689b0e"
+    },
+    {
+      "src": "MicroHydroV1_FullUpgrade_All/StageB/README.txt",
+      "dest": "07_Docs/Documentation/README.txt",
+      "hash": "295ee28a2725562a69bf8b4249794cbe77d1a5b2733cc5dcaf073be50cb41cf4"
+    },
+    {
+      "src": "MicroHydroV1_FullUpgrade_All/RnD/README.txt",
+      "dest": "07_Docs/Documentation/README.txt",
+      "hash": "a6d0f85df01ea3375231fe0fd2c1c49bad8f1f3a758b9c354e3da16c466c7101"
+    },
+    {
+      "src": "MicroHydroV1_FullUpgrade_All/TankTests/T002/README.txt",
+      "dest": "07_Docs/Documentation/README.txt",
+      "hash": "6694cef159dd054255d2f9e78215890b6cc730678fc3d576c8ed57122e5fb397"
+    },
+    {
+      "src": "MicroHydroV1_FullUpgrade_All/TankTests/T001/README.txt",
+      "dest": "07_Docs/Documentation/README.txt",
+      "hash": "b49d21dbc5e1b8ecc9c03729631e273a04b17dcd127b61c836a68ed49acbbe93"
+    }
+  ],
+  "dups": [
+    {
+      "src": "MicroHydroV1_RnD_Export.xlsx",
+      "kept": "03_Data/RnD_Workbook/MicroHydroV1_RnD_Export (1).xlsx"
+    },
+    {
+      "src": "MicroHydroV1_CAD/MicroHydroV1_RnD_FullUpgrade.xlsx",
+      "kept": "03_Data/RnD_Workbook/MicroHydroV1_RnD_FullUpgrade.xlsx"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/MacroSuiteFull/01_Diffuser/build_diffuser.FCMacro",
+      "kept": "01_CAD/macros/build_diffuser.FCMacro"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/MacroSuiteFull/04_Retainer/build_retainer.FCMacro",
+      "kept": "01_CAD/macros/build_retainer.FCMacro"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/MacroSuiteFull/03_VanePacks/build_vanepacks.FCMacro",
+      "kept": "01_CAD/macros/build_vanepacks.FCMacro"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/MacroSuiteFull/Assembly/build_assembly.FCMacro",
+      "kept": "01_CAD/macros/build_assembly.FCMacro"
+    },
+    {
+      "src": "MicroHydroV1_CAD (1)old/MacroSuiteFull/02_Nozzle/build_nozzle.FCMacro",
+      "kept": "01_CAD/macros/build_nozzle.FCMacro"
+    },
+    {
+      "src": "MicroHydroV1_CAD/04_Retainer/build_retainer.FCMacro",
+      "kept": "01_CAD/macros/build_retainer.FCMacro"
+    },
+    {
+      "src": "MicroHydroV1_CAD/03_VanePacks/build_vanepacks.FCMacro",
+      "kept": "01_CAD/macros/build_vanepacks.FCMacro"
+    },
+    {
+      "src": "MicroHydroV1_CAD/Assembly/build_assembly.FCMacro",
+      "kept": "01_CAD/macros/build_assembly.FCMacro"
+    },
+    {
+      "src": "MicroHydroV1_CAD/02_Nozzle/build_nozzle.FCMacro",
+      "kept": "01_CAD/macros/build_nozzle.FCMacro"
+    },
+    {
+      "src": "MicroHydroV1_CAD/scripts/export_batch.FCMacro",
+      "kept": "01_CAD/macros/export_batch.FCMacro"
+    }
+  ],
+  "params_source": "MicroHydroV1_CAD/params.json"
+}

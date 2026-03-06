@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+import FreeCAD, Part
+from FreeCAD import Vector
+
+P = PARAMS['Diffuser']
+D_in = float(P['D_in'])
+D_out = float(P['D_out'])
+L = float(P['Length'])
+wall = float(P['Wall'])
+sag = float(P.get('ArcSagitta', L * 0.02))
+
+doc = FreeCAD.newDocument('Diffuser_vA1')
+
+p1 = Vector(D_in/2, 0, 0)
+p2 = Vector(D_out/2, 0, L)
+mx = (p1.x + p2.x)/2
+mz = (p1.z + p2.z)/2
+pMid = Vector(mx, sag, mz)
+arc1 = Part.Arc(p1, pMid, p2).toShape()
+
+p1b = Vector(-p1.x, 0, p1.z)
+p2b = Vector(-p2.x, 0, p2.z)
+arc2 = Part.Arc(p1b, Vector(-mx, sag, mz), p2b).toShape()
+
+line_top = Part.LineSegment(p2, p2b).toShape()
+line_bot = Part.LineSegment(p1, p1b).toShape()
+wire = Part.Wire([arc1, line_top, arc2, line_bot])
+solid = wire.revolve(Vector(0,0,0), Vector(0,0,1), 360)
+obj = doc.addObject('Part::Feature', 'Diffuser_vA1')
+obj.Shape = solid
+
+if wall > 0:
+    try:
+        thick = solid.makeThickness([], -wall, 1e-3)
+        obj.Shape = thick
+    except:
+        print('[WARN] thickness failed')
+
+doc.recompute()

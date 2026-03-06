@@ -1,0 +1,99 @@
+# -*- coding: utf-8 -*-
+# MicroHydroV1 — Diffuser Builder (robust face + revolve)
+
+import FreeCAD, Part
+from FreeCAD import Vector
+
+# ---- 1) Parameters ----------------------------------------------------------
+P      = PARAMS['Diffuser']
+D_in   = float(P['D_in'])
+D_out  = float(P['D_out'])
+L      = float(P['Length'])
+wall   = float(P['Wall'])
+
+# Guard against zero/negative or pathological inputs
+if D_in <= 0 or D_out <= 0 or L <= 0:
+    raise ValueError("[Diffuser] Non-positive dimensions. Check params.json.")
+
+# Ensure we have some non-colinearity for the arc
+sag_default = max(0.5, 0.02 * L)  # at least 0.5 mm or 2% of length
+sag = float(P.get('ArcSagitta', sag_default))
+if abs(sag) < 1e-6:
+    sag = sag_default
+
+doc = FreeCAD.newDocument("Diffuser_vA1")
+
+# ---- 2) Build a clean, closed profile in the XZ plane -----------------------
+# Endpoints
+p1  = Vector(D_in/2.0,  0.0, 0.0)     # inlet radius @ z=0
+p2  = Vector(D_out/2.0, 0.0, L)       # outlet radius @ z=L
+p1m = Vector(-p1.x,     0.0, p1.z)    # mirror of p1 on X
+p2m = Vector(-p2.x,     0.0, p2.z)    # mirror of p2 on X
+
+# Midpoints with sag in +Y to avoid colinearity
+mx = 0.5 * (p1.x + p2.x)
+mz = 0.5 * (p1.z + p2.z)
+pm  = Vector(mx,  sag, mz)
+pmm = Vector(-mx, sag, mz)
+
+# Arcs (try once; if OCCT complains, increase sag)
+def make_arc(a, m, b):
+    try:
+        return Part.Arc(a, m, b).toShape()
+    except Exception:
+        m2 = Vector(m.x, m.y * 2.0, m.z)
+        return Part.Arc(a, m2, b).toShape()
+
+arc_outer = make_arc(p1, pm, p2)
+arc_inner = make_arc(p1m, pmm, p2m)
+
+# Straight closures (top and bottom)
+line_top = Part.LineSegment(p2,  p2m).toShape()
+line_bot = Part.LineSegment(p1m, p1 ).toShape()  # note: go p1m -> p1 to keep consistent orientation
+
+# Assemble wire in a consistent, non-crossing order (counterclockwise in XZ)
+# p1 -> p2 via outer arc, p2 -> p2m (top line), p2m -> p1m via mirrored arc, p1m -> p1 (bottom line)
+wire = Part.Wire([arc_outer, line_top, arc_inner, line_bot])
+
+# Snap endpoints exactly (helps eliminate tiny gaps)
+wire = Part.Wire(wire.Edges)
+
+# ---- Diagnostics before face -----------------------------------------------
+print("[Diffuser] isClosed:", wire.isClosed())
+print("[Diffuser] isValid :", wire.isValid())
+if not wire.isClosed():
+    raise RuntimeError("[Diffuser] Profile wire is not closed — check orientation / endpoints.")
+
+# ---- 3) Make a Face from the wire, then revolve the Face --------------------
+try:
+    face = Part.Face(wire)
+except Exception as e:
+    print("[Diffuser][WARN] Face() failed; attempting fix via makeFilledFace.")
+    try:
+        face = Part.makeFilledFace(wire.Edges)
+    except Exception:
+        raise RuntimeError("[Diffuser] Could not create a face from the profile. " + str(e))
+
+# Axis of revolution: Z-axis through origin
+axis_origin = Vector(0,0,0)
+axis_dir    = Vector(0,0,1)
+
+try:
+    solid = face.revolve(axis_origin, axis_dir, 360.0)
+except Exception as e:
+    print("[Diffuser][WARN] Revolve failed once; retrying with tiny axis offset.")
+    solid = face.copy().revolve(Vector(0,0,1e-6), axis_dir, 360.0)
+
+obj = doc.addObject("Part::Feature", "Diffuser_vA1")
+obj.Shape = solid
+
+# ---- 4) Optional wall thickness --------------------------------------------
+if wall > 0:
+    try:
+        thick = solid.makeThickness([], -wall, 1e-3)
+        obj.Shape = thick
+    except Exception as e:
+        print("[Diffuser][WARN] Thickness failed; continuing with solid. Reason:", e)
+
+doc.recompute()
+print("[Diffuser] OK — built and revolved face successfully.")

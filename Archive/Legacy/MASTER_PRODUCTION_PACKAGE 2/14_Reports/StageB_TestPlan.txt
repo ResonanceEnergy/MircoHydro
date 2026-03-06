@@ -1,0 +1,5 @@
+Stage B Bench Test Plan
+- Measure discharge vs head
+- Capture delta-P across nozzle
+- Swirl velocity profiles via pitot/ultrasonic
+- Test vane packs 10/20/30 deg

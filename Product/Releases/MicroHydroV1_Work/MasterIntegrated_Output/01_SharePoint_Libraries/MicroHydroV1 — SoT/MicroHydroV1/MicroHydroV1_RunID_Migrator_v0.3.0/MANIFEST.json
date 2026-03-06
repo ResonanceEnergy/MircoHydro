@@ -1,0 +1,16 @@
+{
+  "package": "MicroHydroV1_RunID_Migrator_v0.3.0",
+  "created": "2026-01-22T06:13:26",
+  "files": [
+    {
+      "path": "MicroHydroV1/docs/governance/README_RunID_Migration.md",
+      "bytes": 830,
+      "sha256": "a0adf0443e01c39eb322cc0c7a8e5dd18c21bce037a912872c6de629d1783cad"
+    },
+    {
+      "path": "MicroHydroV1/tools/workflow/migrate_add_run_id.py",
+      "bytes": 4868,
+      "sha256": "f7ff10e2694896271b5b860a383c1bf304f458a51b2bd60cef2420a2540c0cb3"
+    }
+  ]
+}

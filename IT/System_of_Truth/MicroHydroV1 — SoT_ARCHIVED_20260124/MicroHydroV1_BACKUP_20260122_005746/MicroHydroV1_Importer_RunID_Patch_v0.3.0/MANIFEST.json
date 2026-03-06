@@ -1,0 +1,16 @@
+{
+  "package": "MicroHydroV1_Importer_RunID_Patch_v0.3.0",
+  "created": "2026-01-22T06:18:32",
+  "files": [
+    {
+      "path": "MicroHydroV1/automation/import_measurements.py",
+      "bytes": 5969,
+      "sha256": "f7e29180cdddbd3e4e9e78c4036328099ed0bf871b9d1e54609dbae6d6d4ce1c"
+    },
+    {
+      "path": "MicroHydroV1/docs/governance/README_Importer_RunID_Patch.md",
+      "bytes": 1154,
+      "sha256": "0c9393c00741fbf5d3f5e56e81ab662b7cb8878882ac0d57e9b340b1e71b7b3b"
+    }
+  ]
+}

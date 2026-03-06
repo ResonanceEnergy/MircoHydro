@@ -1,0 +1,5 @@
+Timestamp,Test_ID,Sensor,Value,Unit,Baseline_Value,Conditions,Notes
+2026-01-22T09:01,T-001,coherence,0.932,,,Head=7.5m;Flow=45L/s,
+2026-01-22T09:02,T-001,coherence,0.945,,,Head=7.5m;Flow=45L/s,
+2026-01-22T09:03,T-001,coherence,0.917,,,Head=7.5m;Flow=45L/s,
+2026-01-22T09:04,T-001,coherence,0.958,,,Head=7.5m;Flow=45L/s,

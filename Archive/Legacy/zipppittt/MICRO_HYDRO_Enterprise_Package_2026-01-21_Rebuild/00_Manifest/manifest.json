@@ -1,0 +1,12 @@
+{
+  "package_name": "MICRO_HYDRO_Enterprise_Package_2026-01-21_Rebuild",
+  "generated_on_utc": "2026-01-21T21:41:02.256319Z",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "07_Source_Archive/MICRO HYDRO.zip",
+      "bytes": 14653840,
+      "sha256": "6738b21dbf24bce65d95037e7940220a03707110a29d358ff12ef142402f8e23"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-01-21T10:01:46.265159Z",
+  "accepted_test_ids": [
+    "T-001",
+    "T-002"
+  ],
+  "sensor_keywords": {
+    "T-001": [
+      "coherence",
+      "jet coherence"
+    ],
+    "T-002": [
+      "ripple",
+      "surface ripple"
+    ]
+  },
+  "notes": [
+    "Timestamp can be any Excel-recognized date/time or ISO 8601 string.",
+    "Baseline_Value is used for T-002 ripple comparisons (Threshold = Baseline * 0.70).",
+    "Leave Baseline_Value blank for T-001."
+  ]
+}

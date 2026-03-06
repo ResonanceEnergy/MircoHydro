@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+import FreeCAD, Part
+from FreeCAD import Vector, Rotation
+import math
+
+PV = PARAMS['VanePack_Common']
+Angles = PARAMS['VanePacks']['Angles']
+OD = float(PV['Outer_Diameter'])
+ID = float(PV['Inner_Hub_D'])
+Ht = float(PV['Height'])
+t = float(PV['Vane_Thickness'])
+count = int(PV['Vane_Count'])
+
+for ang in Angles:
+    doc = FreeCAD.newDocument(f'VanePack_{int(ang)}deg_vA1')
+    p1 = Vector(ID/2, 0, 0)
+    p2 = Vector(OD/2, 0, 0)
+    p3 = Vector(OD/2, t, 0)
+    p4 = Vector(ID/2, t, 0)
+    wire = Part.makePolygon([p1,p2,p3,p4,p1])
+    face = Part.Face(wire)
+    vane = face.extrude(Vector(0,0,Ht))
+    vane.rotate(Vector(0,0,0), Vector(0,0,1), ang)
+    vanes = []
+    for i in range(count):
+        vcopy = vane.copy()
+        vcopy.rotate(Vector(0,0,0), Vector(0,0,1), i*(360/count))
+        vanes.append(vcopy)
+    compound = Part.makeCompound(vanes)
+    obj = doc.addObject('Part::Feature', f'VanePack_{int(ang)}deg_vA1')
+    obj.Shape = compound
+    doc.recompute()

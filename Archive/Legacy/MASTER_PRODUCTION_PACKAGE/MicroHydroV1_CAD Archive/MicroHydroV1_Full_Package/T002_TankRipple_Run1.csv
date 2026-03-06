@@ -1,0 +1,5 @@
+Timestamp,Test_ID,Sensor,Value,Unit,Baseline_Value,Conditions,Notes
+2026-01-22T09:10,T-002,ripple,7.1,mm,12.4,Flow=FR1,
+2026-01-22T09:12,T-002,ripple,6.8,mm,12.5,Flow=FR2,
+2026-01-22T09:14,T-002,ripple,7.3,mm,13.1,Flow=FR3,
+2026-01-22T09:16,T-002,ripple,6.9,mm,12.8,Flow=FR3R,

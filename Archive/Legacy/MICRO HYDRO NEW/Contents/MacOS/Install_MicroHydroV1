@@ -1,0 +1,5 @@
+#!/bin/bash
+HERE="$(cd "$(dirname "$0")" && cd ../../ && pwd)"
+INSTALLER="$HERE/Install_MicroHydroV1_InModule.command"
+chmod +x "$INSTALLER"
+bash "$INSTALLER"
