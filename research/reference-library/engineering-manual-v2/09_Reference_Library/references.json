@@ -1,0 +1,140 @@
+[
+  {
+    "title": "Off-Grid or Stand-Alone Renewable Energy Systems",
+    "org": "U.S. Department of Energy (Energy Saver)",
+    "url": "https://www.energy.gov/energysaver/grid-or-stand-alone-renewable-energy-systems",
+    "id": "turn1search31"
+  },
+  {
+    "title": "Grid-Connected Renewable Energy Systems",
+    "org": "U.S. Department of Energy (Energy Saver)",
+    "url": "https://www.energy.gov/energysaver/grid-connected-renewable-energy-systems",
+    "id": "turn1search12"
+  },
+  {
+    "title": "Designing and Modeling Off-Grid Solar Systems (REopt training module)",
+    "org": "NREL",
+    "url": "https://docs.nrel.gov/docs/fy24osti/89248.pdf",
+    "id": "turn1search28"
+  },
+  {
+    "title": "PVWatts V8 API Documentation",
+    "org": "NREL Developer Network",
+    "url": "https://developer.nrel.gov/docs/solar/pvwatts/v8/",
+    "id": "turn2search50"
+  },
+  {
+    "title": "PVWatts model in SAM help",
+    "org": "NREL SAM",
+    "url": "https://samrepo.nrelcloud.org/help/pvwatts.html",
+    "id": "turn2search53"
+  },
+  {
+    "title": "Small Wind Guidebook",
+    "org": "U.S. DOE WINDExchange",
+    "url": "https://www.energy.gov/eere/wind/windexchange/small-wind-guidebook",
+    "id": "turn2search87"
+  },
+  {
+    "title": "Small Wind Electric Systems: A U.S. Consumer\u2019s Guide (PDF)",
+    "org": "NREL",
+    "url": "https://docs.nrel.gov/docs/fy07osti/42005.pdf",
+    "id": "turn2search88"
+  },
+  {
+    "title": "Microhydropower Handbook, Volume 1, Part 1",
+    "org": "U.S. DOE",
+    "url": "https://www1.eere.energy.gov/water/pdfs/doewater-10107-vol.1-pt1.pdf",
+    "id": "turn1search16"
+  },
+  {
+    "title": "Small Hydropower Systems (Fact Sheet)",
+    "org": "NREL / DOE",
+    "url": "https://docs.nrel.gov/docs/fy01osti/29065.pdf",
+    "id": "turn1search17"
+  },
+  {
+    "title": "Micro-Hydro Power: A Beginners Guide to Design and Installation",
+    "org": "ATTRA (NCAT)",
+    "url": "https://attra.ncat.org/publication/micro-hydro-power-a-beginners-guide-to-design-and-installation/",
+    "id": "turn1search19"
+  },
+  {
+    "title": "FAO Anaerobic digestion overview",
+    "org": "FAO",
+    "url": "https://www.fao.org/4/t0541e/T0541E03.htm",
+    "id": "turn1search42"
+  },
+  {
+    "title": "Micro-Scale Biogas Production: A Beginners Guide",
+    "org": "ATTRA (NCAT)",
+    "url": "https://attra.ncat.org/publication/micro-scale-biogas-production-a-beginners-guide/",
+    "id": "turn1search45"
+  },
+  {
+    "title": "Hydrogen Production: Electrolysis",
+    "org": "U.S. DOE HFTO",
+    "url": "https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis",
+    "id": "turn1search34"
+  },
+  {
+    "title": "Microgrids for Energy Resilience: A Guide to Conceptual Design",
+    "org": "NREL",
+    "url": "https://docs.nrel.gov/docs/fy19osti/72586.pdf",
+    "id": "turn2search68"
+  },
+  {
+    "title": "Microgrid Controls",
+    "org": "NREL",
+    "url": "https://www.nrel.gov/grid/microgrid-controls",
+    "id": "turn2search72"
+  },
+  {
+    "title": "NREL Grid Standards and Codes",
+    "org": "NREL",
+    "url": "https://www.nrel.gov/grid/standards-codes",
+    "id": "turn1search11"
+  },
+  {
+    "title": "NEC 2023 PV systems overview (Article 690 excerpt)",
+    "org": "Mike Holt Enterprises",
+    "url": "https://www.mikeholt.com/files/PDF/23_SOLAR_690.1.pdf",
+    "id": "turn2search80"
+  },
+  {
+    "title": "NFPA 855: Improving Energy Storage System Safety (overview)",
+    "org": "ACP / Clean Power",
+    "url": "https://cleanpower.org/gateway.php?file=2024/01/NFPA855_Safety_240111.pdf",
+    "id": "turn2search59"
+  },
+  {
+    "title": "UL Solutions ESS installation codes FAQ (UL 9540A/NFPA855/IFC references)",
+    "org": "UL Solutions",
+    "url": "https://www.ul.com/resources/installation-codes-and-requirements-energy-storage-systems-ess-faqs",
+    "id": "turn2search61"
+  },
+  {
+    "title": "Renewable Power Generation Costs in 2024",
+    "org": "IRENA",
+    "url": "https://www.irena.org/Publications/2025/Jun/Renewable-Power-Generation-Costs-in-2024",
+    "id": "turn1search23"
+  },
+  {
+    "title": "Lazard Levelized Cost of Energy+ (June 2025)",
+    "org": "Lazard",
+    "url": "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
+    "id": "turn1search22"
+  },
+  {
+    "title": "EIA AEO 2025 LCOE report",
+    "org": "U.S. EIA",
+    "url": "https://www.eia.gov/outlooks/aeo/electricity_generation/pdf/AEO2025_LCOE_report.pdf",
+    "id": "turn1search24"
+  },
+  {
+    "title": "Perpetual motion overview",
+    "org": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Perpetual_motion",
+    "id": "turn1search5"
+  }
+]

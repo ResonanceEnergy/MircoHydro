@@ -1,0 +1,24 @@
+{
+  "page_size": "LETTER",
+  "margins_in": {
+    "left": 0.75,
+    "right": 0.75,
+    "top": 0.75,
+    "bottom": 0.75
+  },
+  "fonts": {
+    "title": 18,
+    "h1": 16,
+    "h2": 13,
+    "body": 10,
+    "mono": 9
+  },
+  "line_spacing": {
+    "body": 13,
+    "tight": 11
+  },
+  "footer": {
+    "show": true,
+    "text": "Resonance Energy Systems \u2014 Internal Doctrine (Draft)"
+  }
+}

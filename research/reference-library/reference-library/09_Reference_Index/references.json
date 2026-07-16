@@ -1,0 +1,107 @@
+[
+  {
+    "id": "turn1search31",
+    "title": "Off-Grid or Stand-Alone Renewable Energy Systems",
+    "org": "U.S. Department of Energy (Energy Saver)",
+    "url": "https://www.energy.gov/energysaver/grid-or-stand-alone-renewable-energy-systems",
+    "type": "web"
+  },
+  {
+    "id": "turn1search12",
+    "title": "Grid-Connected Renewable Energy Systems",
+    "org": "U.S. Department of Energy (Energy Saver)",
+    "url": "https://www.energy.gov/energysaver/grid-connected-renewable-energy-systems",
+    "type": "web"
+  },
+  {
+    "id": "turn1search28",
+    "title": "Designing and Modeling Off-Grid Solar Systems (REopt training module)",
+    "org": "NREL",
+    "url": "https://docs.nrel.gov/docs/fy24osti/89248.pdf",
+    "type": "pdf"
+  },
+  {
+    "id": "turn1search32",
+    "title": "Off-grid renewable energy systems: Status and methodological issues (Working Paper)",
+    "org": "IRENA",
+    "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2015/IRENA_Off-grid_Renewable_Systems_WP_2015.pdf",
+    "type": "pdf"
+  },
+  {
+    "id": "turn1search23",
+    "title": "Renewable Power Generation Costs in 2024",
+    "org": "IRENA",
+    "url": "https://www.irena.org/Publications/2025/Jun/Renewable-Power-Generation-Costs-in-2024",
+    "type": "web"
+  },
+  {
+    "id": "turn1search22",
+    "title": "Lazard's Levelized Cost of Energy+ (June 2025)",
+    "org": "Lazard",
+    "url": "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
+    "type": "pdf"
+  },
+  {
+    "id": "turn1search24",
+    "title": "Levelized Costs of New Generation Resources in the Annual Energy Outlook 2025",
+    "org": "U.S. EIA",
+    "url": "https://www.eia.gov/outlooks/aeo/electricity_generation/pdf/AEO2025_LCOE_report.pdf",
+    "type": "pdf"
+  },
+  {
+    "id": "turn1search17",
+    "title": "Small Hydropower Systems (Fact Sheet)",
+    "org": "NREL / DOE",
+    "url": "https://docs.nrel.gov/docs/fy01osti/29065.pdf",
+    "type": "pdf"
+  },
+  {
+    "id": "turn1search16",
+    "title": "Microhydropower Handbook, Volume 1, Part 1",
+    "org": "U.S. DOE",
+    "url": "https://www1.eere.energy.gov/water/pdfs/doewater-10107-vol.1-pt1.pdf",
+    "type": "pdf"
+  },
+  {
+    "id": "turn1search19",
+    "title": "Micro-Hydro Power: A Beginners Guide to Design and Installation",
+    "org": "ATTRA (NCAT)",
+    "url": "https://attra.ncat.org/publication/micro-hydro-power-a-beginners-guide-to-design-and-installation/",
+    "type": "web"
+  },
+  {
+    "id": "turn1search45",
+    "title": "Micro-Scale Biogas Production: A Beginners Guide",
+    "org": "ATTRA (NCAT)",
+    "url": "https://attra.ncat.org/publication/micro-scale-biogas-production-a-beginners-guide/",
+    "type": "web"
+  },
+  {
+    "id": "turn1search42",
+    "title": "FAO Biogas technology overview (T0541E03)",
+    "org": "FAO",
+    "url": "https://www.fao.org/4/t0541e/T0541E03.htm",
+    "type": "web"
+  },
+  {
+    "id": "turn1search34",
+    "title": "Hydrogen Production: Electrolysis",
+    "org": "U.S. DOE HFTO",
+    "url": "https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis",
+    "type": "web"
+  },
+  {
+    "id": "turn1search11",
+    "title": "Grid Standards and Codes (IEEE 1547, UL 1741 context)",
+    "org": "NREL",
+    "url": "https://www.nrel.gov/grid/standards-codes",
+    "type": "web"
+  },
+  {
+    "id": "turn1search5",
+    "title": "Perpetual motion",
+    "org": "Wikipedia (overview; cites thermodynamics)",
+    "url": "https://en.wikipedia.org/wiki/Perpetual_motion",
+    "type": "web"
+  }
+]

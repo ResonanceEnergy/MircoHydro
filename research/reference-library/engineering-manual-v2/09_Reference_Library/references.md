@@ -1,0 +1,25 @@
+# Reference Library (clickable)
+
+- **Off-Grid or Stand-Alone Renewable Energy Systems** — U.S. Department of Energy (Energy Saver) — https://www.energy.gov/energysaver/grid-or-stand-alone-renewable-energy-systems
+- **Grid-Connected Renewable Energy Systems** — U.S. Department of Energy (Energy Saver) — https://www.energy.gov/energysaver/grid-connected-renewable-energy-systems
+- **Designing and Modeling Off-Grid Solar Systems (REopt training module)** — NREL — https://docs.nrel.gov/docs/fy24osti/89248.pdf
+- **PVWatts V8 API Documentation** — NREL Developer Network — https://developer.nrel.gov/docs/solar/pvwatts/v8/
+- **PVWatts model in SAM help** — NREL SAM — https://samrepo.nrelcloud.org/help/pvwatts.html
+- **Small Wind Guidebook** — U.S. DOE WINDExchange — https://www.energy.gov/eere/wind/windexchange/small-wind-guidebook
+- **Small Wind Electric Systems: A U.S. Consumer’s Guide (PDF)** — NREL — https://docs.nrel.gov/docs/fy07osti/42005.pdf
+- **Microhydropower Handbook, Volume 1, Part 1** — U.S. DOE — https://www1.eere.energy.gov/water/pdfs/doewater-10107-vol.1-pt1.pdf
+- **Small Hydropower Systems (Fact Sheet)** — NREL / DOE — https://docs.nrel.gov/docs/fy01osti/29065.pdf
+- **Micro-Hydro Power: A Beginners Guide to Design and Installation** — ATTRA (NCAT) — https://attra.ncat.org/publication/micro-hydro-power-a-beginners-guide-to-design-and-installation/
+- **FAO Anaerobic digestion overview** — FAO — https://www.fao.org/4/t0541e/T0541E03.htm
+- **Micro-Scale Biogas Production: A Beginners Guide** — ATTRA (NCAT) — https://attra.ncat.org/publication/micro-scale-biogas-production-a-beginners-guide/
+- **Hydrogen Production: Electrolysis** — U.S. DOE HFTO — https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis
+- **Microgrids for Energy Resilience: A Guide to Conceptual Design** — NREL — https://docs.nrel.gov/docs/fy19osti/72586.pdf
+- **Microgrid Controls** — NREL — https://www.nrel.gov/grid/microgrid-controls
+- **NREL Grid Standards and Codes** — NREL — https://www.nrel.gov/grid/standards-codes
+- **NEC 2023 PV systems overview (Article 690 excerpt)** — Mike Holt Enterprises — https://www.mikeholt.com/files/PDF/23_SOLAR_690.1.pdf
+- **NFPA 855: Improving Energy Storage System Safety (overview)** — ACP / Clean Power — https://cleanpower.org/gateway.php?file=2024/01/NFPA855_Safety_240111.pdf
+- **UL Solutions ESS installation codes FAQ (UL 9540A/NFPA855/IFC references)** — UL Solutions — https://www.ul.com/resources/installation-codes-and-requirements-energy-storage-systems-ess-faqs
+- **Renewable Power Generation Costs in 2024** — IRENA — https://www.irena.org/Publications/2025/Jun/Renewable-Power-Generation-Costs-in-2024
+- **Lazard Levelized Cost of Energy+ (June 2025)** — Lazard — https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf
+- **EIA AEO 2025 LCOE report** — U.S. EIA — https://www.eia.gov/outlooks/aeo/electricity_generation/pdf/AEO2025_LCOE_report.pdf
+- **Perpetual motion overview** — Wikipedia — https://en.wikipedia.org/wiki/Perpetual_motion

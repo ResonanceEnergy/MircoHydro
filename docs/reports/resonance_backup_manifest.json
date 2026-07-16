@@ -1,0 +1,770 @@
+{
+  "meta": {
+    "created": "2026-01-23T16:50:35Z",
+    "last_backup": "2026-01-23T16:52:12Z"
+  },
+  "RUN_BUILD_ALL.command": {
+    "size": 151,
+    "mtime_ns": 1769140775968095845
+  },
+  "RUN_BUILD_ALL_GUARDED.command": {
+    "size": 163,
+    "mtime_ns": 1769142626119067904
+  },
+  "RUN_INSTALL_WORKSPACE_GUARD.command": {
+    "size": 5408,
+    "mtime_ns": 1769142398434318947
+  },
+  "RUN_RENDER_GUARDED.command": {
+    "size": 177,
+    "mtime_ns": 1769142626122718596
+  },
+  "RUN_RESONANCE_SETUP.command": {
+    "size": 169,
+    "mtime_ns": 1769140775966103963
+  },
+  "01_Executive_Summary/EXEC_SUMMARY.md": {
+    "size": 2843,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/preflight_report.md": {
+    "size": 413,
+    "mtime_ns": 1769140852352379750
+  },
+  "artifacts/build_all_report.md": {
+    "size": 51,
+    "mtime_ns": 1769140864131270673
+  },
+  "artifacts/bootstrap_report.md": {
+    "size": 1353,
+    "mtime_ns": 1769140858859528863
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_210052.zip": {
+    "size": 106725,
+    "mtime_ns": 1769140864118154687
+  },
+  "artifacts/handbook_automation_report.md": {
+    "size": 59,
+    "mtime_ns": 1769140852279450930
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803.zip": {
+    "size": 32022,
+    "mtime_ns": 1769135898765384674
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_194438.zip": {
+    "size": 32022,
+    "mtime_ns": 1769136278324106454
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/README.md": {
+    "size": 378,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/01_Executive_Summary/EXEC_SUMMARY.md": {
+    "size": 2843,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/artifacts/handbook_automation_report.md": {
+    "size": 59,
+    "mtime_ns": 1769135850000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/12_Admin_Governance/BOARD_CHARTER.md": {
+    "size": 346,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/11_References/MASTER_REFERENCES.md": {
+    "size": 1619,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/05_RnD/04_Coherent_Geometry/SOURCES.md": {
+    "size": 1047,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/05_RnD/03_Advanced_Intake_Vortex/IAHR_VORTEX_INTAKES.md": {
+    "size": 593,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/02_Vision_Ethics_Founders/VISION_FOUNDATION.md": {
+    "size": 2787,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/scripts/render_handbooks.py": {
+    "size": 4634,
+    "mtime_ns": 1769130188000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/scripts/one_click_installer.py": {
+    "size": 824,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/scripts/zip_repo_safe.py": {
+    "size": 1576,
+    "mtime_ns": 1769130188000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/scripts/automate_handbooks.py": {
+    "size": 8537,
+    "mtime_ns": 1769130188000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/03_Market_Scenarios/Scenario3_Industrial_Outfall/SCENARIO.md": {
+    "size": 1189,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/03_Market_Scenarios/Scenario4_EcoResort_Campus/SCENARIO.md": {
+    "size": 1346,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/03_Market_Scenarios/Scenario1_Indigenous_Microgrid/SCENARIO.md": {
+    "size": 1723,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/03_Market_Scenarios/Scenario5_Resilience_Hub/SCENARIO.md": {
+    "size": 1105,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/03_Market_Scenarios/Scenario2_Irrigation_Canal/SCENARIO.md": {
+    "size": 1361,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/README.md": {
+    "size": 987,
+    "mtime_ns": 1769135850000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-06_Commissioning_FAT_SAT/handbook.md": {
+    "size": 1128,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-06_Commissioning_FAT_SAT/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-05_Controls_SCADA/handbook.md": {
+    "size": 1129,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-05_Controls_SCADA/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-04_Hydram_Tuning/handbook.md": {
+    "size": 1114,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-04_Hydram_Tuning/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-02_Intake_Debris/handbook.md": {
+    "size": 1133,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-02_Intake_Debris/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-01_Turbine_Selection/handbook.md": {
+    "size": 1124,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-01_Turbine_Selection/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-03_Penstock_Headloss/handbook.md": {
+    "size": 1129,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/HB-03_Penstock_Headloss/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/_shared/COVER_TEMPLATE.md": {
+    "size": 314,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/_shared/DEFAULT_CONTEXTS.md": {
+    "size": 532,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/_shared/handbook_style.json": {
+    "size": 382,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/_shared/CONTEXT_MATRIX.md": {
+    "size": 250,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/handbooks/_shared/DISCLAIMER.md": {
+    "size": 282,
+    "mtime_ns": 1769130282000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/06_Control_SCADA/BLACKSTART_CONCEPT.md": {
+    "size": 376,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/04_Electrical_Protection/PROTECTION_OVERVIEW.md": {
+    "size": 447,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/02_Hydram/HYDRAM_GUIDE.md": {
+    "size": 821,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/01_Hydraulics/HYDRAULICS_PRIMER.md": {
+    "size": 972,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/03_Turbine_Generator/CROSSFLOW_TURBINE.md": {
+    "size": 766,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/ResonanceEnergy_Enterprise_20260122_193803/04_Technology/05_Battery_PV_Wind/COST_BENCHMARKS.md": {
+    "size": 543,
+    "mtime_ns": 1769151752000000000
+  },
+  "artifacts/chat_context/CHAT_CONTEXT.md": {
+    "size": 37307,
+    "mtime_ns": 1769138970881542110
+  },
+  "branding/DECISIONS_AND_TODOS.md": {
+    "size": 29,
+    "mtime_ns": 1769140858858694674
+  },
+  "branding/taglines/TAGLINES_MASTER.md": {
+    "size": 18,
+    "mtime_ns": 1769140858858801213
+  },
+  "12_Admin_Governance/BOARD_CHARTER.md": {
+    "size": 346,
+    "mtime_ns": 1769151752000000000
+  },
+  "11_References/MASTER_REFERENCES.md": {
+    "size": 1619,
+    "mtime_ns": 1769151752000000000
+  },
+  "Tools Folder Kit/Backup_Resonance_REPACK.command": {
+    "size": 1799,
+    "mtime_ns": 1769185956201273833
+  },
+  "Tools Folder Kit/RESONANCE_PROJECT_ROOT.txt": {
+    "size": 277,
+    "mtime_ns": 1769186069972299098
+  },
+  "Tools Folder Kit/Backup_Resonance_DRYRUN.command": {
+    "size": 1801,
+    "mtime_ns": 1769185954965851744
+  },
+  "Tools Folder Kit/Backup_Resonance.command": {
+    "size": 1783,
+    "mtime_ns": 1769185951463462829
+  },
+  "Tools Folder Kit/Backup_Resonance_HASH.command": {
+    "size": 1795,
+    "mtime_ns": 1769185953417734844
+  },
+  "05_RnD/experiment_registry/EXP-000_TEMPLATE.md": {
+    "size": 22,
+    "mtime_ns": 1769140858859374742
+  },
+  "05_RnD/04_Coherent_Geometry/SOURCES.md": {
+    "size": 1047,
+    "mtime_ns": 1769151752000000000
+  },
+  "05_RnD/annex_winter_phase_coherence/DISCLAIMER.md": {
+    "size": 31,
+    "mtime_ns": 1769140858859257953
+  },
+  "05_RnD/03_Advanced_Intake_Vortex/IAHR_VORTEX_INTAKES.md": {
+    "size": 593,
+    "mtime_ns": 1769151752000000000
+  },
+  "99_Operations/Visionary_Intelligence/CHANGELOG.md": {
+    "size": 78,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/SCOPE.md": {
+    "size": 700,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/STATUS.md": {
+    "size": 1331,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/README.md": {
+    "size": 2728,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/00_Admin/Contribution_Guide.md": {
+    "size": 84,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/00_Admin/Conventions.md": {
+    "size": 75,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/00_Admin/Citation_Rules.md": {
+    "size": 241,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/00_Admin/License_Policy.md": {
+    "size": 160,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/00_Admin/Naming_Standards.md": {
+    "size": 64,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/02_Founder_Collections/Schauberger/Schauberger_Profile.md": {
+    "size": 58,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/02_Founder_Collections/Schauberger/Schauberger_Patent_Compendium.md": {
+    "size": 36,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/02_Founder_Collections/Schauberger/Schauberger_Works_Index.md": {
+    "size": 30,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/02_Founder_Collections/Tesla/Tesla_Profile.md": {
+    "size": 52,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/02_Founder_Collections/Tesla/Tesla_Patent_Compendium.md": {
+    "size": 72,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/02_Founder_Collections/Tesla/Tesla_Works_Index.md": {
+    "size": 24,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/02_Founder_Collections/Dan_Winter/Dan_Winter_Profile.md": {
+    "size": 57,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/02_Founder_Collections/Dan_Winter/Dan_Winter_Annex_NonMainstream_Disclaimer.md": {
+    "size": 110,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/02_Founder_Collections/Dan_Winter/Dan_Winter_Total_Work_Index.md": {
+    "size": 34,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/07_Scenario_Traceability/Traceability_Matrix.md": {
+    "size": 22,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/07_Scenario_Traceability/README.md": {
+    "size": 24,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/07_Scenario_Traceability/Scenario_Crosslinks/Scenario5.md": {
+    "size": 24,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/07_Scenario_Traceability/Scenario_Crosslinks/Scenario1.md": {
+    "size": 24,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/07_Scenario_Traceability/Scenario_Crosslinks/Scenario4.md": {
+    "size": 24,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/07_Scenario_Traceability/Scenario_Crosslinks/Scenario3.md": {
+    "size": 24,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/07_Scenario_Traceability/Scenario_Crosslinks/Scenario2.md": {
+    "size": 24,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/06_Tools/hydraulics/hydraulics_friction_calculator.py": {
+    "size": 35,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/06_Tools/hydraulics/README.md": {
+    "size": 19,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/06_Tools/hydraulics/sample_inputs/example_site_01.json": {
+    "size": 99,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/06_Tools/hydraulics/sample_inputs/example_site_02.json": {
+    "size": 97,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/06_Tools/crosslinking/README.md": {
+    "size": 15,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/06_Tools/crosslinking/scenario_linker_rules.md": {
+    "size": 24,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/08_Review_and_Promotion/Merge_Map_To_Company_Tree.md": {
+    "size": 12,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/08_Review_and_Promotion/Promotion_Checklist.md": {
+    "size": 22,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/08_Review_and_Promotion/QA_Checklist.md": {
+    "size": 15,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/08_Review_and_Promotion/Release_Notes_Template.md": {
+    "size": 25,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/README.md": {
+    "size": 67,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Schauberger/patents/README.md": {
+    "size": 26,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Schauberger/patents/INDEX.json": {
+    "size": 84,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Schauberger/images/README.md": {
+    "size": 25,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Schauberger/images/INDEX.json": {
+    "size": 82,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Schauberger/publications/README.md": {
+    "size": 31,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Schauberger/publications/INDEX.json": {
+    "size": 94,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Tesla/patents/README.md": {
+    "size": 20,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Tesla/patents/INDEX.json": {
+    "size": 78,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Tesla/images/README.md": {
+    "size": 19,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Tesla/images/INDEX.json": {
+    "size": 76,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Tesla/publications/README.md": {
+    "size": 25,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Tesla/publications/INDEX.json": {
+    "size": 88,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Shared/historical_images/README.md": {
+    "size": 31,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Shared/historical_images/INDEX.json": {
+    "size": 99,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Shared/diagrams/README.md": {
+    "size": 22,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Shared/diagrams/INDEX.json": {
+    "size": 81,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Shared/figures/README.md": {
+    "size": 21,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/Shared/figures/INDEX.json": {
+    "size": 79,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/schemas/INDEX.schema.json": {
+    "size": 325,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/04_Artifacts/schemas/LICENSE.schema.json": {
+    "size": 288,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/03_Visionary_Profiles/00_Profile_Template.md": {
+    "size": 271,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/05_Doctrine_Output/README.md": {
+    "size": 59,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/05_Doctrine_Output/markdown/Crossflow_Setup_Tuning.md": {
+    "size": 25,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/05_Doctrine_Output/markdown/Penstock_Headloss_Rules.md": {
+    "size": 26,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/05_Doctrine_Output/markdown/Turbine_Selection_Doctrine.md": {
+    "size": 29,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/05_Doctrine_Output/markdown/Intake_Vortex_Prevention.md": {
+    "size": 27,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/01_Master_Index/Visionary_Master_Index.md": {
+    "size": 54,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/01_Master_Index/Crosslink_Map.md": {
+    "size": 66,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/01_Master_Index/Visionary_Comparative_Matrix.md": {
+    "size": 77,
+    "mtime_ns": 1769172102000000000
+  },
+  "99_Operations/Visionary_Intelligence/01_Master_Index/Tag_Taxonomy.md": {
+    "size": 177,
+    "mtime_ns": 1769172102000000000
+  },
+  "02_Vision_Ethics_Founders/VISION_FOUNDATION.md": {
+    "size": 2787,
+    "mtime_ns": 1769151752000000000
+  },
+  "01_Company/FOUNDING_STATEMENT.md": {
+    "size": 21,
+    "mtime_ns": 1769140858858917044
+  },
+  "01_Company/VISION_MISSION_VALUES.md": {
+    "size": 26,
+    "mtime_ns": 1769140858859024000
+  },
+  "01_Company/NORTH_STAR_METRICS.md": {
+    "size": 21,
+    "mtime_ns": 1769140858859130955
+  },
+  "scripts/zip_repo_safe_guarded.py": {
+    "size": 485,
+    "mtime_ns": 1769142626106845586
+  },
+  "scripts/preflight_handbooks.py": {
+    "size": 4984,
+    "mtime_ns": 1769137457087102047
+  },
+  "scripts/render_handbooks.py": {
+    "size": 7097,
+    "mtime_ns": 1769137428820840809
+  },
+  "scripts/one_click_full_build.py": {
+    "size": 15835,
+    "mtime_ns": 1769170926000000000
+  },
+  "scripts/one_click_installer.py": {
+    "size": 824,
+    "mtime_ns": 1769151752000000000
+  },
+  "scripts/copy_context_to_clipboard.sh": {
+    "size": 213,
+    "mtime_ns": 1769138190776769867
+  },
+  "scripts/workspace_disk_guard.py": {
+    "size": 1405,
+    "mtime_ns": 1769142626098661999
+  },
+  "scripts/context_for_chat.py": {
+    "size": 4698,
+    "mtime_ns": 1769138892708055801
+  },
+  "scripts/build_all.py": {
+    "size": 1696,
+    "mtime_ns": 1769140775961849729
+  },
+  "scripts/render_handbooks_guarded.py": {
+    "size": 488,
+    "mtime_ns": 1769142626102570481
+  },
+  "scripts/zip_repo_safe.py": {
+    "size": 1576,
+    "mtime_ns": 1769130188714132308
+  },
+  "scripts/build_all_guarded.py": {
+    "size": 1545,
+    "mtime_ns": 1769142626110982483
+  },
+  "scripts/one_click_bootstrap.py": {
+    "size": 3202,
+    "mtime_ns": 1769140775957063305
+  },
+  "scripts/automate_handbooks.py": {
+    "size": 8537,
+    "mtime_ns": 1769130188707028150
+  },
+  "00_MASTER_PLAN/FILE_STRUCTURE_MAP.md": {
+    "size": 21,
+    "mtime_ns": 1769140858858320808
+  },
+  "00_MASTER_PLAN/MASTER_PLAN.md": {
+    "size": 37,
+    "mtime_ns": 1769140858858155561
+  },
+  "00_MASTER_PLAN/DECISION_LOG.md": {
+    "size": 35,
+    "mtime_ns": 1769140858858559344
+  },
+  "00_MASTER_PLAN/POPULATION_ROADMAP.md": {
+    "size": 21,
+    "mtime_ns": 1769140858858446638
+  },
+  "03_Market_Scenarios/Scenario3_Industrial_Outfall/SCENARIO.md": {
+    "size": 1189,
+    "mtime_ns": 1769151752000000000
+  },
+  "03_Market_Scenarios/Scenario4_EcoResort_Campus/SCENARIO.md": {
+    "size": 1346,
+    "mtime_ns": 1769151752000000000
+  },
+  "03_Market_Scenarios/Scenario1_Indigenous_Microgrid/SCENARIO.md": {
+    "size": 1723,
+    "mtime_ns": 1769151752000000000
+  },
+  "03_Market_Scenarios/Scenario5_Resilience_Hub/SCENARIO.md": {
+    "size": 1105,
+    "mtime_ns": 1769151752000000000
+  },
+  "03_Market_Scenarios/Scenario2_Irrigation_Canal/SCENARIO.md": {
+    "size": 1361,
+    "mtime_ns": 1769151752000000000
+  },
+  "04_Technology/handbooks/README.md": {
+    "size": 987,
+    "mtime_ns": 1769140850770193365
+  },
+  "04_Technology/handbooks/HB-06_Commissioning_FAT_SAT/handbook.md": {
+    "size": 1128,
+    "mtime_ns": 1769130283330356836
+  },
+  "04_Technology/handbooks/HB-06_Commissioning_FAT_SAT/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130283330080986
+  },
+  "04_Technology/handbooks/HB-06_Commissioning_FAT_SAT/exports/HB-06_Commissioning_&_Acceptance_Testing_(FAT_\u2192_SAT).pdf": {
+    "size": 4091,
+    "mtime_ns": 1769140852575114368
+  },
+  "04_Technology/handbooks/HB-05_Controls_SCADA/handbook.md": {
+    "size": 1129,
+    "mtime_ns": 1769130283329554796
+  },
+  "04_Technology/handbooks/HB-05_Controls_SCADA/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130283329282045
+  },
+  "04_Technology/handbooks/HB-05_Controls_SCADA/exports/HB-05_Controls,_Blackstart_&_SCADA_(Microgrid_Backbone).pdf": {
+    "size": 3964,
+    "mtime_ns": 1769140852567544084
+  },
+  "04_Technology/handbooks/HB-04_Hydram_Tuning/handbook.md": {
+    "size": 1114,
+    "mtime_ns": 1769130283328765630
+  },
+  "04_Technology/handbooks/HB-04_Hydram_Tuning/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130283328394889
+  },
+  "04_Technology/handbooks/HB-04_Hydram_Tuning/exports/HB-04_Hydraulic_Ram_Pump_Design_&_Tuning.pdf": {
+    "size": 3944,
+    "mtime_ns": 1769140852560526121
+  },
+  "04_Technology/handbooks/HB-02_Intake_Debris/handbook.md": {
+    "size": 1133,
+    "mtime_ns": 1769130283326729059
+  },
+  "04_Technology/handbooks/HB-02_Intake_Debris/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130283326111316
+  },
+  "04_Technology/handbooks/HB-02_Intake_Debris/exports/HB-02_Intake_&_Debris_Management_(Run-of-River,_Water-kind).pdf": {
+    "size": 3960,
+    "mtime_ns": 1769140852546058621
+  },
+  "04_Technology/handbooks/HB-01_Turbine_Selection/handbook.md": {
+    "size": 1124,
+    "mtime_ns": 1769130283325324296
+  },
+  "04_Technology/handbooks/HB-01_Turbine_Selection/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130283324727058
+  },
+  "04_Technology/handbooks/HB-01_Turbine_Selection/exports/HB-01_Turbine_Selection_Doctrine_(Crossflow-first).pdf": {
+    "size": 3939,
+    "mtime_ns": 1769140852538901161
+  },
+  "04_Technology/handbooks/HB-03_Penstock_Headloss/handbook.md": {
+    "size": 1129,
+    "mtime_ns": 1769130283327786207
+  },
+  "04_Technology/handbooks/HB-03_Penstock_Headloss/contexts/CONTEXT_OVERLAYS.md": {
+    "size": 253,
+    "mtime_ns": 1769130283327335357
+  },
+  "04_Technology/handbooks/HB-03_Penstock_Headloss/exports/HB-03_Penstock_&_Headloss_Design_(\u226410%_Loss_Standard).pdf": {
+    "size": 4096,
+    "mtime_ns": 1769140852553445367
+  },
+  "04_Technology/handbooks/_shared/COVER_TEMPLATE.md": {
+    "size": 314,
+    "mtime_ns": 1769130283323638439
+  },
+  "04_Technology/handbooks/_shared/DEFAULT_CONTEXTS.md": {
+    "size": 532,
+    "mtime_ns": 1769130283323125600
+  },
+  "04_Technology/handbooks/_shared/handbook_style.json": {
+    "size": 382,
+    "mtime_ns": 1769130283323919057
+  },
+  "04_Technology/handbooks/_shared/CONTEXT_MATRIX.md": {
+    "size": 250,
+    "mtime_ns": 1769130283323312520
+  },
+  "04_Technology/handbooks/_shared/DISCLAIMER.md": {
+    "size": 282,
+    "mtime_ns": 1769130283323483943
+  },
+  "04_Technology/06_Control_SCADA/BLACKSTART_CONCEPT.md": {
+    "size": 376,
+    "mtime_ns": 1769151752000000000
+  },
+  "04_Technology/04_Electrical_Protection/PROTECTION_OVERVIEW.md": {
+    "size": 447,
+    "mtime_ns": 1769151752000000000
+  },
+  "04_Technology/02_Hydram/HYDRAM_GUIDE.md": {
+    "size": 821,
+    "mtime_ns": 1769151752000000000
+  },
+  "04_Technology/01_Hydraulics/HYDRAULICS_PRIMER.md": {
+    "size": 972,
+    "mtime_ns": 1769151752000000000
+  },
+  "04_Technology/03_Turbine_Generator/CROSSFLOW_TURBINE.md": {
+    "size": 766,
+    "mtime_ns": 1769151752000000000
+  },
+  "04_Technology/05_Battery_PV_Wind/COST_BENCHMARKS.md": {
+    "size": 543,
+    "mtime_ns": 1769151752000000000
+  }
+}

@@ -1,0 +1,1 @@
+# Schauberger — Patent Compendium

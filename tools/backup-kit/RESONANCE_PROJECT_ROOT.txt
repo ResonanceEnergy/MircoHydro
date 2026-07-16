@@ -1,0 +1,4 @@
+# Paste the FULL path to your project root folder on the next line.
+# Example: /Users/yourname/Projects/ResonanceEnergy
+# (The project root is the folder that contains 01_Master_Index, 05_Doctrine_Output, etc.)
+/Users/gripandripphdd/Desktop/ResonanceEnergy_Enterprise_POPULATED
