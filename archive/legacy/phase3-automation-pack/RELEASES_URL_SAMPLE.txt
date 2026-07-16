@@ -1,0 +1,7 @@
+Paste your SharePoint Releases library URL here for convenience.
+
+Example:
+https://<tenant>.sharepoint.com/sites/<site>/MicroHydroV1%20%E2%80%94%20Releases
+
+Then in Terminal:
+export MICROHYDRO_RELEASES_URL='...'

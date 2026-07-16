@@ -1,0 +1,3 @@
+Timestamp,Test_ID,Sensor,Value,Unit,Baseline_Value,Conditions,Notes
+2026-01-22T09:10,T-002,ripple,7.1,mm,12.4,FR1,
+2026-01-22T09:12,T-002,ripple,6.8,mm,12.5,FR2,

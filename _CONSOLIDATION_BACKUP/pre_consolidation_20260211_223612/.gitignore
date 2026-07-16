@@ -1,5 +1,0 @@
-# Archive files - too large for GitHub
-Archive/Old_Releases/*.zip
-
-# Git LFS tracking
-.gitattributes
