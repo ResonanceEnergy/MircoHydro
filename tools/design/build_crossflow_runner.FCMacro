@@ -1,0 +1,112 @@
+# -*- coding: utf-8 -*-
+"""
+build_crossflow_runner.FCMacro — parametric Banki-Michell crossflow runner
+FreeCAD >= 0.20. Set PARAMS, run macro, then File > Export selected solid as STL.
+
+Geometry per classical construction:
+  - blade = circular arc, radius rb = 0.163*D1
+  - outer tip on D1 at blade angle beta1 = 30 deg to the local tangent
+  - inner tip reaches D2 = 0.66*D1 (beta2 ~ 90 deg, radial)
+  - Nb blades between two end disks; center hub with shaft bore
+Replaces the legacy flat-vane 'build_vanepacks' geometry (not a crossflow runner).
+"""
+import math
+import FreeCAD as App
+import Part
+
+PARAMS = {
+    "D1_mm": 100.0,      # outer diameter
+    "Nb": 26,            # blade count -> print 21 / 26 / 30 for the A/B test
+    "width_mm": 42.0,    # blade span between disks
+    "blade_t_mm": 2.0,   # blade thickness
+    "disk_t_mm": 4.0,    # end disk thickness
+    "hub_od_mm": 22.0,   # hub outer diameter (both disks)
+    "bore_mm": 8.0,      # shaft bore
+    "doc_name": "CrossflowRunner",
+}
+
+def blade_profile_2d(R1, R2, rb, t, beta1_deg=30.0):
+    """Return a Part.Face of one blade cross-section in the XY plane.
+    Outer tip at point A=(R1,0); arc curls inward to radius R2."""
+    beta1 = math.radians(beta1_deg)
+    A = App.Vector(R1, 0, 0)
+    # tangent to runner circle at A is +Y; blade chord leans beta1 from tangent, inward
+    chord_dir = App.Vector(-math.sin(beta1), math.cos(beta1), 0)
+    # arc center: perpendicular to blade direction at A, at distance rb (choose inward side)
+    n = App.Vector(-chord_dir.y, chord_dir.x, 0)   # 90 deg CCW from chord_dir
+    C = A + n * rb
+    if C.Length > R1:                              # wrong side -> flip
+        n = n * -1.0
+        C = A + n * rb
+    # sweep from A around C until radius from origin reaches R2
+    v0 = A - C
+    a0 = math.atan2(v0.y, v0.x)
+    hit = None
+    for sgn in (+1.0, -1.0):
+        for i in range(1, 721):
+            ang = a0 + sgn * math.radians(i * 0.25)
+            P = C + App.Vector(rb * math.cos(ang), rb * math.sin(ang), 0)
+            if P.Length <= R2:
+                hit = (sgn, ang)
+                break
+        if hit:
+            break
+    if not hit:
+        raise RuntimeError("Blade arc never reaches inner diameter; check rb/D2.")
+    sgn, a1 = hit
+    # inner and outer arc edges (offset by thickness toward arc center)
+    def arc_pts(radius):
+        pts = []
+        steps = 24
+        for k in range(steps + 1):
+            ang = a0 + (a1 - a0) * k / steps
+            pts.append(C + App.Vector(radius * math.cos(ang), radius * math.sin(ang), 0))
+        return pts
+    outer = arc_pts(rb)
+    inner = arc_pts(rb - t)
+    poly = outer + list(reversed(inner)) + [outer[0]]
+    wire = Part.makePolygon(poly)
+    return Part.Face(wire)
+
+def build():
+    p = PARAMS
+    R1 = p["D1_mm"] / 2.0
+    R2 = 0.66 * p["D1_mm"] / 2.0
+    rb = 0.163 * p["D1_mm"]
+    doc = App.newDocument(p["doc_name"])
+
+    # blades
+    face = blade_profile_2d(R1, R2, rb, p["blade_t_mm"])
+    blade = face.extrude(App.Vector(0, 0, p["width_mm"]))
+    blades = []
+    for i in range(p["Nb"]):
+        b = blade.copy()
+        b.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 360.0 * i / p["Nb"])
+        blades.append(b)
+
+    # end disks (full disk with bore; blades land on the disk faces)
+    def disk(z0):
+        d = Part.makeCylinder(R1, p["disk_t_mm"], App.Vector(0, 0, z0))
+        bore = Part.makeCylinder(p["bore_mm"] / 2.0, p["disk_t_mm"] + 2, App.Vector(0, 0, z0 - 1))
+        return d.cut(bore)
+
+    bottom = disk(-p["disk_t_mm"])
+    top = disk(p["width_mm"])
+    hub_len = p["width_mm"] + 2 * p["disk_t_mm"]
+    hub = Part.makeCylinder(p["hub_od_mm"] / 2.0, hub_len, App.Vector(0, 0, -p["disk_t_mm"]))
+    hub = hub.cut(Part.makeCylinder(p["bore_mm"] / 2.0, hub_len + 2, App.Vector(0, 0, -p["disk_t_mm"] - 1)))
+
+    solid = bottom.fuse(top).fuse(hub)
+    for b in blades:
+        solid = solid.fuse(b)
+    solid = solid.removeSplitter()
+
+    obj = doc.addObject("Part::Feature", "Runner_Nb%d" % p["Nb"])
+    obj.Shape = solid
+    doc.recompute()
+    App.Console.PrintMessage(
+        "Runner built: D1=%.0f D2=%.0f rb=%.1f Nb=%d width=%.0f (mm)\n"
+        % (p["D1_mm"], 2 * R2, rb, p["Nb"], p["width_mm"]))
+    return obj
+
+build()
