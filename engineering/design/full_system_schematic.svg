@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 720" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 z" fill="#2b6cb0"/>
+    </marker>
+    <marker id="dim" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M1,1 L9,9 M1,9 L9,1" stroke="#c05621" stroke-width="1.2" fill="none"/>
+    </marker>
+  </defs>
+
+  <rect width="1250" height="720" fill="#fbfaf7"/>
+
+  <!-- title block -->
+  <text x="40" y="42" font-size="22" font-weight="bold" fill="#1a202c">MACHINE B — FULL SYSTEM DESIGN</text>
+  <text x="40" y="64" font-size="13" fill="#4a5568">river → intake → drive pipe → hydram → rise pipe → HEADSTOCK → FLUTED PENSTOCK → twin nozzles → turbine → tailrace → river</text>
+  <text x="40" y="82" font-size="12" fill="#718096">Reference site B-Standard: 1.5 m natural fall · 100 L/s drive flow · solver: tools/design/ram_pelton_design.py</text>
+
+  <!-- performance box -->
+  <rect x="880" y="28" width="330" height="86" rx="6" fill="#fff" stroke="#cbd5e0"/>
+  <text x="896" y="50" font-size="13" font-weight="bold" fill="#1a202c">OPERATING MODES</text>
+  <text x="896" y="70" font-size="12.5" fill="#2d3748">Continuous (N1): <tspan font-weight="bold" fill="#c05621">556 W</tspan> — 13.3 kWh/day, 24/7</text>
+  <text x="896" y="88" font-size="12.5" fill="#2d3748">Boost (N1+N2): <tspan font-weight="bold" fill="#c05621">~996 W</tspan> for 6 min, 50% duty</text>
+  <text x="896" y="106" font-size="12.5" fill="#2d3748">Water-to-wire: <tspan font-weight="bold">38%</tspan> · ram η 0.67 @ lift ratio 6</text>
+
+  <!-- terrain -->
+  <path d="M0,600 L430,600 Q560,590 700,520 Q850,440 940,330 L1080,300 L1250,295 L1250,720 L0,720 Z" fill="#e8e2d4" stroke="#c9c0ab" stroke-width="1.5"/>
+
+  <!-- river upstream -->
+  <path d="M30,530 L300,552 L300,600 L30,600 Z" fill="#bcd8f0" stroke="#5b9bd5"/>
+  <path d="M30,530 L300,552" stroke="#2b6cb0" stroke-width="2.5" fill="none"/>
+  <text x="60" y="522" font-size="13" font-weight="bold" fill="#2b6cb0">RIVER (upstream)</text>
+  <line x1="80" y1="545" x2="130" y2="549" stroke="#2b6cb0" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="150" y1="558" x2="200" y2="562" stroke="#2b6cb0" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- intake -->
+  <rect x="255" y="540" width="34" height="26" fill="#a0aec0" stroke="#4a5568"/>
+  <line x1="258" y1="542" x2="286" y2="564" stroke="#4a5568" stroke-width="1"/>
+  <line x1="258" y1="550" x2="286" y2="558" stroke="#4a5568" stroke-width="1"/>
+  <text x="212" y="512" font-size="12.5" font-weight="bold" fill="#2d3748">SCREENED INTAKE</text>
+  <text x="212" y="527" font-size="11.5" fill="#4a5568">0.35 m² @ ≤0.3 m/s, fish-safe</text>
+  <line x1="268" y1="530" x2="272" y2="540" stroke="#718096" stroke-width="1"/>
+
+  <!-- drive pipe: intake to ram, descending the 1.5 m fall -->
+  <line x1="289" y1="556" x2="470" y2="612" stroke="#4a5568" stroke-width="9"/>
+  <line x1="289" y1="556" x2="470" y2="612" stroke="#e2e8f0" stroke-width="3.5"/>
+  <text x="300" y="640" font-size="12.5" font-weight="bold" fill="#2d3748">DRIVE PIPE</text>
+  <text x="300" y="655" font-size="11.5" fill="#4a5568">rigid steel · 300 mm × 45 m · v≈1.5 m/s</text>
+  <text x="300" y="669" font-size="11.5" fill="#4a5568">the water-hammer power stroke lives here</text>
+
+  <!-- hydram -->
+  <rect x="470" y="596" width="44" height="34" rx="4" fill="#718096" stroke="#2d3748" stroke-width="1.5"/>
+  <circle cx="481" cy="592" r="9" fill="#a0aec0" stroke="#2d3748"/>
+  <!-- waste valve splash -->
+  <path d="M522,626 q6,-10 3,-18 M530,626 q8,-8 6,-16 M537,626 q5,-12 1,-17" stroke="#5b9bd5" stroke-width="1.5" fill="none"/>
+  <text x="446" y="662" font-size="12.5" font-weight="bold" fill="#2d3748">HYDRAM</text>
+  <text x="446" y="677" font-size="11.5" fill="#4a5568">tunable waste valve · air chamber</text>
+  <text x="446" y="691" font-size="11.5" fill="#4a5568">η = 0.67 · waste water returns to river</text>
+
+  <!-- rise pipe ram -> tank -->
+  <path d="M492,596 C560,470 700,330 866,306" stroke="#4a5568" stroke-width="4.5" fill="none"/>
+  <path d="M492,596 C560,470 700,330 866,306" stroke="#e2e8f0" stroke-width="1.6" fill="none"/>
+  <line x1="640" y1="420" x2="660" y2="402" stroke="#2b6cb0" stroke-width="1.4" marker-end="url(#arr)"/>
+  <text x="560" y="392" font-size="12.5" font-weight="bold" fill="#2d3748">RISE PIPE</text>
+  <text x="560" y="407" font-size="11.5" fill="#4a5568">DN80 poly · 11.2 L/s up to headstock</text>
+
+  <!-- headstock tank on hillside -->
+  <rect x="856" y="258" width="120" height="52" rx="4" fill="#dbe9f6" stroke="#2b6cb0" stroke-width="2"/>
+  <line x1="856" y1="272" x2="976" y2="272" stroke="#5b9bd5" stroke-width="2"/>
+  <rect x="868" y="310" width="8" height="20" fill="#718096"/>
+  <rect x="956" y="310" width="8" height="20" fill="#718096"/>
+  <text x="842" y="236" font-size="13" font-weight="bold" fill="#1a4e8a">HEADSTOCK TANK</text>
+  <text x="842" y="251" font-size="11.5" fill="#4a5568">4 m³ · EL +9.0 m · buffer + boost storage + air separation</text>
+
+  <!-- fluted penstock tank -> turbine, with helical rifling ticks -->
+  <line x1="872" y1="310" x2="700" y2="560" stroke="#4a5568" stroke-width="8"/>
+  <line x1="872" y1="310" x2="700" y2="560" stroke="#e2e8f0" stroke-width="3"/>
+  <g stroke="#4a5568" stroke-width="1.3">
+    <line x1="856" y1="336" x2="868" y2="344"/>
+    <line x1="840" y1="360" x2="852" y2="368"/>
+    <line x1="824" y1="384" x2="836" y2="392"/>
+    <line x1="808" y1="408" x2="820" y2="416"/>
+    <line x1="792" y1="432" x2="804" y2="440"/>
+    <line x1="776" y1="456" x2="788" y2="464"/>
+    <line x1="760" y1="480" x2="772" y2="488"/>
+    <line x1="744" y1="504" x2="756" y2="512"/>
+    <line x1="728" y1="528" x2="740" y2="536"/>
+  </g>
+  <text x="898" y="382" font-size="13" font-weight="bold" fill="#2d3748">FLUTED PENSTOCK</text>
+  <text x="898" y="397" font-size="11.5" fill="#4a5568">DN100 × 15 m · helical rifling</text>
+  <text x="898" y="411" font-size="11.5" fill="#4a5568">v = 1.4 m/s · loss 0.35 m → 8.65 m at nozzle</text>
+
+  <!-- turbine house -->
+  <rect x="640" y="548" width="130" height="82" rx="4" fill="#fff" stroke="#2d3748" stroke-width="1.8"/>
+  <!-- wheel -->
+  <circle cx="722" cy="590" r="26" fill="none" stroke="#c05621" stroke-width="3"/>
+  <circle cx="722" cy="590" r="5" fill="#c05621"/>
+  <g stroke="#c05621" stroke-width="1.6">
+    <line x1="722" y1="564" x2="722" y2="572"/><line x1="722" y1="608" x2="722" y2="616"/>
+    <line x1="696" y1="590" x2="704" y2="590"/><line x1="740" y1="590" x2="748" y2="590"/>
+    <line x1="703" y1="571" x2="709" y2="577"/><line x1="735" y1="603" x2="741" y2="609"/>
+    <line x1="741" y1="571" x2="735" y2="577"/><line x1="709" y1="603" x2="703" y2="609"/>
+  </g>
+  <!-- twin nozzles -->
+  <path d="M676,562 L696,576 L690,584 L672,572 Z" fill="#4a5568"/>
+  <path d="M660,596 L692,596 L692,604 L660,604 Z" fill="#4a5568"/>
+  <text x="648" y="543" font-size="12.5" font-weight="bold" fill="#2d3748">TURBINE HOUSE</text>
+
+  <!-- turbine callouts -->
+  <rect x="415" y="428" width="212" height="96" rx="6" fill="#fff" stroke="#cbd5e0"/>
+  <text x="428" y="448" font-size="12.5" font-weight="bold" fill="#c05621">TWIN NOZZLES / JETS</text>
+  <text x="428" y="464" font-size="11.5" fill="#2d3748">N1: 33.5 mm fixed — continuous</text>
+  <text x="428" y="478" font-size="11.5" fill="#2d3748">N2: 33.5 mm valved — boost mode</text>
+  <text x="428" y="496" font-size="12.5" font-weight="bold" fill="#c05621">PELTON WHEEL</text>
+  <text x="428" y="512" font-size="11.5" fill="#2d3748">300 mm PCD · 368 rpm · jet 12.6 m/s</text>
+  <line x1="627" y1="490" x2="676" y2="566" stroke="#a0aec0" stroke-width="1.2"/>
+
+  <!-- PMA + electronics -->
+  <rect x="800" y="560" width="150" height="66" rx="6" fill="#fff" stroke="#cbd5e0"/>
+  <text x="812" y="580" font-size="12" font-weight="bold" fill="#2d3748">PMA (direct drive)</text>
+  <text x="812" y="596" font-size="11.5" fill="#4a5568">→ rectifier → solar MPPT</text>
+  <text x="812" y="611" font-size="11.5" fill="#4a5568">→ 48 V battery → inverter</text>
+  <line x1="770" y1="590" x2="800" y2="590" stroke="#2d3748" stroke-width="2.4"/>
+
+  <!-- tailrace -->
+  <path d="M640,616 L520,648 L340,660" stroke="#5b9bd5" stroke-width="7" fill="none"/>
+  <line x1="560" y1="640" x2="500" y2="652" stroke="#2b6cb0" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="440" y="700" font-size="12.5" font-weight="bold" fill="#2b6cb0">TAILRACE — 100% of water returns to river</text>
+
+  <!-- dimension: natural fall -->
+  <line x1="316" y1="556" x2="316" y2="612" stroke="#c05621" stroke-width="1.4" marker-start="url(#dim)" marker-end="url(#dim)"/>
+  <text x="230" y="590" font-size="12.5" font-weight="bold" fill="#c05621">F = 1.5 m</text>
+  <text x="230" y="604" font-size="11" fill="#c05621">natural fall</text>
+
+  <!-- dimension: headstock elevation -->
+  <line x1="1010" y1="310" x2="1010" y2="590" stroke="#c05621" stroke-width="1.4" marker-start="url(#dim)" marker-end="url(#dim)"/>
+  <text x="1022" y="440" font-size="12.5" font-weight="bold" fill="#c05621">9.0 m</text>
+  <text x="1022" y="455" font-size="11" fill="#c05621">headstock above</text>
+  <text x="1022" y="469" font-size="11" fill="#c05621">nozzle centerline</text>
+  <line x1="976" y1="310" x2="1010" y2="310" stroke="#c05621" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="770" y1="590" x2="1010" y2="590" stroke="#c05621" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- energy ledger strip -->
+  <rect x="40" y="96" width="700" height="30" rx="4" fill="#f0ece2" stroke="#cbd5e0"/>
+  <text x="52" y="116" font-size="12" fill="#2d3748">Energy ledger: 100 L/s × 1.5 m = <tspan font-weight="bold">1,472 W</tspan> in stream → ram 0.67 → jet <tspan font-weight="bold">948 W</tspan> → wheel 0.75 → PMA 0.85 → MPPT 0.92 → <tspan font-weight="bold" fill="#c05621">556 W out</tspan></text>
+</svg>
