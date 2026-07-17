@@ -4,7 +4,7 @@
 
 **Verdicts:** ✅ ALIGNED · 🟡 PARTIAL (direction right, work open) · ⚠️ TENSION (design and principle pull against each other) · ❌ VIOLATED (a founding doc's claim or the design breaks the principle today) · ⏸ PREMATURE (business-stage commitment; nothing to audit yet) · 🔒 GATED (speculative claim correctly held behind its own validation gate)
 
-**Bottom line: 41 aligned · 19 partial · 4 tension · 7 violated · 21 premature · 12 gated.** The violations are all in *documents*, not in the machines — the current design is the most founder-aligned artifact in the repo, and several founding docs now violate their own non-negotiables.
+**Bottom line: 42 aligned (1 by founder decision 2026-07-16) · 19 partial · 3 tension · 7 violated · 21 premature · 12 gated.** The violations are all in *documents*, not in the machines — the current design is the most founder-aligned artifact in the repo, and several founding docs now violate their own non-negotiables.
 
 ---
 
@@ -64,7 +64,7 @@
 
 | Principle | Audit | Verdict |
 |---|---|---|
-| **Avoid rare-earth elements** (EVB) | **Both machines spec neodymium PM machines.** Options: ferrite-magnet PMA (−3–5 pts efficiency, bigger), induction + capacitor excitation. Genuine unresolved trade — needs an explicit founder decision | ⚠️ |
+| ~~Avoid rare-earth elements~~ (EVB, as originally written) | **RESOLVED 2026-07-16 by founder decision:** ban rescinded; NdFeB permitted with responsible sourcing + magnet recovery at end-of-life (see `docs/business/decisions/DECISION_2026-07-16_rare_earth_materials.md`). Conflict-materials avoidance unchanged | ✅ decided |
 | Durable/recyclable/responsibly sourced (EVB, GIGA) | Steel, HDPE, aluminum, LiFePO₄ (cobalt-free — good); no material passport yet | 🟡 |
 | Design for disassembly, take-back (EVB, GIGA) | Bolted assemblies, no potting specified — compatible; not yet documented | 🟡 |
 | Natural materials for "energetic properties" (Schauberger avatar) | Not adopted; wood/stone/copper on structural merit only | 🔒 |
@@ -133,7 +133,7 @@
 
 1. **Ratify the canon table (X1–X9)** — one founder decision session; everything downstream quotes it.
 2. **Fix the three violating documents:** rewrite `physics_for_kids.md` honestly, strip "proven 55%" from FlowCube marketing, revise BRAND_IDENTITY to three-inspirations + gated tracks.
-3. **Decide the rare-earth question** (Theme E): neodymium PMA vs ferrite/induction — a real engineering trade with a values dimension; deserves a one-page trade study.
+3. ~~Decide the rare-earth question~~ — **DONE 2026-07-16:** ban rescinded by founder decision; see decision log.
 4. **Add a LICENSE** to make the open-source alignment deliberate rather than accidental.
 5. **Write the four capstone stubs** from the ratified canon.
 6. **Small design touches from the values:** visible-mechanism window on the turbine house; bypass-flow % and community/consent columns in the site survey; material passport section in the BOM template.

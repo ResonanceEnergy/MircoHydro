@@ -197,7 +197,7 @@ Five essential words that capture MicroHydro's essence:
 ## Sustainability & Social Responsibility
 
 ### Environmental Commitments
-- **Material sourcing principles:** Prioritize durable, recyclable, and responsibly sourced materials. Avoid rare earth elements and conflict materials. Prefer locally-available components that reduce supply-chain footprint.
+- **Material sourcing principles:** Prioritize durable, recyclable, and responsibly sourced materials. Avoid conflict materials. Rare-earth elements (e.g., NdFeB magnets in permanent-magnet generators) are permitted where they deliver clear efficiency, size, or reliability benefits — sourced through traceable, responsible supply chains, with magnet recovery included in the end-of-life/take-back program. Prefer locally-available components that reduce supply-chain footprint. *(Amended 2026-07-16 by founder decision — see docs/business/decisions/DECISION_2026-07-16_rare_earth_materials.md; original text banned all rare-earth elements.)*
 - **Manufacturing footprint targets:** Reduce manufacturing carbon footprint 10% annually; aim for carbon-neutral manufacturing by Year 5. Minimize water use in production. Manage waste streams to zero-landfill where feasible.
 - **End-of-life / recyclability strategy:** Design all components for disassembly and reuse or recycling. Maintain material passport for each product (BOM with material identities and recyclability info). Partner with responsible recycling programs.
 - **Carbon neutral or offset goals:** All products shipped will be carbon-offset within 12 months. Aim for product carbon neutrality by Year 3 (considering manufacturing, shipping, and installation).
