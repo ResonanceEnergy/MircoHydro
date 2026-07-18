@@ -44,6 +44,17 @@ class RamSim:
                  stroke=0.015, wv_dia_ratio=1.0, wv_weight=None,
                  Hd_target=9.0, V_air0=0.060, n_nodes=24,
                  K_entrance=0.5, K_junction=None):
+        # input validation (P0-1: solvers guard the company's claims and had
+        # no guardrails themselves — a crash bug slipped through once already)
+        if F <= 0: raise ValueError(f"fall F must be > 0 m (got {F})")
+        if D <= 0 or D > 1.0: raise ValueError(f"drive-pipe D must be in (0, 1] m (got {D})")
+        if L is not None and L <= 0: raise ValueError(f"drive-pipe L must be > 0 m (got {L})")
+        if wall <= 0: raise ValueError(f"wall thickness must be > 0 m (got {wall})")
+        if stroke <= 0 or stroke > 0.2: raise ValueError(f"stroke must be in (0, 0.2] m (got {stroke})")
+        if Hd_target <= F: raise ValueError(f"headstock Hd ({Hd_target}) must exceed fall F ({F}) — otherwise no ram is needed")
+        if V_air0 <= 0: raise ValueError(f"air volume must be > 0 m^3 (got {V_air0})")
+        if n_nodes < 8: raise ValueError(f"n_nodes must be >= 8 (got {n_nodes})")
+        if wv_weight is not None and wv_weight <= 0: raise ValueError(f"valve weight must be > 0 N (got {wv_weight})")
         self.F = F
         self.L = L if L else max(6*F, 150*D)
         self.D = D

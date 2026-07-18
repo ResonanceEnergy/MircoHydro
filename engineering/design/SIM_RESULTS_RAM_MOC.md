@@ -97,6 +97,15 @@ Digital prototype of the self-tuning ram (`tools/design/servo_min_recoil.py`), d
 
 The sweep found Wf* = 0.70 on its own — the static grid's knee (0.65–0.70) rediscovered by the controller with no map given. Stated fairly: the servo holds the *water-efficiency knee*, so it delivers slightly less water than a heavy fixed valve on a water-rich site (1.28 vs 1.42 L/s post-drift) while consuming 36% less drive water — on the water-limited sites where rams matter most, the servo's operating point is the one that survives. **Hardware implied: one pressure sensor, one preload actuator, firmware a $3 MCU runs. This is IP Disclosure 2's reduction-to-practice narrative, now with its failure modes documented — which is what makes it credible.**
 
+## Finding 9 — chamber sizing (sim queue #3): the architecture makes the small, legal chamber sufficient
+
+Grid: gas volume 15–120 L × rise-pipe conductance, tuned B300 knee point (data: `engineering/data/sweep_chamber_sizing.csv`).
+
+- **η is insensitive to chamber size** (0.67–0.76 across an 8× volume range) — the literature's "insensitive above a minimum" (Asvapoositkul) reproduced by our transient physics.
+- **Smoothing scales with volume as expected**: rise-pipe delivery CoV 1.34 (15 L) → 0.82 (30 L) → 0.45 (60 L) → 0.23 (120 L) at the gentlest rise-pipe setting; a more restrictive rise pipe also filters, at ~no η cost.
+- **The architectural point that decides REQ-S1: in the ratified design the JET is fed from the HEADSTOCK, not the chamber.** The open headstock (minutes of residence time) smooths delivery essentially completely before the penstock — so chamber size affects rise-pipe pulsation only, not jet quality. T-001 at the nozzle is governed by penstock/manifold/nozzle design (D-6 study), not by chamber volume. A direct-coupled machine (no headstock) would need the big chamber; ours does not — **another engineering payoff of the founder's headstock, on the record.**
+- **REQ-S1 consequence:** a chamber in the ~40 L class (CSA B51 small-vessel exemption territory — **threshold to be verified against current B51/ABSA Pressure Equipment Safety Regulation before reliance**) costs ~2% relative η vs 120 L and nothing at the jet. Design direction: (a) primary — exemption-class chamber, exit vessel scope entirely; (b) alternate — commodity **CRN-registered pre-charged bladder vessel** (COMPONENT_TECH_SCAN §3), compliance bought off the shelf. The legacy 150 L PN10 spec is superseded pending the verification memo.
+
 ## Status of the retired fit
 
 η(r) = 0.85 − 0.03r is retired per D-5. At the operating point it happens to agree with the sim (0.67 vs 0.667) — the fit was right where it mattered and wrong in shape elsewhere, which is exactly why it needed replacing.
@@ -107,6 +116,8 @@ The sweep found Wf* = 0.70 on its own — the static grid's knee (0.65–0.70) r
 2. ~~Valve tuning map~~ **DONE 2026-07-18 → Finding 6** (site-water-budget card data banked; WPT pressure-matrix short-site variant still pending).
 2b. ~~T-002 metric rework~~ **DONE 2026-07-18 → Finding 7** (coherence = health signal; P2 answered in-model).
 2c. ~~Min-recoil servo simulation~~ **DONE 2026-07-18 → Finding 8** (sweep-then-track v3; v1/v2 failures on the record).
-3. Chamber + rise-pipe sizing for T-001 jet quality (Gen 0 metric as design requirement).
-4. Model v2: reopen-leakage; re-anchor; then solver ingestion and full SKU re-statement.
+3. ~~Chamber + rise-pipe sizing~~ **DONE 2026-07-18 → Finding 9** (small legal chamber sufficient; headstock does the jet smoothing; REQ-S1 exemption memo queued).
+4. Model v2: reopen-leakage; re-anchor; then solver ingestion and full SKU re-statement (incl. WPT pressure-matrix short-site variant).
 5. Physical bench correlation when hardware exists (±10% model-vs-prototype gate, VALIDATION req 8).
+
+**Toolchain status (P0-1 DONE 2026-07-18):** 25 unit tests now guard the solvers (`tools/tests/test_solvers.py` — physics invariants, input validation, calibration-anchor regression envelope, energy-conservation bound, Welch-metric sanity, solver smoke tests) and run in GitHub Actions CI on every push (`.github/workflows/ci.yml`). Input validation added to `RamSim.__init__`. The ram_pelton solver's doc drift (headstock-less architecture text) corrected + D-5 supersession note added inline.

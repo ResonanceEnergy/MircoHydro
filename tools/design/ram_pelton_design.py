@@ -2,10 +2,19 @@
 """
 Machine B — coupled ram-pump -> impulse-turbine design solver.
 
-Architecture (per project design): stream -> drive pipe -> hydram -> air chamber
--> pressure line -> fixed nozzle (jet) -> Pelton/Turgo wheel -> PMA -> MPPT -> battery/loads.
-No elevated headstock required: the air chamber smooths delivery so the nozzle's
-back-pressure IS the delivery head. (Optional tank where terrain provides one.)
+RATIFIED architecture (canon; no-silent-substitution rule): stream -> drive pipe
+-> hydram -> air chamber -> rise pipe -> ELEVATED HEADSTOCK -> penstock -> twin
+nozzles -> Pelton/Turgo wheel -> PMA -> MPPT -> battery/loads. The headstock is
+a founder design element and doubles as the open surge tank (COMPONENT_TECH_SCAN
+section 3). An earlier draft of this docstring described a headstock-less
+direct-coupled variant; that text was doc drift, corrected 2026-07-18. The
+operating-point math (nozzle back-pressure = delivery head) applies unchanged
+with the headstock providing that head.
+
+SUPERSESSION NOTE (D-5): the eta_ram(r) fit below is retired as a source of
+truth — the MOC transient simulator (ram_moc_sim.py) supersedes it, including
+the per-ram appetite cap (SIM_RESULTS Findings 1, 4-6). The fit remains only
+until queue #4 (solver ingestion of sim-derived curves) lands.
 
 Grounding in repo docs:
   - engineering/specs/technology/02_Hydram/HYDRAM_GUIDE.md — USAID relation:
