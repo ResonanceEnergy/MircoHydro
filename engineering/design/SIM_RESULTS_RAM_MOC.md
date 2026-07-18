@@ -60,6 +60,21 @@ Delivered water stays in a narrow band (~1.4–2.0 L/s) while drive-water consum
 - Site logic: water-limited sites tune light (η 0.75+); water-rich sites gain nothing per-ram by tuning heavy — they just waste less-scarce water. The commissioning card (queue #2) becomes a *site-water-budget* card.
 - The untuned flat-η ≈ 0.667 envelope of Finding 2 was a mid-window artifact; the tuned machine reaches the high end of the measured lab band (0.70-class) in-model. Public numbers remain frozen until model v2 + bench correlation per canon.
 
+## Finding 6 — zero-recoil hunt (sim queue #3, run 2026-07-18): both predictions failed as stated, and what survived is more useful
+
+New instrument: `recoil_mismatch` = |water-column flow at valve-reopen| / mean drive flow (0 = Young's zero-recoil condition, measured mid-pipe). Grid: 7 weights × 3 strokes at B300, L/D 100 (data: `engineering/data/tuning_map_zero_recoil.csv`; 17/21 points sustain cycling).
+
+**P1 (Young: η peak coincides with zero recoil) — REFUTED as a global correlation** (Spearman +0.19, predicted strongly negative). The η peak (0.797 at the lightest working valve) carries recoil 0.249; the min-recoil point (0.034) sits at η = 0.747. Mechanism visible in the data: an ever-lighter valve keeps raising η by wasting less water per cycle — but it *starves* the machine (Q 8.2 L/s, delivery collapses to 1.09 L/s). Efficiency alone rewards starvation; Young's condition doesn't chase it.
+
+**What survived is better than the prediction:**
+1. **The min-recoil point lands at the knee of the trade-off** — η = 0.747 (94% of peak) at essentially full delivery (1.83 vs max 2.04 L/s → 161 W vs the η-peak's 96 W). Ranked by delivered power at high efficiency, min-recoil is arguably the best *operating* point on the grid.
+2. **Recoil separates alive from dead sharply**: every non-cycling flutter state shows recoil > 1.4; every live state < 0.25. It's a binary health signal plus a continuous tuning signal in one number.
+3. **And it is sensor-measurable per cycle** (one pressure/flow transducer), unlike η (needs calibrated flow measurement on two legs). **A controller that servos to minimum recoil lands within ~6% of peak η at full delivery, detects stall instantly, and needs one cheap sensor.** This upgrades the self-tuning module from "holds a mapped setpoint" to "closed-loop on a physically meaningful target" — the strongest technical exhibit yet for IP Disclosure 2 (which claims exactly this loop).
+
+**P2 (founder: coherence peak coincides with η peak) — INCONCLUSIVE, metric's fault.** T-002 as implemented (single DFT peak/median) scatters over two orders of magnitude across neighboring grid points — too fragile to answer the question. Not refuted, not confirmed. Fix queued: Welch-averaged PSD over per-cycle windows, then re-ask.
+
+**Tuning-map deliverables also banked** (same grid): stroke-weight pairing reproduced (light weights need short strokes — 15/25 mm strokes die under light weights, exactly the literature's "each weight has its own optimal stroke"); the site-water-budget card now has its data table (appetite 8→24 L/s vs η 0.80→0.48 at near-constant ~2 L/s delivery).
+
 ## Status of the retired fit
 
 η(r) = 0.85 − 0.03r is retired per D-5. At the operating point it happens to agree with the sim (0.67 vs 0.667) — the fit was right where it mattered and wrong in shape elsewhere, which is exactly why it needed replacing.
@@ -67,7 +82,9 @@ Delivered water stays in a narrow band (~1.4–2.0 L/s) while drive-water consum
 ## Queue (in order)
 
 1. ~~Drive-pipe length sweep~~ **DONE 2026-07-18 → Findings 4 & 5.** (Answer: appetite does NOT recover with length — it's a weight-knob variable at constant delivery; optimum L/D 100–250; per-ram power cap confirmed.)
-2. Valve tuning map at the new operating points (weight × stroke) → the field commissioning card — now reframed as the site-water-budget card (Finding 5). Include the WPT pressure-matrix convolute (expired US9518595B2) as a short-site variant per COMPONENT_TECH_SCAN.
+2. ~~Valve tuning map~~ **DONE 2026-07-18 → Finding 6** (site-water-budget card data banked; WPT pressure-matrix short-site variant still pending).
+2b. **T-002 metric rework** (Welch-averaged per-cycle PSD) → re-run the coherence-vs-η coincidence test properly (P2 still open).
+2c. **Min-recoil servo simulation** — close the loop in-model (controller adjusts weight/preload each cycle toward recoil→0) and measure convergence + held η vs drift scenarios: the digital prototype of the self-tuning module.
 3. Chamber + rise-pipe sizing for T-001 jet quality (Gen 0 metric as design requirement).
 4. Model v2: reopen-leakage; re-anchor; then solver ingestion and full SKU re-statement.
 5. Physical bench correlation when hardware exists (±10% model-vs-prototype gate, VALIDATION req 8).

@@ -87,6 +87,8 @@ class RamSim:
         drive_vol = deliv_vol = 0.0
         cycles = 0
         last_closed = False
+        was_closed = False            # zero-recoil instrumentation: reopen events
+        reopen_Q = []                 # drive-pipe flow at each valve-reopen instant
         t = 0.0
         rec_t, rec_p, rec_qj = [], [], []
         next_sample = record_from
@@ -139,9 +141,17 @@ class RamSim:
                 if not last_closed:
                     cycles += 1
                     last_closed = True
-            elif x_v >= self.stroke:
-                x_v, u_v = self.stroke, min(u_v, 0.0)
-                last_closed = False
+                was_closed = True
+            else:
+                if was_closed and rec_started:
+                    # valve reopening after full closure: Young's zero-recoil
+                    # condition met when the water COLUMN's flow ~ 0 at this
+                    # instant (mid-pipe node — junction node is 0 by BC when shut)
+                    reopen_Q.append(Qn[N//2])
+                was_closed = False
+                if x_v >= self.stroke:
+                    x_v, u_v = self.stroke, min(u_v, 0.0)
+                    last_closed = False
             # chamber update: inflow Qc from check valve, outflow Qd up the rise pipe
             # to the headstock at fixed head Hd (ratified architecture)
             Qd = self.G_del*max(h_ch - self.Hd, 0.0)
@@ -173,12 +183,16 @@ class RamSim:
         mean_qj = sum(rec_qj)/len(rec_qj)
         var_qj = sum((q-mean_qj)**2 for q in rec_qj)/len(rec_qj)
         jet_cov = math.sqrt(var_qj)/mean_qj if mean_qj > 0 else 1.0
+        # zero-recoil mismatch: mean |drive-pipe flow| at valve reopen, normalized
+        # by mean drive flow (0 = perfect Young condition; >1 = badly mistimed)
+        recoil = (sum(abs(q) for q in reopen_Q)/len(reopen_Q)/max(Qdr, 1e-9)) if reopen_Q else float('nan')
         return dict(F=self.F, L=self.L, D=self.D, a=self.a,
                     Q_drive_Ls=Qd*1000, q_deliv_Ls=qd*1000,
                     h_delivery=h_del, r=r, eta=eta,
                     freq_hz=(cycles - cyc0)/T_rec if rec_started else 0,
                     ripple_pct=100*(max(rec_p)-min(rec_p))/max(sum(rec_p)/len(rec_p), 1),
-                    T002_psd_peakiness=psd_peak, T001_jet_cov=jet_cov)
+                    T002_psd_peakiness=psd_peak, T001_jet_cov=jet_cov,
+                    recoil_mismatch=recoil, n_reopens=len(reopen_Q))
 
     @staticmethod
     def _psd_peakiness(p, fs):
