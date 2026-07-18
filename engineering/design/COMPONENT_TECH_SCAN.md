@@ -54,7 +54,7 @@
 ## 5. What this scan changes (decision items & actions — nothing adopted silently)
 
 **For the founder (decision items):**
-1. **Fluted penstock** — quantitative evidence against (1.6–2.7× friction; riblets only work at µm scale and invert off-design). Options: (a) keep A/B as designed, instrumented for the predicted loss; (b) reframe intent as flow-conditioning and test honeycomb straightener as the literature-backed equivalent; (c) both arms. Founder's call — D-6 candidate.
+1. **Fluted penstock** — quantitative evidence against on friction (1.6–2.7×; riblets only work at µm scale and invert off-design). **RESOLVED as D-6 (ratified 2026-07-18):** founder confirms the intent is flow conditioning; three-arm comparison adopted (smooth baseline / fluted / smooth + honeycomb straightener), judged on jet CoV. See `docs/business/decisions/DECISION_2026-07-18_D6_fluting_intent_flow_conditioning.md`.
 2. **Vortex nozzle** — same shape: physics is against it, test is novel either way, D-3 A/B slot stands unless founder redirects.
 3. **IP strategy reframe** — self-tuning disclosure narrows to zero-recoil phase-locking + bank phase coordination + generation-optimized control (the verified-open trio); base architecture claims are foreclosed by expired IWHR patent (which also gives us freedom to operate).
 
