@@ -1,0 +1,56 @@
+{
+ "config": {
+  "F_m": 1.5,
+  "D_mm": 300,
+  "L_m": 30.0,
+  "LD": 100,
+  "stroke_mm": 8,
+  "Wf": 0.65,
+  "V_air_L": 40,
+  "Hd_m": 9.0,
+  "r": 6,
+  "wave_speed_ms": 1173.5,
+  "penstock": {
+   "L_m": 12.0,
+   "D_mm": 90.0,
+   "f": 0.019
+  }
+ },
+ "ram": {
+  "eta_daubuisson": 0.736,
+  "Q_drive_Ls": 14.83,
+  "q_deliv_Ls": 1.819,
+  "freq_hz": 1.85,
+  "Hj_peak_m": 9.9,
+  "v_col_prelslam_ms": 0.399,
+  "v_col_max_ms": 0.408,
+  "joukowsky_full_slam_head_m": 47.8
+ },
+ "jet": {
+  "H_net_m": 8.98,
+  "penstock_loss_m": 0.018,
+  "Vj_ms": 12.88,
+  "d_nozzle_single_mm": 13.4,
+  "d_nozzle_twin_mm": 9.5
+ },
+ "wheel": {
+  "type": "Turgo (D-1: 4-8 m band)",
+  "PCD_mm": 150.0,
+  "rpm": 754.0,
+  "runaway_rpm": 1358.0
+ },
+ "power": {
+  "P_jet_W": 150.8,
+  "P_shaft_W": 113.1,
+  "P_electric_W": 88.4,
+  "annual_kWh": 697.0,
+  "chain": "jet x0.75 turgo x0.85 PMA x0.92 MPPT (canon, bench supersedes)"
+ },
+ "energy_window": {
+  "T_s": 20.0,
+  "E_in_kJ": 4.36,
+  "E_delivered_kJ": 3.21,
+  "E_loss_kJ": 1.15,
+  "balance_check_eta": 0.736
+ }
+}
