@@ -75,6 +75,28 @@ New instrument: `recoil_mismatch` = |water-column flow at valve-reopen| / mean d
 
 **Tuning-map deliverables also banked** (same grid): stroke-weight pairing reproduced (light weights need short strokes — 15/25 mm strokes die under light weights, exactly the literature's "each weight has its own optimal stroke"); the site-water-budget card now has its data table (appetite 8→24 L/s vs η 0.80→0.48 at near-constant ~2 L/s delivery).
 
+## Finding 7 — T-002 v2 (Welch) answers P2: coherence is a HEALTH signal, not an optimizer
+
+The reworked metric (Hann-windowed, 50%-overlap Welch-averaged PSD, peak/median in dB) is stable where v1 scattered over two orders of magnitude. Verdict on the founding prediction ("coherence peak coincides with efficiency peak"): **in-model, there is no coherence peak to coincide with.** Every live operating point sits in a tight 39–43 dB band regardless of tuning (η 0.48–0.80 across those same points); every dead/flutter state sits at 28–33 dB. Delivery-pressure coherence saturates as soon as the machine cycles regularly — it cleanly separates *running* from *stalled* but carries almost no tuning information. The founding intuition survives in modified form: **coherence = alive** (a genuinely useful, cheap fleet-telemetry health metric — a 5 dB drop is a dispatch alarm), while **recoil = tuned** (the continuous signal near the knee). Both computed from one pressure sensor. Physical-bench confirmation pending as always.
+
+## Finding 8 — the self-tuning module's control law, found the honest way (three failures on the record)
+
+Digital prototype of the self-tuning ram (`tools/design/servo_min_recoil.py`), developed adversarially against our own model:
+
+- **v1 failed**: naive extremum-seeking on raw |recoil| climbed into a *fake* low-recoil basin created by valve-bounce chatter (the model's reopen events included micro-bounces) and lost 4× output. Lesson: debounce (closure ≥ 50 ms defines a real reopen).
+- **v2 failed differently**: debounced, the chatter basin vanished but a REAL second attractor at heavy tune remains — |recoil| is multi-modal in valve weight. Blind descent from an arbitrary mistune converges to whichever basin is downhill. A signed-flow phase detector was also tested and refuted (all reopens occur during backflow at every weight; sign carries no direction information in-model).
+- **v3 works — sweep-then-track** (the same architecture solar MPPT adopted for the same multi-modal problem): a ~44 s commissioning sweep maps recoil across the weight range, jumps to the global minimum, then tracks with small steps + best-point memory + auto-re-sweep on 2.5× degradation.
+
+**Result (mistuned start Wf = 1.4; supply fall drops 1.5 → 1.2 m mid-run):**
+
+| Window | Fixed valve | Servo v3 | |
+|---|---|---|---|
+| pre-drift η | 0.566 | **0.729** | +29% rel. |
+| post-drift η | 0.456 | **0.646** | +42% rel. |
+| post-drift recoil | 0.212 | 0.020 | tracker followed the drift with no re-sweep needed |
+
+The sweep found Wf* = 0.70 on its own — the static grid's knee (0.65–0.70) rediscovered by the controller with no map given. Stated fairly: the servo holds the *water-efficiency knee*, so it delivers slightly less water than a heavy fixed valve on a water-rich site (1.28 vs 1.42 L/s post-drift) while consuming 36% less drive water — on the water-limited sites where rams matter most, the servo's operating point is the one that survives. **Hardware implied: one pressure sensor, one preload actuator, firmware a $3 MCU runs. This is IP Disclosure 2's reduction-to-practice narrative, now with its failure modes documented — which is what makes it credible.**
+
 ## Status of the retired fit
 
 η(r) = 0.85 − 0.03r is retired per D-5. At the operating point it happens to agree with the sim (0.67 vs 0.667) — the fit was right where it mattered and wrong in shape elsewhere, which is exactly why it needed replacing.
@@ -83,8 +105,8 @@ New instrument: `recoil_mismatch` = |water-column flow at valve-reopen| / mean d
 
 1. ~~Drive-pipe length sweep~~ **DONE 2026-07-18 → Findings 4 & 5.** (Answer: appetite does NOT recover with length — it's a weight-knob variable at constant delivery; optimum L/D 100–250; per-ram power cap confirmed.)
 2. ~~Valve tuning map~~ **DONE 2026-07-18 → Finding 6** (site-water-budget card data banked; WPT pressure-matrix short-site variant still pending).
-2b. **T-002 metric rework** (Welch-averaged per-cycle PSD) → re-run the coherence-vs-η coincidence test properly (P2 still open).
-2c. **Min-recoil servo simulation** — close the loop in-model (controller adjusts weight/preload each cycle toward recoil→0) and measure convergence + held η vs drift scenarios: the digital prototype of the self-tuning module.
+2b. ~~T-002 metric rework~~ **DONE 2026-07-18 → Finding 7** (coherence = health signal; P2 answered in-model).
+2c. ~~Min-recoil servo simulation~~ **DONE 2026-07-18 → Finding 8** (sweep-then-track v3; v1/v2 failures on the record).
 3. Chamber + rise-pipe sizing for T-001 jet quality (Gen 0 metric as design requirement).
 4. Model v2: reopen-leakage; re-anchor; then solver ingestion and full SKU re-statement.
 5. Physical bench correlation when hardware exists (±10% model-vs-prototype gate, VALIDATION req 8).

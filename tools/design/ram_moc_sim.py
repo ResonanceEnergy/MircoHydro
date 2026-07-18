@@ -196,23 +196,45 @@ class RamSim:
 
     @staticmethod
     def _psd_peakiness(p, fs):
-        """Gen 0 T-002: dominant-peak-to-median PSD ratio in 0.2-20 Hz (simple DFT)."""
-        n = min(len(p), 2048)
-        if n < 64: return 0.0
-        p = p[-n:]
+        """Gen 0 T-002 v2: Welch-averaged PSD peakiness in 0.2-20 Hz.
+
+        v1 (single 2048-pt DFT, peak/median) scattered over two orders of
+        magnitude between neighboring tuning points — too fragile to test the
+        coherence-efficiency coincidence (SIM_RESULTS Finding 6). v2 averages
+        Hann-windowed 50%-overlapping segments (Welch 1967) and reports
+        dominant-peak power / median power of the averaged spectrum, in dB.
+        """
+        n = len(p)
+        seg = 512
+        if n < seg: return 0.0
+        step = seg//2
         mean = sum(p)/n
         x = [v - mean for v in p]
-        psd = []
-        for k in range(1, n//2):
-            fr = k*fs/n
-            if fr < 0.2 or fr > 20.0: continue
-            re = sum(x[i]*math.cos(2*math.pi*k*i/n) for i in range(n))
-            im = sum(x[i]*math.sin(2*math.pi*k*i/n) for i in range(n))
-            psd.append(re*re + im*im)
-        if not psd: return 0.0
-        s = sorted(psd)
+        w = [0.5 - 0.5*math.cos(2*math.pi*i/(seg-1)) for i in range(seg)]
+        acc = None
+        nseg = 0
+        start = 0
+        while start + seg <= n:
+            xs = [x[start+i]*w[i] for i in range(seg)]
+            psd = []
+            for k in range(1, seg//2):
+                fr = k*fs/seg
+                if fr < 0.2 or fr > 20.0:
+                    psd.append(None); continue
+                re = sum(xs[i]*math.cos(2*math.pi*k*i/seg) for i in range(seg))
+                im = sum(xs[i]*math.sin(2*math.pi*k*i/seg) for i in range(seg))
+                psd.append(re*re + im*im)
+            if acc is None:
+                acc = psd
+            else:
+                acc = [None if v is None else acc[j] + v for j, v in enumerate(psd)]
+            nseg += 1
+            start += step
+        vals = [v/nseg for v in acc if v is not None] if acc else []
+        if not vals: return 0.0
+        s = sorted(vals)
         med = s[len(s)//2]
-        return max(psd)/med if med > 0 else 0.0
+        return 10*math.log10(max(vals)/med) if med > 0 else 0.0
 
 
 def sweep_r(F=1.5, D=0.30, targets=(4, 6, 8, 10, 12, 16, 20)):
