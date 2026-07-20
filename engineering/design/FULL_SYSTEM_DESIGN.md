@@ -1,5 +1,17 @@
 # Machine B — Full System Design (headstock architecture)
 
+> **⚠ SUPERSESSION BANNER (2026-07-19, per DESIGN_GAPS_AND_GAINS_AUDIT GAP-1):**
+> numbers in this document predate the digital bench and are superseded where they
+> conflict: single-ram 100 L/s and **556 W** → ram BANKS at ~15–30 L/s and **~82–88 W
+> electric per ram** (SIM_RESULTS Findings 1/5/10, ENERGY_LOSS_BUDGET); Pelton 300 mm
+> @ 368 rpm + 33.5 mm nozzles → **Turgo 150 mm PCD @ 754 rpm, twin 9.5 mm jets**
+> (D-1, POWERTRAIN_AUDIT); flat η=0.67 → v2 dual-η calibration; drive pipe 45 m
+> (L/D 150) → **30–75 m (L/D 100–250)** (Finding 4); box tank → **ovoid headstock,
+> tangential top entry** (D-8); manifold → one-sweep + straight header spec
+> (ENERGY_LOSS_BUDGET). The architecture (canon X1–X9) is unchanged; the X2
+> rewrite of this document is queued. Until then, live numbers come from the
+> documents named above.
+
 **Date:** 2026-07-16 · **Schematic:** `full_system_schematic.svg` · **Solver:** `../../tools/design/ram_pelton_design.py`
 **Reference site (B-Standard):** 1.5 m natural fall, 100 L/s drive flow.
 
