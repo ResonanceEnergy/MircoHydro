@@ -24,6 +24,7 @@
 | REQ-P6 | **Ram bank scaling** as the standard growth path (per digital-bench Finding 1: ~18 L/s per 300 mm ram) — manifold design, N-ram skid layouts, per-ram isolation valves | SIM_RESULTS finding 1; SKU ladder X6 | bank of 2 demo'd |
 | REQ-P7 | Permits-in-box: templated Water Act memo, DFO self-assessment, interconnection form (if grid), grant boilerplate shipped with product docs | fixed-cost kill strategy | complete pack for one province |
 | REQ-P8 | Load-module menu implemented: battery/loads · heat-dump (northern) · productive-use kit (program channel) · (miner-heater only in private channel) | load-module strategy + channel rules | heat-dump module spec'd for demo |
+| **REQ-P9** | **Generator/wheel speed-match analysis at BOM freeze**: 754 rpm (150 mm PCD @ r=6 site) sits below benchmark PMG band (1,200–2,400 rpm). Resolve via smaller PCD (100 mm → 1,131 rpm), kV/winding selection into MPPT window, or (last resort) belt step-up — decided by dyno data | POWERTRAIN_AUDIT §3 (founder challenge 2026-07-19) | dyno curve showing MPPT lock across seasonal head range |
 
 ## C. Engineering-system requirements (the audit's fix program, phased)
 
