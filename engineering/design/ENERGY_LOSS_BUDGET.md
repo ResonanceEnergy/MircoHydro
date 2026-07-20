@@ -40,6 +40,8 @@
 
 Misalignment loss goes as ~cos²(error): 5° costs 0.8% (1.2 W), 10° costs 3% (4.5 W), and **axial entry (what the render wrongly showed) costs ~100% — the wheel doesn't turn.** The design's requirements, now written as spec: jets enter in the runner plane ±20–25° axial inclination, tangent to the pitch circle, twin jets separated ≥25° circumferentially (ours: 23°→ widened to 25° in the corrected scene), housing clearance sized so discharged water exits without re-striking cups (splash-back/windage costs 2–5% in bad housings — REQ addition for the housing drawing), discharge path falls clear to the tailrace.
 
+**Manifold approach spec (founder catch — the render's "hook" was a violation):** the penstock-to-nozzle run makes **ONE wide-radius sweep** (bend radius ≥5× bore), then a **dead-straight header aligned with the jet axis, ≥3× bore (built: ~8×) before N1**; N2 takes off at a **shallow-angle wye (≤30°), never a right-angle tee**, with its own straight run before its nozzle; the isolation valve sits on the N2 branch, upstream of that straight run (a part-open valve directly before a nozzle is a jet-quality killer). Every elbow within a few diameters of a nozzle disturbs the velocity profile the nozzle is supposed to perfect — this is the same physics as the D-6 straight-run/honeycomb rule. Hydraulic cost of a bad hook: 2–4 minor-loss coefficients (~0.5–1 W here) plus an unquantified-but-larger jet CoV penalty at the wheel.
+
 ## The honest max-output stack (same water, same site)
 
 | Build | Chain | Electric out |
