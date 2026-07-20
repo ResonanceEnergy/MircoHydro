@@ -106,6 +106,26 @@ Grid: gas volume 15–120 L × rise-pipe conductance, tuned B300 knee point (dat
 - **The architectural point that decides REQ-S1: in the ratified design the JET is fed from the HEADSTOCK, not the chamber.** The open headstock (minutes of residence time) smooths delivery essentially completely before the penstock — so chamber size affects rise-pipe pulsation only, not jet quality. T-001 at the nozzle is governed by penstock/manifold/nozzle design (D-6 study), not by chamber volume. A direct-coupled machine (no headstock) would need the big chamber; ours does not — **another engineering payoff of the founder's headstock, on the record.**
 - **REQ-S1 consequence:** a chamber in the ~40 L class (CSA B51 small-vessel exemption territory — **threshold to be verified against current B51/ABSA Pressure Equipment Safety Regulation before reliance**) costs ~2% relative η vs 120 L and nothing at the jet. Design direction: (a) primary — exemption-class chamber, exit vessel scope entirely; (b) alternate — commodity **CRN-registered pre-charged bladder vessel** (COMPONENT_TECH_SCAN §3), compliance bought off the shelf. The legacy 150 L PN10 spec is superseded pending the verification memo.
 
+## Finding 10 — Model v2 (2026-07-19): physical leak channel, dual efficiencies, joint re-anchor
+
+v2 adds what the queue ordered: **(a)** a waste-valve **seat-leakage channel** (real rams leak high-pressure water through the seat during delivery — the physical mechanism v1 lacked); **(b)** optional **seat-bounce restitution** (Lansford's valve-elasticity requirement — left OFF by default: with it on, the tuned knee configurations die, so bounce is a study knob pending bench data); **(c)** **dual efficiency reporting** — D'Aubuisson and the stricter Rankine on every run.
+
+**Re-anchor (joint, three constraints: anchor η≈0.667 at r=6, high-r decline, tuned-knee viability): Kj 125 → 100 with leak = 0.3% of port area.** Anchor now 0.663/0.631 (D'Aub/Rankine); the knee point moves 0.736 → 0.693 — the honest ~4-point cost of a real seat leak, propagating to all knee-based numbers (~82 W/ram electric, restated from 88). Two things learned the hard way, on the record: the leak initially locked the valve shut because leak flow was wrongly exerting drag on the closed disc (fixed — leakage passes around the seat); and leak × low-Kj interact nonlinearly (each alone fine, together the cycle dies) — the calibration space is genuinely multi-modal, echoing Finding 8. **High-r decline remains under-modeled** (0.63 at r=20 vs published ~0.3): pushing leak high enough to match kills the cycle through the reopen mechanism first. The missing physics is reopen-against-pressure dynamics — v3/bench territory. **The Finding-2 conservative envelope ruling stays in force.** Suite now 26 tests (new invariants: Rankine < D'Aubuisson; leakage never helps).
+
+## Finding 11 — D-6/D-7 jet conditioning predictions (first-order model; rig decides)
+
+New tool `jet_conditioning_model.py` (swirl/turbulence bookkeeping, calibrated to published anchors; ±50% absolutes, rankings robust; NOT CFD — honesty banner in the file):
+
+| Config | predicted jet CoV | spread |
+|---|---|---|
+| **C — smooth + honeycomb** | **0.007** | 0.01° |
+| A — smooth + plain header | 0.015 | 0.23° |
+| B — fluted penstock | 0.016 | 0.45° |
+| A + the rejected "hook" elbow | **0.035** | 0.58° |
+| D-7 vortex nozzle (10–30° vanes) | 0.11–0.35 | 6–19° |
+
+Read-outs: **(1)** the founder's hook catch is quantified — a tight elbow before the header costs 2.4× on CoV, right at the literature's ">2 points" anchor; **(2)** honeycomb halves CoV vs the plain header — arm C is the model's favorite; **(3)** an unexpected clean result: at L/D ≈ 133 the penstock **itself** kills incoming swirl (tank swirl decays to noise before the manifold) — so the "flutes stabilize variable inflow swirl" defense (H-flute) is refuted in-model: there's no variable swirl left to stabilize, and flutes just add their own fixed deviation; **(4)** D-7's vortex nozzle predicts an order of magnitude worse CoV — consistent with the D-7 evidence record; the A/B stands to measure the magnitude. **All four are predictions, not verdicts — the D-6/D-7 rig (or CFD) supersedes per canon.** Note the fluted pipe's remaining honest path: the 2025 curved-oval-pipe drag literature (see SCHAUBERGER_EVIDENCE_FILE) supports friction *reduction* claims for some helical geometries — the ΔP-vs-flow instrumentation added to the D-6 rig tests exactly that, independently of the CoV question.
+
 ## Status of the retired fit
 
 η(r) = 0.85 − 0.03r is retired per D-5. At the operating point it happens to agree with the sim (0.67 vs 0.667) — the fit was right where it mattered and wrong in shape elsewhere, which is exactly why it needed replacing.
@@ -117,7 +137,7 @@ Grid: gas volume 15–120 L × rise-pipe conductance, tuned B300 knee point (dat
 2b. ~~T-002 metric rework~~ **DONE 2026-07-18 → Finding 7** (coherence = health signal; P2 answered in-model).
 2c. ~~Min-recoil servo simulation~~ **DONE 2026-07-18 → Finding 8** (sweep-then-track v3; v1/v2 failures on the record).
 3. ~~Chamber + rise-pipe sizing~~ **DONE 2026-07-18 → Finding 9** (small legal chamber sufficient; headstock does the jet smoothing; REQ-S1 exemption memo queued).
-4. Model v2: reopen-leakage; re-anchor; then solver ingestion and full SKU re-statement (incl. WPT pressure-matrix short-site variant).
+4. ~~Model v2~~ **DONE 2026-07-19 → Finding 10** (leak channel, dual η, re-anchor; solver ingestion + WPT pressure-matrix variant still pending → v3 backlog with reopen-dynamics rework).
 5. Physical bench correlation when hardware exists (±10% model-vs-prototype gate, VALIDATION req 8).
 
 **Toolchain status (P0-1 DONE 2026-07-18):** 25 unit tests now guard the solvers (`tools/tests/test_solvers.py` — physics invariants, input validation, calibration-anchor regression envelope, energy-conservation bound, Welch-metric sanity, solver smoke tests) and run in GitHub Actions CI on every push (`.github/workflows/ci.yml`). Input validation added to `RamSim.__init__`. The ram_pelton solver's doc drift (headstock-less architecture text) corrected + D-5 supersession note added inline.

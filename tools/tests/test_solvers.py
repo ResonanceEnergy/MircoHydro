@@ -65,7 +65,9 @@ def test_reference_site_regression():
     """
     s = RamSim(F=1.5, D=0.30, L=45.0, Hd_target=9.0)
     r = s.run(t_end=40.0, record_from=20.0)
+    # v2 anchor (2026-07-19): Kj=100 + leak_frac=0.003 -> eta ~0.663
     assert 0.58 <= r["eta"] <= 0.72, r["eta"]
+    assert 0.0 < r["eta_rankine"] < r["eta"]  # Rankine is strictly stricter
     assert 1.6 <= r["q_deliv_Ls"] <= 2.2, r["q_deliv_Ls"]
     assert 14.0 <= r["Q_drive_Ls"] <= 22.0, r["Q_drive_Ls"]
     assert 0.3 <= r["freq_hz"] <= 0.8, r["freq_hz"]
@@ -148,3 +150,12 @@ def test_solve_site_smoke():
     # 100 L/s single-ram assumption; the MOC sim caps a 300 mm ram near
     # ~18 L/s (Finding 1). This test checks geometry math only, not the power
     # claim — solver ingestion of sim curves is queue #4.
+
+
+def test_v2_leak_channel_costs_efficiency():
+    """Model v2: more seat leakage must never increase efficiency."""
+    tight = RamSim(F=1.5, D=0.30, L=45.0, Hd_target=9.0, leak_frac=0.0)
+    leaky = RamSim(F=1.5, D=0.30, L=45.0, Hd_target=9.0, leak_frac=0.003)
+    rt = tight.run(t_end=30.0, record_from=15.0)
+    rl = leaky.run(t_end=30.0, record_from=15.0)
+    assert rl["eta"] <= rt["eta"] + 0.02

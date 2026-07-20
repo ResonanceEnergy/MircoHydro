@@ -43,7 +43,8 @@ class RamSim:
     def __init__(self, F=1.5, L=None, D=0.30, wall=0.006, f=0.022,
                  stroke=0.015, wv_dia_ratio=1.0, wv_weight=None,
                  Hd_target=9.0, V_air0=0.060, n_nodes=24,
-                 K_entrance=0.5, K_junction=None):
+                 K_entrance=0.5, K_junction=None,
+                 leak_frac=None, e_seat=0.0):
         # input validation (P0-1: solvers guard the company's claims and had
         # no guardrails themselves — a crash bug slipped through once already)
         if F <= 0: raise ValueError(f"fall F must be > 0 m (got {F})")
@@ -61,9 +62,21 @@ class RamSim:
         self.A = math.pi*D*D/4
         self.f = f
         self.Ke = K_entrance
+        # MODEL v2 (2026-07-19): two physical loss channels replace part of the
+        # v1 lumped knob. leak_frac = waste-valve seat leakage as a fraction of
+        # full port area (real rams leak high-pressure water through the seat
+        # during delivery — the mechanism v1 lacked, which made eta(r) flat at
+        # high r; Finding 2). e_seat = seat bounce restitution (Lansford could
+        # only match data with valve elasticity; our chatter observation agrees).
+        # Re-anchored jointly with Kj: see SIM_RESULTS Finding 10.
+        self.leak_frac = leak_frac if leak_frac is not None else 0.003
+        self.e_seat = e_seat
         # junction dissipation (valve slam / unsteady friction lump) —
-        # single calibration knob anchored to USAID eta≈0.66 @ r=6: Kj=125 calibrated 2026-07-18 (see SIM_RESULTS doc)
-        self.Kj = K_junction if K_junction is not None else 125.0
+        # v1: Kj=125 anchored alone. v2: re-anchored WITH leak channel active
+        # to USAID eta~0.667 @ r=6 with knee-config viability constraint;
+        # high-r decline partially captured (0.63 @ r=20 vs published ~0.3) —
+        # conservative envelope ruling (Finding 2) REMAINS in force.
+        self.Kj = K_junction if K_junction is not None else 100.0
         # wave speed with pipe elasticity
         self.a = math.sqrt(K_WATER/RHO / (1 + K_WATER*D/(E_STEEL*wall)))
         self.N = n_nodes
@@ -125,7 +138,8 @@ class RamSim:
             # Cp - Hj = B*Qp + KjR*Qp|Qp|  and  Qp = Qw + Qc
             Cp = H[N-1] + B*Q[N-1] - R*Q[N-1]*abs(Q[N-1])
             KjR = self.Kj/(2*G*self.A*self.A)
-            Aw = self.Aw_max*max(0.0, min(1.0, x_v/self.stroke))
+            Aw_open = self.Aw_max*max(0.0, min(1.0, x_v/self.stroke))
+            Aw = Aw_open + self.leak_frac*self.Aw_max  # v2: junction sees port + seat leak
             h_ch = P_ch/(RHO*G)
             lo, hi = -20.0, max(Cp, h_ch) + 80.0
             for _ in range(48):
@@ -141,14 +155,22 @@ class RamSim:
                 (lo, hi) = (Hj, hi) if (Qp - Qw - Qc) > 0 else (lo, Hj)
             Hn[N], Qn[N] = Hj, Qp
             # waste valve disc dynamics: weight opens (+), flow drag + pressure close (-)
-            v_port = (Qw/max(Aw, 1e-6)) if Aw > 0 else 0.0
+            # v2: disc drag comes from flow through the OPEN port only — seat
+            # leakage passes around the closed disc and exerts no closing drag
+            Qw_open = self.Cd_w*Aw_open*math.sqrt(2*G*max(Hj, 0.0)) if Aw_open > 0 else 0.0
+            v_port = (Qw_open/max(Aw_open, 1e-6)) if Aw_open > 0 else 0.0
             F_close = 0.5*RHO*1.15*self.Cd_w*self.Aw_max*v_port*v_port \
                       + max(Hj - self.F, 0.0)*RHO*G*self.Aw_max*0.15
             acc = (self.W - F_close)/self.m_v
             u_v += acc*dt
             x_v += u_v*dt
             if x_v <= 0.0:
-                x_v, u_v = 0.0, 0.0
+                # v2: seat bounce (restitution) instead of dead stop — Lansford's
+                # valve-elasticity requirement; fast impacts rebound slightly
+                if u_v < -0.05 and self.e_seat > 0.0:
+                    x_v, u_v = 0.0, -self.e_seat*u_v
+                else:
+                    x_v, u_v = 0.0, 0.0
                 if not last_closed:
                     cycles += 1
                     last_closed = True
@@ -186,7 +208,10 @@ class RamSim:
         Qdr = drive_vol/T_rec
         qd = deliv_vol/T_rec
         h_del = self.Hd                     # delivery head = headstock elevation (fixed)
-        eta = qd*h_del/(Qdr*self.F) if Qdr > 0 else 0.0
+        eta = qd*h_del/(Qdr*self.F) if Qdr > 0 else 0.0            # D'Aubuisson
+        # v2: Rankine efficiency (stricter — lift above source over waste-water energy)
+        eta_rank = (qd*(h_del - self.F)/((Qdr - qd)*self.F)
+                    if (Qdr - qd) > 1e-9 and h_del > self.F else 0.0)
         r = h_del/self.F
         Qd = Qdr
         # Gen 0 metrics
@@ -199,7 +224,7 @@ class RamSim:
         recoil = (sum(abs(q) for q in reopen_Q)/len(reopen_Q)/max(Qdr, 1e-9)) if reopen_Q else float('nan')
         return dict(F=self.F, L=self.L, D=self.D, a=self.a,
                     Q_drive_Ls=Qd*1000, q_deliv_Ls=qd*1000,
-                    h_delivery=h_del, r=r, eta=eta,
+                    h_delivery=h_del, r=r, eta=eta, eta_rankine=eta_rank,
                     freq_hz=(cycles - cyc0)/T_rec if rec_started else 0,
                     ripple_pct=100*(max(rec_p)-min(rec_p))/max(sum(rec_p)/len(rec_p), 1),
                     T002_psd_peakiness=psd_peak, T001_jet_cov=jet_cov,
