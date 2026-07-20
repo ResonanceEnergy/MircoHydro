@@ -1,0 +1,8 @@
+# Invention Disclosure 1 — Coupled Ram-Bank → Headstock → Jet Design Method
+**Date of record:** 2026-07-19 · **Inventor:** NATRIX (founder, Resonance Energy Systems) · **Status:** internal disclosure draft for counsel; NOT filed.
+**Title:** Method and system for sizing and operating a bank of hydraulic ram pumps feeding a common elevated headstock and impulse-turbine generation set.
+**The invention:** a computational design method (MOC transient model of each ram with calibrated junction dissipation and seat-leakage channels; per-ram appetite/delivery curves; conservative-envelope efficiency; shared-rise-pipe superposition; flow-duration site envelope) that produces buildable operating points for N-ram generation systems — plus the physical system so sized.
+**Reduction to practice:** `tools/design/ram_moc_sim.py` (v2), `bank_phase_model.py`, `flow_duration.py`, `ram_pelton_design.py` ingestion — git history commits a13f5a3…356e8a2, CI-tested. SIM_RESULTS Findings 1–12.
+**Prior art distinguished:** expired CN107228042B (IWHR) claims the plumbing (waves→rams→tank→turbine) but no sizing/operating method; Lungudi 2024 models one ram, no bank, no generation coupling; no published full-chain design method exists (COMPONENT_TECH_SCAN verified).
+**Claims outline:** (1) method of jointly selecting ram count, valve tuning point, rise-pipe conductance and headstock elevation from a calibrated transient model + site flow-duration curve; (2) the conservative-envelope efficiency selection min(model, published-decline); (3) a system sized by (1) with staggered-phase bank operation per Disclosure 2(b).
+**Witness:** ______________________ date ______

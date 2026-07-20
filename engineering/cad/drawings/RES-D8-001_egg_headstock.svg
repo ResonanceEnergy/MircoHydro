@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640" font-family="monospace" font-size="12">
+<rect width="900" height="640" fill="#fdfdf8"/>
+<text x="20" y="28" font-size="16" font-weight="bold">RES-D8-001 rev A — EGG HEADSTOCK, 4 m3 CLASS (dimensioned schematic; CAD solid = P1 drawing package)</text>
+<text x="20" y="46">Material: rotomolded PE or bolted GRP segments (P1 trade study) · VENTED/ATMOSPHERIC — out of CSA B51 scope (see B51 memo)</text>
+<!-- egg profile -->
+<ellipse cx="380" cy="330" rx="150" ry="200" fill="#dfeee6" stroke="#1a4a3a" stroke-width="3"/>
+<path d="M 380 530 Q 350 480 330 440" fill="none" stroke="#1a4a3a" stroke-width="1" stroke-dasharray="4 3"/>
+<!-- collar -->
+<rect x="340" y="118" width="80" height="26" fill="#cfd8dc" stroke="#333"/>
+<text x="430" y="132">top collar ID 600 mm, vent area >= 2x rise bore</text>
+<!-- tangential inlet -->
+<line x1="230" y1="150" x2="352" y2="140" stroke="#1663a8" stroke-width="8"/>
+<text x="60" y="140" fill="#1663a8">rise pipe DN100 IN — TANGENTIAL at collar,</text>
+<text x="60" y="156" fill="#1663a8">discharge over air gap (no back-siphon)</text>
+<!-- waterline -->
+<line x1="255" y1="220" x2="505" y2="220" stroke="#1663a8" stroke-dasharray="6 4"/>
+<text x="512" y="224" fill="#1663a8">operating level (4.0 m3)</text>
+<!-- overflow -->
+<line x1="512" y1="250" x2="600" y2="290" stroke="#607d8b" stroke-width="6"/>
+<text x="608" y="288">overflow DN100 to tailrace (>= max delivery)</text>
+<!-- penstock offtake -->
+<line x1="470" y1="450" x2="590" y2="500" stroke="#37474f" stroke-width="7"/>
+<text x="598" y="500">penstock offtake DN90, 300 mm ABOVE silt cone</text>
+<!-- silt drain -->
+<line x1="380" y1="530" x2="380" y2="580" stroke="#5d4037" stroke-width="6"/>
+<text x="395" y="575">silt drain DN50 + ball valve (copper-alloy option)</text>
+<text x="395" y="591">returns settled material to riverbed (stewardship spec)</text>
+<!-- cradle -->
+<line x1="290" y1="470" x2="250" y2="600" stroke="#455a64" stroke-width="8"/>
+<line x1="470" y1="470" x2="510" y2="600" stroke="#455a64" stroke-width="8"/>
+<ellipse cx="380" cy="470" rx="95" ry="18" fill="none" stroke="#455a64" stroke-width="6"/>
+<text x="530" y="600">cradle: ring at 0.62 H + 3 legs, anchor plates</text>
+<!-- dims -->
+<line x1="200" y1="130" x2="200" y2="530" stroke="#c62828" stroke-width="1"/>
+<text x="150" y="330" fill="#c62828" transform="rotate(-90 150 330)">overall H = 2,600 mm</text>
+<line x1="230" y1="330" x2="530" y2="330" stroke="#c62828" stroke-width="1"/>
+<text x="330" y="322" fill="#c62828">max OD = 1,900 mm</text>
+<text x="20" y="625">Design rules: pointed end DOWN (silt cone); tangential inlet sets in-winding spiral (D-8); vent sized so vessel CANNOT pressurize; freeze: insulated jacket per REQ-P5.</text>
+</svg>

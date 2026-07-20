@@ -51,9 +51,40 @@ PCD_MAX = 0.300           # m
 NOZZLE_MIN = 0.006        # m
 HD_MIN = 6.0              # m — practical impulse floor
 
+# ---- SIM INGESTION (queue #4, done 2026-07-19) ----------------------------
+# Per-ram performance from the calibrated MOC digital bench, model v2
+# (Kj=100, leak=0.3%; SIM_RESULTS Findings 4-6, 10). Interpolate on r.
+# Columns: r, eta_DAubuisson, q_deliv_Ls (per 300mm ram, tuned-knee class site)
+SIM_TABLE_300 = [
+    (6.0, 0.693, 1.74),    # knee config, v2
+    (8.0, 0.664, 1.46),
+    (12.0, 0.624, 1.01),
+    (16.0, 0.622, 0.68),
+    (20.0, 0.633, 0.56),   # envelope: min(sim, published decline) applies >r=9
+]
+PUBLISHED_DECLINE = [(6.0, 0.66), (10.0, 0.55), (14.0, 0.45), (20.0, 0.32)]
+
+def _interp(table, r):
+    if r <= table[0][0]: return table[0][1:]
+    if r >= table[-1][0]: return table[-1][1:]
+    for (r1, *v1), (r2, *v2) in zip(table, table[1:]):
+        if r1 <= r <= r2:
+            f = (r - r1)/(r2 - r1)
+            return tuple(a + f*(b - a) for a, b in zip(v1, v2))
+    return table[-1][1:]
+
+def eta_ram_sim(r):
+    """LIVE per-ram efficiency: conservative envelope min(sim v2, published)."""
+    eta_s = _interp(SIM_TABLE_300, r)[0]
+    eta_p = _interp(PUBLISHED_DECLINE, r)[0]
+    return min(eta_s, eta_p)
+
+def q_per_ram_300(r):
+    """Delivered L/s per tuned 300 mm ram (sim v2)."""
+    return _interp(SIM_TABLE_300, r)[1]
+
 def eta_ram(r):
-    """Hydram D'Aubuisson-style efficiency vs lift ratio r = H_d / F.
-    Fit to published hydram data; repo HYDRAM_GUIDE constant E=0.66 sits at r~6."""
+    """RETIRED fallback (D-5). Use eta_ram_sim() — kept only for old callers."""
     return max(0.20, min(0.72, 0.85 - 0.03 * r))
 
 def drive_pipe(Q, F):

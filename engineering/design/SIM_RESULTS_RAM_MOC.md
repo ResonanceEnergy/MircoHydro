@@ -126,6 +126,17 @@ New tool `jet_conditioning_model.py` (swirl/turbulence bookkeeping, calibrated t
 
 Read-outs: **(1)** the founder's hook catch is quantified — a tight elbow before the header costs 2.4× on CoV, right at the literature's ">2 points" anchor; **(2)** honeycomb halves CoV vs the plain header — arm C is the model's favorite; **(3)** an unexpected clean result: at L/D ≈ 133 the penstock **itself** kills incoming swirl (tank swirl decays to noise before the manifold) — so the "flutes stabilize variable inflow swirl" defense (H-flute) is refuted in-model: there's no variable swirl left to stabilize, and flutes just add their own fixed deviation; **(4)** D-7's vortex nozzle predicts an order of magnitude worse CoV — consistent with the D-7 evidence record; the A/B stands to measure the magnitude. **All four are predictions, not verdicts — the D-6/D-7 rig (or CFD) supersedes per canon.** Note the fluted pipe's remaining honest path: the 2025 curved-oval-pipe drag literature (see SCHAUBERGER_EVIDENCE_FILE) supports friction *reduction* claims for some helical geometries — the ΔP-vs-flow instrumentation added to the D-6 rig tests exactly that, independently of the CoV question.
 
+## Finding 12 — bank stagger quantified (GAP-5; IP Disclosure 2 claim b evidence)
+
+Superposition of six v2 ram waveforms through a shared DN100 rise pipe (`bank_phase_model.py`; assumptions stated in-file — separate drive pipes per canon, fixed-head headstock):
+
+| Phase config | headstock inflow CoV | rise-pipe loss | peak intake draw |
+|---|---|---|---|
+| synchronized | 1.115 | 8.0 W | 176 L/s |
+| **staggered 1/6** | **0.115 (−90%)** | **1.3 W (−84%)** | **114 L/s (−35%)** |
+
+Anti-synchronization buys: near-smooth tank inflow (T-001 at the headstock), ~6.7 W recovered per bank, and a 35% smaller intake screen/channel — a civils-free cost cut. The stagger is exactly what the self-tuning controllers can hold for free (each ram's servo offsets its sweep phase). This is the quantified prize behind IP Disclosure 2 claim (b). Full coupled-solver verification (shared-drive-manifold variant) queued for v3.
+
 ## Status of the retired fit
 
 η(r) = 0.85 − 0.03r is retired per D-5. At the operating point it happens to agree with the sim (0.67 vs 0.667) — the fit was right where it mattered and wrong in shape elsewhere, which is exactly why it needed replacing.
